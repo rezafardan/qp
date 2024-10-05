@@ -1,0 +1,314 @@
+{
+  "content": {
+    "profile": {
+      "title": "PROFIL",
+      "subtitle": {
+        "1": "BIOGRAFI SINGKAT",
+        "2": "CERITA SINGKAT",
+        "3": "PERJALANAN SINGKAT"
+      }
+    },
+    "experience": {
+      "subtitle": {
+        "1": "PEKERJAAN",
+        "2": "PENGALAMAN",
+        "3": "DAN",
+        "full": "PENGALAMAN KERJA DAN PENDIDIKAN"
+      }
+    },
+    "certification": {
+      "subtitle": {
+        "1": "KURSUS",
+        "2": "DAN",
+        "full": "KURSUS DAN SERTIFIKASI"
+      }
+    },
+    "skills": {
+      "subtitle": "KETERAMPILAN"
+    },
+    "project": {
+      "title": "PROYEK",
+      "subtitle": {
+        "1": "DAFTAR",
+        "2": "PROYEK",
+        "full": "DAFTAR PROYEK"
+      }
+    },
+    "contact": {
+      "title": "KONTAK",
+      "subtitle": {
+        "1": "TETAP",
+        "2": "TERHUBUNG",
+        "full": "TETAP TERHUBUNG"
+      }
+    }
+  },
+
+  "shortBiography_1": "Nama saya {{name}}, tetapi Anda bisa memanggil saya <highlight>{{nickname}}</highlight>. Saya berusia {{age}} tahun dan saat ini terdaftar di bootcamp pengembang fullstack bersama <a>{{bootcamp}}</a>. Tujuan saya adalah menjadi pengembang fullstack dengan fokus yang kuat pada pengembangan backend. Saya berkomitmen untuk terus belajar, selalu berusaha meningkatkan keterampilan saya dan tetap mengikuti tren industri terbaru.",
+
+  "shortBiography_2": "Perjalanan saya ke dalam pengembangan web dimulai enam bulan yang lalu, tetapi minat saya terhadap teknologi sudah ada selama bertahun-tahun. Setelah lulus dari Sekolah Menengah Kejuruan pada tahun 2015, saya mengembangkan minat yang kuat dalam IT, terutama dalam jaringan dan perangkat lunak. Selama di sekolah, saya berpartisipasi dalam Kompetisi Kompetensi Siswa di tingkat provinsi di Jawa Timur. Meskipun saya tidak menang, pengalaman tersebut memicu kecintaan yang abadi terhadap IT.",
+
+  "shortBiography_3": "Setelah menyelesaikan studi, saya bekerja di <highlight>{{company}}</highlight>, anak perusahaan PT Telkom Indonesia, di sektor telekomunikasi. Sepanjang karir saya di sana, saya menjabat beberapa peran, termasuk teknisi, operator helpdesk untuk aktivasi layanan, dan akhirnya, pemimpin tim. Posisi-posisi ini memungkinkan saya untuk mendapatkan keterampilan teknis yang berharga dan pengalaman kepemimpinan, yang membentuk kemampuan saya untuk mengelola proyek dengan efektif dan berkolaborasi dengan tim. Lingkungan dinamis di sektor ISP juga memberi saya wawasan mendalam tentang IT, khususnya dalam infrastruktur jaringan.",
+
+  "shortBiography_4": "Meskipun saya telah mencapai banyak hal di industri ISP, minat saya terhadap pengembangan web terus tumbuh. Kecintaan ini akhirnya membawa saya untuk melakukan pergeseran karir ke pengembangan web secara penuh waktu. Meskipun ini adalah keputusan yang sulit, tekad saya untuk mengikuti minat saya memotivasi saya untuk melanjutkan. Saya yakin bahwa belajar adalah proses seumur hidup, dan saya berkomitmen untuk terus meningkatkan dan berkembang di bidang pengembangan web.",
+
+  "shortBiography_5": "Saat ini, saya fokus pada teknologi frontend dan backend. Di sisi frontend, saya sedang meningkatkan pengetahuan saya tentang React dan Redux, serta menjelajahi berbagai pustaka npm React. Untuk backend, saya sedang bekerja dengan basis data relasional dan membangun API menggunakan Express.js. Ini adalah keterampilan kunci yang saya kembangkan untuk mencapai tujuan saya menjadi pengembang fullstack.",
+
+  "shortBiography_6": "Saya melihat ketekunan sebagai kunci kesuksesan. Saya menghadapi tantangan dalam pengembangan web seperti mendaki gunung—setiap kesulitan adalah langkah lebih dekat ke puncak, di mana pemandangan terbaik menunggu. Pola pikir ini mendorong saya untuk mengatasi rintangan dan terus maju dalam perjalanan belajar saya.",
+
+  "shortBiography_7": "Saya selalu terbuka untuk peluang kolaborasi dan belajar. Jika Anda tertarik untuk bekerja sama atau bertukar pengetahuan, jangan ragu untuk menghubungi saya melalui bagian <a>{{contact}}</a> di bawah ini. Saya berharap bisa terhubung dengan individu-individu yang memiliki semangat yang sama dalam pengembangan web.",
+
+  "shortBiography_8": "Website ini dibuat terinspirasi oleh Frans Jesky di <a>{{name}}</a>.",
+
+  "readMoreButton": "Baca Selengkapnya",
+
+  "experience": {
+    "company": "PT Telkom Akses",
+    "location": "Malang, Indonesia",
+    "duration": "Jul, 2015 - Mar, 2024",
+    "teamLeader": {
+      "title": "Team Leader",
+      "position": "Provisioning & Migration",
+      "duration": "Sep 2020 - Mar 2024",
+      "years": "3 tahun 7 bulan",
+      "description": "Sebagai Team Leader, saya memimpin tim yang terdiri dari 16 teknisi, mengelola operasi harian dan memastikan pelaksanaan tugas yang efisien di area yang luas. Saya bertanggung jawab mencapai KPI dengan target kinerja bulanan di atas 98%, yang sangat penting untuk mencapai tujuan pendapatan perusahaan. Saya secara rutin berkolaborasi dengan manajemen senior, memberikan wawasan penting untuk peningkatan kinerja.",
+      "keyResponsibilities": "Tanggung jawab utama:",
+      "responsibilities": [
+        {
+          "title": "Pembagian Tugas & Dukungan Lapangan",
+          "details": "Membagi pesanan harian (lebih dari 20 per hari) secara merata di antara 8 tim, dengan target penyelesaian 80-90%. Memberikan dukungan kepada teknisi dalam menghadapi tantangan di lapangan untuk memastikan efisiensi tugas."
+        },
+        {
+          "title": "Pemantauan Kinerja",
+          "details": "Melacak tingkat penyelesaian harian di dashboard, memastikan kepatuhan terhadap KPI dan target perusahaan. Melakukan briefing pagi untuk menyelaraskan tim dengan tujuan dan strategi harian."
+        },
+        {
+          "title": "Pelaporan & Komunikasi",
+          "details": "Mengirimkan laporan kinerja rinci tiga kali sehari, melacak kemajuan, tingkat penyelesaian, dan mengidentifikasi eskalasi yang diperlukan untuk intervensi manajemen."
+        },
+        {
+          "title": "Jaminan Kualitas",
+          "details": "Melakukan pemeriksaan acak pada instalasi untuk memastikan kepatuhan terhadap SOP dan standar kualitas perusahaan."
+        },
+        {
+          "title": "KPI & Perencanaan Strategis",
+          "details": "Secara rutin meninjau kinerja tim terhadap KPI bulanan, memastikan kami tetap di atas ambang batas 98%. Menyajikan hasil dan mengusulkan perbaikan selama evaluasi triwulanan dengan manajemen."
+        }
+      ]
+    },
+    "helpdesk": {
+      "title": "Helpdesk",
+      "position": "Provisioning & Migration",
+      "duration": "Jun 2019 - Aug 2020",
+      "years": "1 tahun 3 bulan",
+      "description": "Sebagai Helpdesk Migration Specialist, saya mengelola migrasi dari jaringan tembaga ke serat optik di wilayah Malang Raya, berkoordinasi dengan lebih dari 100 teknisi lapangan dari 10 perusahaan mitra. Peran saya melibatkan pengorganisasian operasi harian, konfigurasi teknis, dan memastikan aktivasi layanan pelanggan yang lancar.",
+      "keyResponsibilities": "Tanggung jawab utama:",
+      "responsibilities": [
+        {
+          "title": "Pembagian dan Pengelolaan Pesanan",
+          "details": "Mendistribusikan pesanan migrasi harian kepada lebih dari 100 teknisi dari 10 perusahaan mitra, memastikan distribusi tugas yang adil dan efisien di seluruh wilayah."
+        },
+        {
+          "title": "Pelaporan Harian",
+          "details": "Menyiapkan dan mengirimkan laporan harian tentang hasil migrasi dan kinerja teknisi kepada pemimpin divisi, melacak metrik kunci dan kemajuan."
+        },
+        {
+          "title": "Aktivasi Layanan & Penyelesaian Masalah",
+          "details": "Menangani pemecahan masalah dan aktivasi layanan setelah migrasi, memastikan transisi yang lancar dari tembaga ke serat untuk layanan internet, telepon, dan TV."
+        },
+        {
+          "title": "Konfigurasi OLT",
+          "details": "Mengonfigurasi akun pelanggan pada sistem OLT menggunakan Telnet dan alat perusahaan, menetapkan kredensial internet dan telepon, serta memastikan integrasi SIP, BRAS, dan middleware untuk layanan yang lancar."
+        },
+        {
+          "title": "Kolaborasi & Dukungan",
+          "details": "Bekerja sama dengan tim internal dan teknisi untuk menyelesaikan masalah layanan, memindahkan nomor SIP dari MDU ke OLT, dan sesekali membantu tim lapangan dengan langsung menghubungi pelanggan untuk pemasangan yang lebih cepat."
+        },
+        {
+          "title": "Bantuan Pelanggan",
+          "details": "Membantu pelanggan secara langsung untuk menemukan alamat dan menyelesaikan masalah aktivasi layanan, memberikan pengalaman migrasi yang lebih lancar."
+        }
+      ]
+    },
+    "ioan": {
+      "title": "Jaringan Akses Operasi Terintegrasi",
+      "position": "Teknisi Assurance",
+      "duration": "Mei 2016 - Mei 2019",
+      "years": "3 tahun 1 bulan",
+      "description": "Sebagai Teknisi Assurance, saya bertanggung jawab untuk memecahkan masalah dan memulihkan layanan pelanggan, termasuk internet, telepon darat, dan IPTV. Peran saya melibatkan menangani gangguan layanan secara efisien sambil mempertahankan komunikasi profesional dengan pelanggan.",
+      "keyResponsibilities": "Tanggung jawab utama:",
+      "responsibilities": [
+        {
+          "title": "Penyelesaian Pesanan",
+          "details": "Setiap hari, saya menerima beberapa pesanan perbaikan layanan, dan tujuan saya adalah menyelesaikan 100% dari mereka pada hari yang sama. Tugas tambahan akan datang sepanjang sore, yang membutuhkan penyelesaian cepat dan prioritas yang efektif."
+        },
+        {
+          "title": "Pelaporan Masalah",
+          "details": "Setelah menyelesaikan setiap pekerjaan, saya melaporkan penyebab gangguan dan tindakan yang diambil kepada supervisor saya. Ini termasuk bahan yang digunakan untuk perbaikan dan pemulihan layanan."
+        },
+        {
+          "title": "Keahlian Teknis",
+          "details": "Saya menjadi mahir dalam mendiagnosis dan memperbaiki berbagai peralatan, termasuk kabel serat optik, router, sistem IPTV, dan telepon SIP. Saya juga mendapatkan pengetahuan tentang komponen serat utama seperti OTP, ODP, ODC, dan OLT."
+        },
+        {
+          "title": "Interaksi dengan Pelanggan",
+          "details": "Posisi saya membutuhkan komunikasi yang jelas dan profesional dengan pelanggan, memastikan mereka memahami penyebab masalah dan bagaimana masalah tersebut diselesaikan. Saya mengembangkan keterampilan layanan pelanggan yang kuat melalui manajemen keluhan dan ekspektasi."
+        },
+        {
+          "title": "Area Cakupan",
+          "details": "Area yang saya tangani mencakup enam situs operasi, masing-masing dengan setidaknya 6.000 pelanggan aktif, kadang-kadang mencapai puluhan ribu. Area cakupan yang luas menuntut manajemen waktu yang efisien dan respons teknis cepat untuk memenuhi kesepakatan tingkat layanan."
+        }
+      ]
+    },
+    "dshr": {
+      "title": "Deployed Sales Home Reached",
+      "position": "Teknisi",
+      "duration": "Feb 2016 - Apr 2016",
+      "years": "3 bulan",
+      "description": "Selama penugasan 3 bulan, saya menjadi bagian dari inisiatif khusus yang bertujuan menyediakan pemasangan layanan dalam satu hari untuk memenuhi permintaan pelanggan akan layanan cepat dan efisien.",
+      "keyResponsibilities": "Tanggung jawab utama:",
+      "responsibilities": [
+        {
+          "title": "Penjualan dan Pembuatan Prospek",
+          "details": "Saya secara aktif mencari pelanggan baru dengan menargetkan kluster yang memiliki kapasitas port serat yang tersedia, melakukan penjualan door-to-door, dan memanfaatkan media sosial untuk mempromosikan program layanan satu hari."
+        },
+        {
+          "title": "Pendaftaran dan Instalasi Pelanggan",
+          "details": "Setelah mendapatkan pelanggan baru, saya bertanggung jawab langsung membantu pendaftaran dan melakukan pemasangan layanan internet pada hari yang sama untuk memenuhi tujuan program layanan cepat."
+        },
+        {
+          "title": "Pengelolaan Material",
+          "details": "Saya berkoordinasi dengan gudang untuk mendapatkan material untuk pemasangan, memastikan bahwa saya sepenuhnya siap untuk menyelesaikan pemasangan tanpa penundaan."
+        },
+        {
+          "title": "Pelaporan Harian",
+          "details": "Saya memberikan laporan harian kepada manajemen, merinci aktivitas penjualan, pemasangan, dan umpan balik pelanggan."
+        },
+        {
+          "title": "Target dan Kinerja",
+          "details": "Target saya adalah memperoleh 10 pelanggan baru per bulan. Meskipun sifat peran ini cukup menantang, terutama dengan pengalaman pemasaran yang terbatas, saya berhasil mencapai 50% dari target pada bulan pertama."
+        }
+      ]
+    },
+    "provisioning": {
+      "title": "Provisioning & Migration",
+      "position": "Teknisi",
+      "duration": "Jul 2015 - Jan 2016",
+      "years": "7 bulan",
+      "description": "Di awal karir saya, saya bekerja sebagai Teknisi Instalasi Baru, yang bertanggung jawab untuk memasang layanan internet, telepon, dan IPTV untuk pelanggan.",
+      "keyResponsibilities": "Tanggung jawab utama:",
+      "responsibilities": [
+        {
+          "title": "Pemasangan Kabel",
+          "details": "Mengelola penarikan kabel serat optik dari titik distribusi (ODP) ke rumah pelanggan dan melakukan penyambungan fusi untuk memastikan koneksi yang andal."
+        },
+        {
+          "title": "Aktivasi Layanan",
+          "details": "Setelah menyelesaikan pemasangan fisik, saya berkoordinasi dengan divisi helpdesk untuk meminta aktivasi layanan untuk pelanggan."
+        },
+        {
+          "title": "Edukasi Pelanggan",
+          "details": "Memberikan instruksi rinci tentang cara menggunakan Wi-Fi, mengganti nama dan kata sandi Wi-Fi, mengoperasikan layanan telepon, dan menavigasi fitur IPTV seperti live TV, TV on demand, dan add-ons tambahan."
+        },
+        {
+          "title": "Tugas Administratif",
+          "details": "Menyiapkan laporan pemasangan untuk rekonsiliasi material dan tujuan administratif."
+        }
+      ]
+    }
+  },
+
+  "education": {
+    "school": "Sekolah Menengah Kejuruan Muhammadiyah 1 Kepanjen",
+    "location": "Kab. Malang, Indonesia",
+    "durationSchool": "Jul, 2012 - Mar, 2015",
+    "title": "Teknik Komputer dan Jaringan",
+    "duration": "Jul 2015 - Jan 2016",
+    "description1": "Selama studi, saya memperoleh pengetahuan yang luas dan pengalaman praktis di berbagai bidang IT:",
+    "description2": "Selama di SMK Muhammadiyah 1 Kepanjen, saya mengikuti magang di STIKI (Sekolah Tinggi Informatika dan Komputer Indonesia), di mana saya mendapatkan pengalaman praktis dalam dukungan IT dan pemeliharaan server. Tanggung jawab saya meliputi melakukan defragmentasi disk, memperbaiki PC, dan memelihara server fisik. Pengalaman langsung ini memperkuat minat saya dalam teknologi dan memberi saya wawasan berharga tentang operasi IT di dunia nyata.",
+    "description3": "Selain itu, saya berkompetisi dalam Lomba Kompetensi Siswa tingkat provinsi yang berfokus pada Dukungan Jaringan IT. Dalam kompetisi ini, saya menunjukkan keterampilan saya dalam mengatur server dengan berbagai layanan, termasuk konfigurasi DNS, DHCP, dan firewall. Saya juga menunjukkan kemampuan saya untuk menghubungkan pengguna melalui Wi-Fi menggunakan MikroTik dan access point. Pengalaman ini memperkuat dasar saya dalam jaringan dan semakin mendorong antusiasme saya di bidang ini.",
+    "keyResponsibilities": [
+      {
+        "title": "Perakitan PC dan Komponen",
+        "details": "Belajar merakit PC dan memahami komponen komputer."
+      },
+      {
+        "title": "Desain Web dan Jaringan",
+        "details": "Mempelajari desain web, topologi jaringan skala kecil dan besar, serta administrasi server."
+      },
+      {
+        "title": "Protokol Jaringan",
+        "details": "Menguasai Mikrotik, router Cisco, dan access point, serta administrasi server Linux."
+      },
+      {
+        "title": "Manajemen Server",
+        "details": "Mempelajari server Ubuntu dan Debian, serta mempelajari proxy, DNS, subdomain, DHCP, dan firewall."
+      }
+    ]
+  },
+
+  "certification": "Beberapa sertifikat yang diperoleh dari pekerjaan sebelumnya",
+  "certificationDetail": "UNTUK MELIHAT SEMUA KURSUS DAN SERTIFIKASI SAYA, SILAKAN KUNJUNGI PROFIL <a>{{linkedin}}</a> SAYA",
+
+  "skill": "DAFTAR SET KETERAMPILAN SAYA",
+
+  "contact": {
+    "message": "Jika Anda tertarik merekrut saya atau berkolaborasi, jangan ragu untuk menghubungi saya untuk rekrutmen, kemitraan, atau mengikuti untuk tetap terhubung.",
+    "items": [
+      {
+        "link": "mailto:rezafardaaan@gmail.com",
+        "img": "MdEmail",
+        "title": "Email",
+        "detail": "Saya selalu memeriksa email saya setiap hari, ini adalah metode kontak utama saya"
+      },
+      {
+        "link": "https://discordapp.com/users/claustrum_7",
+        "img": "PiDiscordLogo",
+        "title": "Discord",
+        "detail": "Saya menggunakan ini setiap hari untuk berbagai keperluan, tambahkan saya jika Anda memerlukan percakapan secara real-time"
+      },
+      {
+        "link": "https://www.instagram.com/rezafardan_/",
+        "img": "RiInstagramLine",
+        "title": "Instagram",
+        "detail": "Media sosial sehari-hari saya, ikuti saya untuk melihat kehidupan saya sehari-hari!",
+        "className": "sm:row-start-2 md:row-auto"
+      },
+      {
+        "link": "https://t.me/rezafardan",
+        "img": "ImTelegram",
+        "title": "Telegram",
+        "detail": "Saya jarang menggunakan Telegram, tetapi silakan kirim pesan kapan saja di platform ini",
+        "className": "sm:row-start-2 md:row-start-2 lg:row-auto"
+      },
+      {
+        "link": "https://www.linkedin.com/in/reza-fardan/",
+        "img": "GrLinkedin",
+        "title": "Linkedin",
+        "detail": "Pelajari lebih lanjut tentang latar belakang karier profesional saya di Linkedin",
+        "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
+      },
+      {
+        "link": "https://github.com/rezafardan",
+        "img": "ImGithub",
+        "title": "Github",
+        "detail": "Temukan semua proyek publik dan kontribusi saya di sini",
+        "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
+      },
+      {
+        "link": "https://www.tiktok.com/@xijooojooo",
+        "img": "AiOutlineTikTok",
+        "title": "Tiktok",
+        "detail": "Biasanya saya menggunakan TikTok untuk melihat tren teknologi dan beberapa video lucu",
+        "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
+      },
+      {
+        "link": "https://x.com/xijoojoo",
+        "img": "FaTwitterSquare",
+        "title": "Twitter",
+        "detail": "Mari berteman di platform X, saya menggunakan X untuk melihat tren dan berita terbaru",
+        "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
+      }
+    ]
+  }
+}

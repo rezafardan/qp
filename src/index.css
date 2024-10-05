@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=SUSE:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* user-select: none;
+  -moz-user-select: none; */
+}
+body {
+  font-family: "SUSE", sans-serif;
+  background: #000;
+  color: #fff;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

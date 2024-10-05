@@ -1,0 +1,314 @@
+{
+  "content": {
+    "profile": {
+      "title": "PROFILE",
+      "subtitle": {
+        "1": "SHORT BIOGRAPHY",
+        "2": "SHORT STORY",
+        "3": "SHORT JOURNEY"
+      }
+    },
+    "experience": {
+      "subtitle": {
+        "1": "WORK",
+        "2": "EXPERIENCE",
+        "3": "AND",
+        "full": "WORK EXPERIENCE AND EDUCATION"
+      }
+    },
+    "certification": {
+      "subtitle": {
+        "1": "COURSE",
+        "2": "AND",
+        "full": "COURSE AND CERTIFICATION"
+      }
+    },
+    "skills": {
+      "subtitle": "SKILLS"
+    },
+    "project": {
+      "title": "PROJECT",
+      "subtitle": {
+        "1": "PROJECT",
+        "2": "LIST",
+        "full": "PROJECT LIST"
+      }
+    },
+    "contact": {
+      "title": "CONTACT",
+      "subtitle": {
+        "1": "STAY",
+        "2": "IN",
+        "full": "STAY IN TOUCH"
+      }
+    }
+  },
+
+  "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. I am {{age}} years old and currently enrolled in a fullstack developer bootcamp with <a>{{bootcamp}}</a>. My goal is to become a fullstack developer, with a strong focus on backend development. I am committed to continuous learning, always striving to upgrade my skills and stay in sync with the latest industry trends.",
+
+  "shortBiography_2": "My journey into web development began six months ago, but my passion for technology has been with me for years. After graduating from SMK in 2015, I developed a strong interest in IT, especially in networking and software. During my time in school, I participated in the Student Competency Competition at the provincial level in East Java. Although I didn’t win, the experience sparked a lasting love for IT.",
+
+  "shortBiography_3": "After completing my studies, I worked at <highlight>{{company}}</highlight>, a subsidiary of PT Telkom Indonesia, in the telecommunications sector. Throughout my career there, I held several roles, including technician, helpdesk operator for service activations, and eventually, team leader. These positions allowed me to gain valuable technical skills and leadership experience, which shaped my ability to manage projects effectively and collaborate with teams. The dynamic environment in the ISP sector also gave me deep insights into IT, particularly in network infrastructure.",
+
+  "shortBiography_4": "Despite my achievements in the ISP industry, my passion for web development continued to grow. This passion eventually led me to make a career shift to full-time web development. While it was a difficult decision, my determination to follow my interests motivated me to move forward. I firmly believe that learning is a lifelong process, and I am committed to constantly improving and growing in the web development field.",
+
+  "shortBiography_5": "At present, I am focusing on both frontend and backend technologies. On the frontend, I am advancing my knowledge of React and Redux, and I am exploring various React npm libraries. For the backend, I am working on relational databases and building APIs using Express.js. These are the key skills I am developing to achieve my goal of becoming a fullstack developer.",
+
+  "shortBiography_6": "I see perseverance as the key to success. I approach challenges in web development like climbing a mountain—each difficulty is a step closer to the top, where the best view awaits. This mindset drives me to overcome obstacles and keep progressing in my learning journey.",
+
+  "shortBiography_7": "I am always open to opportunities for collaboration and learning. If you are interested in working together or exchanging knowledge, feel free to reach out to me via the <a>{{contact}}</a> section below. I look forward to connecting with like-minded individuals who share a passion for web development.",
+
+  "shortBiography_8": "this website build, because inspired by Frans Jesky on <a>{{name}}</a>",
+
+  "readMoreButton": "Read More",
+
+  "experience": {
+    "company": "PT Telkom Akses",
+    "location": "Malang, Indonesia",
+    "duration": "Jul, 2015 - Mar, 2024",
+    "teamLeader": {
+      "title": "Team Leader",
+      "position": "Provisioning & Migration",
+      "duration": "Sep 2020 - Mar 2024",
+      "years": "3 years 7 months",
+      "description": "As a Team Leader, I led a team of 16 technicians, managing daily operations and ensuring efficient execution of tasks across a large area. I was responsible for achieving KPIs, with the target of maintaining a monthly performance above 98%, critical for meeting company revenue goals. I regularly collaborated with senior management, providing key insights for performance improvements.",
+      "keyResponsibilities": "Key responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Task Allocation & Field Support",
+          "details": "Distributed daily orders (20+ per day) evenly among 8 teams, with a completion target of 80-90%. Supported technicians with field challenges to ensure task efficiency."
+        },
+        {
+          "title": "Performance Monitoring",
+          "details": "Tracked daily completion rates on the dashboard, ensuring adherence to KPIs and company targets. Conducted morning briefings to align the team on daily goals and strategies."
+        },
+        {
+          "title": "Reporting & Communication",
+          "details": "Submitted detailed performance reports three times a day, tracking progress, completion rates, and identifying any escalations needed for management intervention."
+        },
+        {
+          "title": "Quality Assurance",
+          "details": "Conducted random checks on installations to ensure compliance with company SOPs and quality standards."
+        },
+        {
+          "title": "KPI & Strategic Planning",
+          "details": "Regularly reviewed team performance against monthly KPIs, ensuring we stayed above the 98% threshold. Presented results and proposed improvements during quarterly evaluations with management."
+        }
+      ]
+    },
+    "helpdesk": {
+      "title": "Helpdesk",
+      "position": "Provisioning & Migration",
+      "duration": "Jun 2019 - Aug 2020",
+      "years": "1 year 3 months",
+      "description": "As a Helpdesk Migration Specialist, I managed the migration from copper to fiber networks across the Malang Raya region, coordinating with over 100 field technicians from 10 partner companies. My role involved organizing daily operations, technical configurations, and ensuring seamless customer service activation.",
+      "keyResponsibilities": "Key responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Order Distribution and Management",
+          "details": "Allocated daily migration orders to over 100 technicians from 10 partner companies, ensuring fair and efficient task distribution across the region."
+        },
+        {
+          "title": "Daily Reporting",
+          "details": "Prepared and submitted daily reports on migration outcomes and technician performance to division leaders, tracking key metrics and progress."
+        },
+        {
+          "title": "Service Activation & Issue Resolution",
+          "details": "Handled troubleshooting and activation of services post-migration, ensuring smooth transitions from copper to fiber for internet, phone, and TV services."
+        },
+        {
+          "title": "OLT Configuration",
+          "details": "Configured customer accounts on OLT systems using Telnet and company tools, setting up internet and telephone credentials, and ensuring SIP, BRAS, and middleware integration for seamless service."
+        },
+        {
+          "title": "Collaboration & Support",
+          "details": "Worked closely with internal teams and technicians to resolve service issues, moved SIP numbers from MDU to OLT, and occasionally assisted field teams by directly contacting customers for faster installations."
+        },
+        {
+          "title": "Customer Assistance",
+          "details": "Assisted customers directly to help locate addresses and resolve service activation problems, providing a smoother migration experience."
+        }
+      ]
+    },
+    "ioan": {
+      "title": "Integrated Operation Access Network",
+      "position": "Assurance Technician",
+      "duration": "May 2016 - May 2019",
+      "years": "3 years 1 month",
+      "description": "As an Assurance Technician, I was responsible for troubleshooting and restoring customer services, including internet, landline, and IPTV. My role involved addressing service disruptions efficiently while maintaining professional communication with customers.",
+      "keyResponsibilities": "Key responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Order Completion",
+          "details": "Each day, I received multiple service repair orders, and my goal was to resolve 100% of them within the same day. Additional tasks would come throughout the afternoon, requiring quick turnaround and effective prioritization."
+        },
+        {
+          "title": "Issue Reporting",
+          "details": "After completing each job, I reported the root cause of the disruption and detailed the actions taken to my supervisor. This included materials used for repairs and service restoration."
+        },
+        {
+          "title": "Technical Expertise",
+          "details": "I became proficient in diagnosing and repairing various equipment, including fiber optic cables, routers, IPTV systems, and SIP telephony. I also gained knowledge of key fiber components such as OTP, ODP, ODC, and OLT."
+        },
+        {
+          "title": "Customer Interaction",
+          "details": "My position required clear and professional communication with customers, ensuring they understood the cause of the issue and how it was resolved. I developed strong customer service skills through managing complaints and expectations."
+        },
+        {
+          "title": "Coverage Area",
+          "details": "My assigned area covered six operation sites, each with a minimum of 6,000 active customers, sometimes reaching tens of thousands. The broad coverage area demanded efficient time management and swift technical responses to meet service-level agreements."
+        }
+      ]
+    },
+    "dshr": {
+      "title": "Deployed Sales Home Reached",
+      "position": "Technician",
+      "duration": "Feb 2016 - Apr 2016",
+      "years": "3 months",
+      "description": "During a 3-month assignment, I was part of a special initiative aimed at providing one-day service installations to meet customer demands for fast, efficient service.",
+      "keyResponsibilities": "Key responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Sales and Lead Generation",
+          "details": "I actively sought new customers by targeting clusters with available fiber port capacity, conducting door-to-door sales, and utilizing social media to promote the one-day service program."
+        },
+        {
+          "title": "Customer Registration and Installation",
+          "details": "Upon securing new customers, I was responsible for immediately assisting with registration and performing the installation of internet services on the same day to meet the program's fast-service goal."
+        },
+        {
+          "title": "Material Management",
+          "details": "I coordinated with the warehouse to secure materials for installations, ensuring that I was fully prepared to complete installations without delay."
+        },
+        {
+          "title": "Daily Reporting",
+          "details": "I provided daily reports to management, detailing sales activities, installations, and customer feedback."
+        },
+        {
+          "title": "Target and Performance",
+          "details": "My target was to acquire 10 new customers per month. Despite the challenging nature of this role, particularly with limited marketing experience, I managed to achieve 50% of the target in my first month."
+        }
+      ]
+    },
+    "provisioning": {
+      "title": "Provisioning & Migration",
+      "position": "Technician",
+      "duration": "Jul 2015 - Jan 2016",
+      "years": "7 months",
+      "description": "At the start of my career, I worked as a New Installation Technician, responsible for installing internet, telephone, and IPTV services for customers.",
+      "keyResponsibilities": "Key responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Cable Installation",
+          "details": "Managed the pulling of fiber optic cables from the distribution point (ODP) to the customer's premises and performed fusion splicing to ensure reliable connections."
+        },
+        {
+          "title": "Service Activation",
+          "details": "After completing the physical installation, I coordinated with the helpdesk division to request service activation for the customer."
+        },
+        {
+          "title": "Customer Education",
+          "details": "Provided detailed instructions on how to use Wi-Fi, change Wi-Fi names and passwords, operate telephone services, and navigate IPTV features such as live TV, TV on demand, and additional add-ons."
+        },
+        {
+          "title": "Administrative Tasks",
+          "details": "Prepared installation reports for material reconciliation and administrative purposes."
+        }
+      ]
+    }
+  },
+
+  "education": {
+    "school": "Muhammadiyah 1 Kepanjen Vocational School",
+    "location": "Kab. Malang, Indonesia",
+    "durationSchool": "Jul, 2012 - Mar, 2015",
+    "title": "Computer and Networking Engineering",
+    "duration": "Jul 2015 - Jan 2016",
+    "description1": "During my studies, I gained extensive knowledge and hands-on experience in various areas of IT:",
+    "description2": "During my time at SMK Muhammadiyah 1 Kepanjen, I participated in an internship at STIKI (Sekolah Tinggi Informatika dan Komputer Indonesia), where I gained practical experience in IT support and server maintenance. My responsibilities included performing disk defragmentation, repairing PCs, and maintaining physical servers. This hands-on experience reinforced my passion for technology and provided me with valuable insights into real-world IT operations.",
+    "description3": "Additionally, I competed in the provincial-level Student Competency Competition focused on IT Networking Support. In this competition, I showcased my skills in setting up a server with various services, including DNS, DHCP, and firewall configurations. I demonstrated my ability to connect users via Wi-Fi using MikroTik and access points. These experiences solidified my foundation in networking and further fueled my enthusiasm for the field.",
+    "keyResponsibilities": [
+      {
+        "title": "PC Assembly and Components",
+        "details": "Learned to assemble PCs and understand computer components."
+      },
+      {
+        "title": "Web Design and Networking",
+        "details": "Studied web design, small and large-scale networking topologies, and server administration."
+      },
+      {
+        "title": "Networking Protocols",
+        "details": "Gained proficiency in Mikrotik, Cisco routers, and access points, as well as Linux server administration."
+      },
+      {
+        "title": "Server Management",
+        "details": "Explored Ubuntu and Debian servers, and learned about proxy, DNS, subdomains, DHCP, and firewalls."
+      }
+    ]
+  },
+
+  "certification": "Some certificates obtained in previous jobs",
+  "certificationDetail": "TO VIEW ALL COURSE AND MY CERTIFICATION, PLEASE VISIT MY <a>{{linkedin}}</a> PROFILE",
+
+  "skill": "LIST OF MY SKILLS SET",
+
+  "contact": {
+    "message": "If you're interested in hiring me or collaborating, feel free to reach out for recruitment, partnership, or follow to stay in touch.",
+    "items": [
+      {
+        "link": "mailto:rezafardaaan@gmail.com",
+        "img": "MdEmail",
+        "title": "Email",
+        "detail": "I always check up on my email daily, this is my primary contact method"
+      },
+      {
+        "link": "https://discordapp.com/users/claustrum_7",
+        "img": "PiDiscordLogo",
+        "title": "Discord",
+        "detail": "I use it daily for multiple purposes, add me if you need real-time conversation"
+      },
+      {
+        "link": "https://www.instagram.com/rezafardan_/",
+        "img": "RiInstagramLine",
+        "title": "Instagram",
+        "detail": "My daily social media, follow me to see my daily life!",
+        "className": "sm:row-start-2 md:row-auto"
+      },
+      {
+        "link": "https://t.me/rezafardan",
+        "img": "ImTelegram",
+        "title": "Telegram",
+        "detail": "I rarely use Telegram, but feel free to send me a text on this platform anytime",
+        "className": "sm:row-start-2 md:row-start-2 lg:row-auto"
+      },
+      {
+        "link": "https://www.linkedin.com/in/reza-fardan/",
+        "img": "GrLinkedin",
+        "title": "Linkedin",
+        "detail": "Learn more about my professional career background on Linkedin",
+        "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
+      },
+      {
+        "link": "https://github.com/rezafardan",
+        "img": "ImGithub",
+        "title": "Github",
+        "detail": "Find all my personal public project source code and contributions here",
+        "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
+      },
+      {
+        "link": "https://www.tiktok.com/@xijooojooo",
+        "img": "AiOutlineTikTok",
+        "title": "Tiktok",
+        "detail": "Usually, I use TikTok to see technology trends and some funny videos",
+        "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
+      },
+      {
+        "link": "https://x.com/xijoojoo",
+        "img": "FaTwitterSquare",
+        "title": "Twitter",
+        "detail": "Let's be friends on platform X, I use X to see the latest trends and news",
+        "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
+      }
+    ]
+  }
+}
