@@ -8,15 +8,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* user-select: none;
-  -moz-user-select: none; */
+  user-select: none;
+  -moz-user-select: none;
 }
 body {
   font-family: "SUSE", sans-serif;
   background: #000;
   color: #fff;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   overflow-y: scroll;
 }
 
