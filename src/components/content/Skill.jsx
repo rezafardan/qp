@@ -90,7 +90,7 @@ const Skill = () => {
                 <Box text="Javascript">
                   <SiJavascript />
                 </Box>
-                <Box text="React JS" progress="Learning stage">
+                <Box text="React JS" progress={t("skills")}>
                   <SiReact />
                 </Box>
                 <Box text="Tailwind CSS">
@@ -102,10 +102,10 @@ const Skill = () => {
               <Box text="Three JS">
                 <SiThreedotjs />
               </Box> */}
-                <Box text="Axios" progress="Learning stage">
+                <Box text="Axios" progress={t("skills")}>
                   <SiAxios />
                 </Box>
-                <Box text="Redux" progress="Learning stage">
+                <Box text="Redux" progress={t("skills")}>
                   <SiRedux />
                 </Box>
               </div>
@@ -121,10 +121,10 @@ const Skill = () => {
                 <Box text="Node JS">
                   <SiNodedotjs />
                 </Box>
-                <Box text="Express JS" progress="Learning stage">
+                <Box text="Express JS" progress={t("skills")}>
                   <SiExpress />
                 </Box>
-                <Box text="MySql" progress="Learning stage">
+                <Box text="MySql" progress={t("skills")}>
                   <SiMysql />
                 </Box>
                 {/* <Box text="PostgreSql">

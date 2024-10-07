@@ -1,8 +1,10 @@
 import project_bg from "../../assets/project_bg.jpg";
 import movie_app from "../../assets/movie_app.png";
-// import movie_app_edit from "../../assets/movie_app_edit.png";
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="flex flex-col gap-8">
@@ -17,24 +19,21 @@ const Project = () => {
 
           <a href="https://github.com/rezafardan/movie-app-rf" target="_blank">
             <button className="max-w-max absolute right-6 bottom-6 text-xs sm:hidden flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-              View On Github
+              {t("projectButton")}
             </button>
           </a>
 
           <a href="https://github.com/rezafardan/movie-app-rf" target="_blank">
             <button className="hidden max-w-max absolute right-6 top-6 text-xs sm:flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-              View On Github
+              {t("projectButton")}
             </button>
           </a>
 
           <div className="absolute px-4 text-lg text-white bottom-0 top-6 w-4/5 sm:w-1/2">
             <h1 className="text-xl sm:text-2xl md:text-4xl font-bold tracking-widest">
-              Movie App
+              {t("projectName")}
             </h1>
-            <p className="text-xs font-thin">
-              Building a movie application from scratch, using React JS for the
-              frontend, Express for the backend, and MySQL as the database.
-            </p>
+            <p className="text-xs font-thin">{t("projectDetail")}</p>
           </div>
         </div>
       </div>

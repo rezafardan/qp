@@ -44,19 +44,25 @@
     }
   },
 
-  "shortBiography_1": "Nama saya {{name}}, tetapi Anda bisa memanggil saya <highlight>{{nickname}}</highlight>. Saya berusia {{age}} tahun dan saat ini terdaftar di bootcamp pengembang fullstack bersama <a>{{bootcamp}}</a>. Tujuan saya adalah menjadi pengembang fullstack dengan fokus yang kuat pada pengembangan backend. Saya berkomitmen untuk terus belajar, selalu berusaha meningkatkan keterampilan saya dan tetap mengikuti tren industri terbaru.",
+  "skills": "Tahap belajar",
 
-  "shortBiography_2": "Perjalanan saya ke dalam pengembangan web dimulai enam bulan yang lalu, tetapi minat saya terhadap teknologi sudah ada selama bertahun-tahun. Setelah lulus dari Sekolah Menengah Kejuruan pada tahun 2015, saya mengembangkan minat yang kuat dalam IT, terutama dalam jaringan dan perangkat lunak. Selama di sekolah, saya berpartisipasi dalam Kompetisi Kompetensi Siswa di tingkat provinsi di Jawa Timur. Meskipun saya tidak menang, pengalaman tersebut memicu kecintaan yang abadi terhadap IT.",
+  "projectName": "Movie App",
+  "projectDetail": "Membangun aplikasi film dari awal, menggunakan React JS untuk frontend, Express untuk backend, dan MySQL sebagai database.",
+  "projectButton": "Lihat di Github",
 
-  "shortBiography_3": "Setelah menyelesaikan studi, saya bekerja di <highlight>{{company}}</highlight>, anak perusahaan PT Telkom Indonesia, di sektor telekomunikasi. Sepanjang karir saya di sana, saya menjabat beberapa peran, termasuk teknisi, operator helpdesk untuk aktivasi layanan, dan akhirnya, pemimpin tim. Posisi-posisi ini memungkinkan saya untuk mendapatkan keterampilan teknis yang berharga dan pengalaman kepemimpinan, yang membentuk kemampuan saya untuk mengelola proyek dengan efektif dan berkolaborasi dengan tim. Lingkungan dinamis di sektor ISP juga memberi saya wawasan mendalam tentang IT, khususnya dalam infrastruktur jaringan.",
+  "shortBiography_1": "Nama saya {{name}}, bisa dipanggil dengan <highlight>{{nickname}}</highlight>. Saya berusia {{age}} tahun dan saat ini sedang mengikuti bootcamp fullstack web developer bersama <a>{{bootcamp}}</a>. Tujuan saya adalah menjadi  fullstack web developer dengan fokus yang kuat pada pengembangan frontend. Saya berkomitmen untuk terus belajar, selalu berusaha meningkatkan keterampilan saya dan tetap mengikuti tren industri terbaru.",
 
-  "shortBiography_4": "Meskipun saya telah mencapai banyak hal di industri ISP, minat saya terhadap pengembangan web terus tumbuh. Kecintaan ini akhirnya membawa saya untuk melakukan pergeseran karir ke pengembangan web secara penuh waktu. Meskipun ini adalah keputusan yang sulit, tekad saya untuk mengikuti minat saya memotivasi saya untuk melanjutkan. Saya yakin bahwa belajar adalah proses seumur hidup, dan saya berkomitmen untuk terus meningkatkan dan berkembang di bidang pengembangan web.",
+  "shortBiography_2": "Perjalanan saya ke dalam pengembangan web dimulai enam bulan yang lalu, tetapi minat saya terhadap teknologi sudah ada selama bertahun-tahun. Setelah lulus dari Sekolah Menengah Kejuruan pada tahun 2015, saya mengembangkan minat yang kuat dalam IT, terutama dalam jaringan dan perangkat lunak. Selama di sekolah, saya berpartisipasi dalam Kompetisi Kompetensi Siswa di tingkat provinsi di Jawa Timur. Meskipun saya tidak menang, pengalaman tersebut memicu ketertarikan mendalam terhadap IT.",
 
-  "shortBiography_5": "Saat ini, saya fokus pada teknologi frontend dan backend. Di sisi frontend, saya sedang meningkatkan pengetahuan saya tentang React dan Redux, serta menjelajahi berbagai pustaka npm React. Untuk backend, saya sedang bekerja dengan basis data relasional dan membangun API menggunakan Express.js. Ini adalah keterampilan kunci yang saya kembangkan untuk mencapai tujuan saya menjadi pengembang fullstack.",
+  "shortBiography_3": "Setelah menyelesaikan studi, saya bekerja di <highlight>{{company}}</highlight>, anak perusahaan PT Telkom Indonesia, di sektor telekomunikasi. Sepanjang karir saya di sana, saya menjabat beberapa peran, termasuk teknisi, staff helpdesk untuk aktivasi layanan, dan akhirnya, memimpin sebuah tim. Posisi-posisi ini memungkinkan saya untuk mendapatkan keterampilan teknis yang berharga dan pengalaman kepemimpinan, yang membentuk kemampuan saya untuk mengelola proyek dengan efektif dan berkolaborasi dengan tim. Lingkungan dinamis di sektor ISP juga memberi saya wawasan mendalam tentang IT, khususnya dalam infrastruktur jaringan.",
 
-  "shortBiography_6": "Saya melihat ketekunan sebagai kunci kesuksesan. Saya menghadapi tantangan dalam pengembangan web seperti mendaki gunung—setiap kesulitan adalah langkah lebih dekat ke puncak, di mana pemandangan terbaik menunggu. Pola pikir ini mendorong saya untuk mengatasi rintangan dan terus maju dalam perjalanan belajar saya.",
+  "shortBiography_4": "Meskipun saya telah memperoleh banyak hal di industri ISP, minat saya terhadap pengembangan web terus tumbuh. Ketertarikan ini akhirnya membawa saya untuk melakukan pergeseran karir ke pengembangan web secara penuh waktu. Meskipun ini adalah keputusan yang sulit, tekad saya untuk mengikuti minat saya memotivasi saya untuk melanjutkan. Saya yakin bahwa belajar adalah proses seumur hidup, dan saya berkomitmen untuk terus meningkatkan dan berkembang di bidang pengembangan web.",
 
-  "shortBiography_7": "Saya selalu terbuka untuk peluang kolaborasi dan belajar. Jika Anda tertarik untuk bekerja sama atau bertukar pengetahuan, jangan ragu untuk menghubungi saya melalui bagian <a>{{contact}}</a> di bawah ini. Saya berharap bisa terhubung dengan individu-individu yang memiliki semangat yang sama dalam pengembangan web.",
+  "shortBiography_5": "Saat ini, saya fokus pada teknologi frontend dan backend. Di sisi frontend, saya sedang meningkatkan pengetahuan saya tentang React dan Redux, serta menjelajahi berbagai library npm React. Untuk backend, saya sedang belajar dengan basis data relasional dan membangun API menggunakan Express.js. Ini adalah keterampilan yang saya kembangkan untuk mencapai tujuan saya menjadi pengembang fullstack.",
+
+  "shortBiography_6": "Saya melihat konsisten dan ketekunan sebagai kunci kesuksesan. Saya menghadapi tantangan dalam pengembangan web layaknya seperti mendaki gunung, setiap kesulitan adalah langkah lebih dekat ke puncak, di mana pemandangan terbaik menunggu. Pola pikir ini mendorong saya untuk mengatasi rintangan dan terus maju dalam perjalanan belajar saya.",
+
+  "shortBiography_7": "Saya selalu terbuka untuk peluang kolaborasi dan belajar. Jika tertarik untuk bekerja sama atau bertukar pengetahuan, jangan ragu untuk menghubungi saya melalui bagian <a>{{contact}}</a> di bawah ini. Saya berharap bisa terhubung dengan individu-individu yang memiliki semangat yang sama dalam pengembangan web.",
 
   "shortBiography_8": "Website ini dibuat terinspirasi oleh Frans Jesky di <a>{{name}}</a>.",
 
@@ -71,16 +77,16 @@
       "position": "Provisioning & Migration",
       "duration": "Sep 2020 - Mar 2024",
       "years": "3 tahun 7 bulan",
-      "description": "Sebagai Team Leader, saya memimpin tim yang terdiri dari 16 teknisi, mengelola operasi harian dan memastikan pelaksanaan tugas yang efisien di area yang luas. Saya bertanggung jawab mencapai KPI dengan target kinerja bulanan di atas 98%, yang sangat penting untuk mencapai tujuan pendapatan perusahaan. Saya secara rutin berkolaborasi dengan manajemen senior, memberikan wawasan penting untuk peningkatan kinerja.",
+      "description": "Sebagai Team Leader, saya memimpin tim yang terdiri dari 16 teknisi, mengelola operasi harian dan memastikan pelaksanaan tugas yang efisien di area yang luas. Saya bertanggung jawab mencapai KPI dengan target kinerja bulanan di atas 98%, yang sangat penting untuk mencapai tujuan pendapatan perusahaan. Saya secara rutin berkolaborasi dengan senior leader, memberikan wawasan penting untuk peningkatan kinerja.",
       "keyResponsibilities": "Tanggung jawab utama:",
       "responsibilities": [
         {
           "title": "Pembagian Tugas & Dukungan Lapangan",
-          "details": "Membagi pesanan harian (lebih dari 20 per hari) secara merata di antara 8 tim, dengan target penyelesaian 80-90%. Memberikan dukungan kepada teknisi dalam menghadapi tantangan di lapangan untuk memastikan efisiensi tugas."
+          "details": "Membagi order harian (lebih dari 20 per hari) secara merata di antara 8 tim, dengan target penyelesaian 80-90%. Memberikan dukungan kepada teknisi dalam menghadapi tantangan di lapangan untuk memastikan efisiensi tugas."
         },
         {
           "title": "Pemantauan Kinerja",
-          "details": "Melacak tingkat penyelesaian harian di dashboard, memastikan kepatuhan terhadap KPI dan target perusahaan. Melakukan briefing pagi untuk menyelaraskan tim dengan tujuan dan strategi harian."
+          "details": "Melacak tingkat penyelesaian harian di dashboard, memastikan kesesuaian terhadap KPI dan target perusahaan. Melakukan briefing pagi untuk menyelaraskan tim dengan tujuan dan strategi harian."
         },
         {
           "title": "Pelaporan & Komunikasi",
@@ -88,7 +94,7 @@
         },
         {
           "title": "Jaminan Kualitas",
-          "details": "Melakukan pemeriksaan acak pada instalasi untuk memastikan kepatuhan terhadap SOP dan standar kualitas perusahaan."
+          "details": "Melakukan pemeriksaan acak (uji petik) pada instalasi untuk memastikan kesesuaian terhadap SOP dan standar kualitas perusahaan."
         },
         {
           "title": "KPI & Perencanaan Strategis",
@@ -101,16 +107,16 @@
       "position": "Provisioning & Migration",
       "duration": "Jun 2019 - Aug 2020",
       "years": "1 tahun 3 bulan",
-      "description": "Sebagai Helpdesk Migration Specialist, saya mengelola migrasi dari jaringan tembaga ke serat optik di wilayah Malang Raya, berkoordinasi dengan lebih dari 100 teknisi lapangan dari 10 perusahaan mitra. Peran saya melibatkan pengorganisasian operasi harian, konfigurasi teknis, dan memastikan aktivasi layanan pelanggan yang lancar.",
+      "description": "Sebagai Helpdesk Migration, saya mengelola migrasi dari jaringan tembaga ke serat optik di wilayah Malang Raya, berkoordinasi dengan lebih dari 100 teknisi melalui pengawas lapangan dari 10 perusahaan mitra. Peran saya melibatkan pengorganisasian operasi harian, konfigurasi teknis, dan memastikan aktivasi layanan pelanggan yang lancar.",
       "keyResponsibilities": "Tanggung jawab utama:",
       "responsibilities": [
         {
-          "title": "Pembagian dan Pengelolaan Pesanan",
-          "details": "Mendistribusikan pesanan migrasi harian kepada lebih dari 100 teknisi dari 10 perusahaan mitra, memastikan distribusi tugas yang adil dan efisien di seluruh wilayah."
+          "title": "Pembagian dan Pengelolaan Order",
+          "details": "Mendistribusikan order migrasi harian kepada pengawas lapangan dari 10 perusahaan mitra, memastikan distribusi tugas yang adil dan efisien di seluruh wilayah."
         },
         {
           "title": "Pelaporan Harian",
-          "details": "Menyiapkan dan mengirimkan laporan harian tentang hasil migrasi dan kinerja teknisi kepada pemimpin divisi, melacak metrik kunci dan kemajuan."
+          "details": "Menyiapkan dan mengirimkan laporan harian tentang hasil migrasi dan kinerja teknisi kepada pemimpin divisi."
         },
         {
           "title": "Aktivasi Layanan & Penyelesaian Masalah",
@@ -139,8 +145,8 @@
       "keyResponsibilities": "Tanggung jawab utama:",
       "responsibilities": [
         {
-          "title": "Penyelesaian Pesanan",
-          "details": "Setiap hari, saya menerima beberapa pesanan perbaikan layanan, dan tujuan saya adalah menyelesaikan 100% dari mereka pada hari yang sama. Tugas tambahan akan datang sepanjang sore, yang membutuhkan penyelesaian cepat dan prioritas yang efektif."
+          "title": "Penyelesaian Order",
+          "details": "Setiap hari, saya menerima beberapa order perbaikan layanan, dan tujuan saya adalah menyelesaikan 100% dari mereka pada hari yang sama. Tugas tambahan akan datang sepanjang sore, yang membutuhkan penyelesaian cepat dan prioritas yang efektif."
         },
         {
           "title": "Pelaporan Masalah",
@@ -225,7 +231,7 @@
     "title": "Teknik Komputer dan Jaringan",
     "duration": "Jul 2015 - Jan 2016",
     "description1": "Selama studi, saya memperoleh pengetahuan yang luas dan pengalaman praktis di berbagai bidang IT:",
-    "description2": "Selama di SMK Muhammadiyah 1 Kepanjen, saya mengikuti magang di STIKI (Sekolah Tinggi Informatika dan Komputer Indonesia), di mana saya mendapatkan pengalaman praktis dalam dukungan IT dan pemeliharaan server. Tanggung jawab saya meliputi melakukan defragmentasi disk, memperbaiki PC, dan memelihara server fisik. Pengalaman langsung ini memperkuat minat saya dalam teknologi dan memberi saya wawasan berharga tentang operasi IT di dunia nyata.",
+    "description2": "Selama di Sekolah Menengah Kejuruan Muhammadiyah 1 Kepanjen, saya mengikuti magang di STIKI (Sekolah Tinggi Informatika dan Komputer Indonesia), di mana saya mendapatkan pengalaman praktis dalam dukungan IT dan pemeliharaan server. Tanggung jawab saya meliputi melakukan defragmentasi disk, memperbaiki PC, dan memelihara server fisik. Pengalaman langsung ini memperkuat minat saya dalam teknologi dan memberi saya wawasan berharga tentang operasi IT di dunia nyata.",
     "description3": "Selain itu, saya berkompetisi dalam Lomba Kompetensi Siswa tingkat provinsi yang berfokus pada Dukungan Jaringan IT. Dalam kompetisi ini, saya menunjukkan keterampilan saya dalam mengatur server dengan berbagai layanan, termasuk konfigurasi DNS, DHCP, dan firewall. Saya juga menunjukkan kemampuan saya untuk menghubungkan pengguna melalui Wi-Fi menggunakan MikroTik dan access point. Pengalaman ini memperkuat dasar saya dalam jaringan dan semakin mendorong antusiasme saya di bidang ini.",
     "keyResponsibilities": [
       {

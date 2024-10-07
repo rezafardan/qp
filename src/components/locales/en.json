@@ -44,20 +44,24 @@
     }
   },
 
-  "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. I am {{age}} years old and currently enrolled in a fullstack developer bootcamp with <a>{{bootcamp}}</a>. My goal is to become a fullstack developer, with a strong focus on backend development. I am committed to continuous learning, always striving to upgrade my skills and stay in sync with the latest industry trends.",
+  "skills": "Learning stage",
+  "projectName": "Movie App",
+  "projectDetail": "Building a movie application from scratch, using React JS for the frontend, Express for the backend, and MySQL as the database.",
+  "projectButton": "View on Github",
 
-  "shortBiography_2": "My journey into web development began six months ago, but my passion for technology has been with me for years. After graduating from SMK in 2015, I developed a strong interest in IT, especially in networking and software. During my time in school, I participated in the Student Competency Competition at the provincial level in East Java. Although I didn’t win, the experience sparked a lasting love for IT.",
+  "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. I am {{age}} years old and currently participating in a full-stack web developer bootcamp at <a>{{bootcamp}}</a>. My goal is to become a full-stack web developer with a strong focus on frontend development. I am committed to continuous learning, always striving to improve my skills and stay updated with the latest industry trends.",
 
-  "shortBiography_3": "After completing my studies, I worked at <highlight>{{company}}</highlight>, a subsidiary of PT Telkom Indonesia, in the telecommunications sector. Throughout my career there, I held several roles, including technician, helpdesk operator for service activations, and eventually, team leader. These positions allowed me to gain valuable technical skills and leadership experience, which shaped my ability to manage projects effectively and collaborate with teams. The dynamic environment in the ISP sector also gave me deep insights into IT, particularly in network infrastructure.",
+  "shortBiography_2": "My journey into web development began six months ago, but my interest in technology has been ongoing for years. After graduating from Vocational High School in 2015, I developed a strong interest in IT, especially in networking and software. During my time in school, I participated in the Student Competency Competition at the provincial level in East Java. Although I didn't win, the experience sparked a deep interest in IT.",
 
-  "shortBiography_4": "Despite my achievements in the ISP industry, my passion for web development continued to grow. This passion eventually led me to make a career shift to full-time web development. While it was a difficult decision, my determination to follow my interests motivated me to move forward. I firmly believe that learning is a lifelong process, and I am committed to constantly improving and growing in the web development field.",
+  "shortBiography_3": "After completing my studies, I worked at <highlight>{{company}}</highlight>, a subsidiary of PT Telkom Indonesia, in the telecommunications sector. Throughout my career there, I held various roles, including technician, helpdesk staff for service activation, and eventually, team lead. These positions allowed me to gain valuable technical skills and leadership experience, shaping my ability to manage projects effectively and collaborate with teams. The dynamic environment of the ISP sector also provided me with deep insights into IT, particularly in network infrastructure.",
 
-  "shortBiography_5": "At present, I am focusing on both frontend and backend technologies. On the frontend, I am advancing my knowledge of React and Redux, and I am exploring various React npm libraries. For the backend, I am working on relational databases and building APIs using Express.js. These are the key skills I am developing to achieve my goal of becoming a fullstack developer.",
+  "shortBiography_4": "Although I have gained a lot in the ISP industry, my interest in web development continued to grow. This passion eventually led me to shift my career towards full-time web development. Although it was a difficult decision, my determination to follow my passion motivated me to move forward. I firmly believe that learning is a lifelong process, and I am committed to continuously improving and growing in the field of web development.",
 
-  "shortBiography_6": "I see perseverance as the key to success. I approach challenges in web development like climbing a mountain—each difficulty is a step closer to the top, where the best view awaits. This mindset drives me to overcome obstacles and keep progressing in my learning journey.",
+  "shortBiography_5": "Currently, I am focusing on both frontend and backend technologies. On the frontend side, I am enhancing my knowledge of React and Redux, as well as exploring various npm React libraries. For the backend, I am working with relational databases and building APIs using Express.js. These are the skills I am developing to achieve my goal of becoming a full-stack developer.",
 
-  "shortBiography_7": "I am always open to opportunities for collaboration and learning. If you are interested in working together or exchanging knowledge, feel free to reach out to me via the <a>{{contact}}</a> section below. I look forward to connecting with like-minded individuals who share a passion for web development.",
+  "shortBiography_6": "I see consistency and perseverance as the keys to success. I approach the challenges of web development as if climbing a mountain—every difficulty is a step closer to the summit, where the best views await. This mindset drives me to overcome obstacles and keep moving forward on my learning journey.",
 
+  "shortBiography_7": "I am always open to collaboration and learning opportunities. If you are interested in working together or exchanging knowledge, feel free to contact me through the <a>{{contact}}</a> section below. I look forward to connecting with individuals who share the same passion for web development.",
   "shortBiography_8": "this website build, because inspired by Frans Jesky on <a>{{name}}</a>",
 
   "readMoreButton": "Read More",
@@ -65,34 +69,34 @@
   "experience": {
     "company": "PT Telkom Akses",
     "location": "Malang, Indonesia",
-    "duration": "Jul, 2015 - Mar, 2024",
+    "duration": "Jul 2015 - Mar 2024",
     "teamLeader": {
       "title": "Team Leader",
       "position": "Provisioning & Migration",
       "duration": "Sep 2020 - Mar 2024",
       "years": "3 years 7 months",
-      "description": "As a Team Leader, I led a team of 16 technicians, managing daily operations and ensuring efficient execution of tasks across a large area. I was responsible for achieving KPIs, with the target of maintaining a monthly performance above 98%, critical for meeting company revenue goals. I regularly collaborated with senior management, providing key insights for performance improvements.",
+      "description": "As a Team Leader, I led a team of 16 technicians, managed daily operations, and ensured the efficient execution of tasks across a large area. I was responsible for achieving KPIs with monthly performance targets above 98%, which was critical for meeting company revenue goals. I regularly collaborated with senior leaders, providing valuable insights for performance improvement.",
       "keyResponsibilities": "Key responsibilities:",
       "responsibilities": [
         {
-          "title": "Task Allocation & Field Support",
-          "details": "Distributed daily orders (20+ per day) evenly among 8 teams, with a completion target of 80-90%. Supported technicians with field challenges to ensure task efficiency."
+          "title": "Task Assignment & Field Support",
+          "details": "Distributed daily orders (over 20 per day) evenly among 8 teams, with a completion target of 80-90%. Provided support to technicians in handling field challenges to ensure task efficiency."
         },
         {
           "title": "Performance Monitoring",
-          "details": "Tracked daily completion rates on the dashboard, ensuring adherence to KPIs and company targets. Conducted morning briefings to align the team on daily goals and strategies."
+          "details": "Tracked daily completion rates on the dashboard, ensuring alignment with KPIs and company targets. Conducted morning briefings to align the team with daily goals and strategies."
         },
         {
           "title": "Reporting & Communication",
-          "details": "Submitted detailed performance reports three times a day, tracking progress, completion rates, and identifying any escalations needed for management intervention."
+          "details": "Submitted detailed performance reports three times a day, tracking progress, completion rates, and identifying escalations needed for management intervention."
         },
         {
           "title": "Quality Assurance",
-          "details": "Conducted random checks on installations to ensure compliance with company SOPs and quality standards."
+          "details": "Conducted random checks (spot checks) on installations to ensure compliance with company SOPs and quality standards."
         },
         {
           "title": "KPI & Strategic Planning",
-          "details": "Regularly reviewed team performance against monthly KPIs, ensuring we stayed above the 98% threshold. Presented results and proposed improvements during quarterly evaluations with management."
+          "details": "Regularly reviewed team performance against monthly KPIs, ensuring we remained above the 98% threshold. Presented results and proposed improvements during quarterly evaluations with management."
         }
       ]
     },
@@ -101,62 +105,62 @@
       "position": "Provisioning & Migration",
       "duration": "Jun 2019 - Aug 2020",
       "years": "1 year 3 months",
-      "description": "As a Helpdesk Migration Specialist, I managed the migration from copper to fiber networks across the Malang Raya region, coordinating with over 100 field technicians from 10 partner companies. My role involved organizing daily operations, technical configurations, and ensuring seamless customer service activation.",
+      "description": "As a Migration Helpdesk, I managed the migration from copper to fiber networks in the Greater Malang area, coordinating with over 100 technicians through field supervisors from 10 partner companies. My role involved organizing daily operations, technical configuration, and ensuring smooth service activation for customers.",
       "keyResponsibilities": "Key responsibilities:",
       "responsibilities": [
         {
-          "title": "Order Distribution and Management",
-          "details": "Allocated daily migration orders to over 100 technicians from 10 partner companies, ensuring fair and efficient task distribution across the region."
+          "title": "Order Distribution & Management",
+          "details": "Distributed daily migration orders to field supervisors from 10 partner companies, ensuring fair and efficient task allocation across the region."
         },
         {
           "title": "Daily Reporting",
-          "details": "Prepared and submitted daily reports on migration outcomes and technician performance to division leaders, tracking key metrics and progress."
+          "details": "Prepared and submitted daily reports on migration results and technician performance to the division leader."
         },
         {
-          "title": "Service Activation & Issue Resolution",
-          "details": "Handled troubleshooting and activation of services post-migration, ensuring smooth transitions from copper to fiber for internet, phone, and TV services."
+          "title": "Service Activation & Troubleshooting",
+          "details": "Handled troubleshooting and service activation after migration, ensuring a smooth transition from copper to fiber for internet, telephone, and TV services."
         },
         {
           "title": "OLT Configuration",
-          "details": "Configured customer accounts on OLT systems using Telnet and company tools, setting up internet and telephone credentials, and ensuring SIP, BRAS, and middleware integration for seamless service."
+          "details": "Configured customer accounts on the OLT system using Telnet and company tools, assigning internet and telephone credentials, and ensuring SIP, BRAS, and middleware integration for smooth services."
         },
         {
           "title": "Collaboration & Support",
-          "details": "Worked closely with internal teams and technicians to resolve service issues, moved SIP numbers from MDU to OLT, and occasionally assisted field teams by directly contacting customers for faster installations."
+          "details": "Collaborated with internal teams and technicians to resolve service issues, moved SIP numbers from MDU to OLT, and occasionally assisted field teams by contacting customers directly for faster installations."
         },
         {
           "title": "Customer Assistance",
-          "details": "Assisted customers directly to help locate addresses and resolve service activation problems, providing a smoother migration experience."
+          "details": "Assisted customers directly in locating addresses and resolving service activation issues, providing a smoother migration experience."
         }
       ]
     },
     "ioan": {
-      "title": "Integrated Operation Access Network",
+      "title": "Integrated Access Network Operations",
       "position": "Assurance Technician",
       "duration": "May 2016 - May 2019",
       "years": "3 years 1 month",
-      "description": "As an Assurance Technician, I was responsible for troubleshooting and restoring customer services, including internet, landline, and IPTV. My role involved addressing service disruptions efficiently while maintaining professional communication with customers.",
+      "description": "As an Assurance Technician, I was responsible for troubleshooting and restoring customer services, including internet, landline, and IPTV. My role involved efficiently handling service disruptions while maintaining professional communication with customers.",
       "keyResponsibilities": "Key responsibilities:",
       "responsibilities": [
         {
           "title": "Order Completion",
-          "details": "Each day, I received multiple service repair orders, and my goal was to resolve 100% of them within the same day. Additional tasks would come throughout the afternoon, requiring quick turnaround and effective prioritization."
+          "details": "Each day, I received multiple service repair orders, aiming to complete 100% of them on the same day. Additional tasks would arrive throughout the afternoon, requiring swift completion and effective prioritization."
         },
         {
           "title": "Issue Reporting",
-          "details": "After completing each job, I reported the root cause of the disruption and detailed the actions taken to my supervisor. This included materials used for repairs and service restoration."
+          "details": "After completing each job, I reported the cause of the disruption and actions taken to my supervisor. This included materials used for repairs and service restoration."
         },
         {
           "title": "Technical Expertise",
-          "details": "I became proficient in diagnosing and repairing various equipment, including fiber optic cables, routers, IPTV systems, and SIP telephony. I also gained knowledge of key fiber components such as OTP, ODP, ODC, and OLT."
+          "details": "I became proficient in diagnosing and repairing various equipment, including fiber optic cables, routers, IPTV systems, and SIP phones. I also gained knowledge of key fiber components such as OTP, ODP, ODC, and OLT."
         },
         {
           "title": "Customer Interaction",
-          "details": "My position required clear and professional communication with customers, ensuring they understood the cause of the issue and how it was resolved. I developed strong customer service skills through managing complaints and expectations."
+          "details": "My position required clear and professional communication with customers, ensuring they understood the cause of issues and how they were resolved. I developed strong customer service skills through managing complaints and expectations."
         },
         {
           "title": "Coverage Area",
-          "details": "My assigned area covered six operation sites, each with a minimum of 6,000 active customers, sometimes reaching tens of thousands. The broad coverage area demanded efficient time management and swift technical responses to meet service-level agreements."
+          "details": "The area I handled covered six operational sites, each with at least 6,000 active customers, sometimes reaching tens of thousands. This extensive coverage demanded efficient time management and a quick technical response to meet service level agreements."
         }
       ]
     },
@@ -165,28 +169,28 @@
       "position": "Technician",
       "duration": "Feb 2016 - Apr 2016",
       "years": "3 months",
-      "description": "During a 3-month assignment, I was part of a special initiative aimed at providing one-day service installations to meet customer demands for fast, efficient service.",
+      "description": "During a 3-month assignment, I was part of a special initiative aimed at providing same-day service installations to meet customer demand for fast and efficient service.",
       "keyResponsibilities": "Key responsibilities:",
       "responsibilities": [
         {
-          "title": "Sales and Lead Generation",
-          "details": "I actively sought new customers by targeting clusters with available fiber port capacity, conducting door-to-door sales, and utilizing social media to promote the one-day service program."
+          "title": "Sales & Lead Generation",
+          "details": "Actively sought new customers by targeting clusters with available fiber ports, conducted door-to-door sales, and used social media to promote the one-day service program."
         },
         {
-          "title": "Customer Registration and Installation",
-          "details": "Upon securing new customers, I was responsible for immediately assisting with registration and performing the installation of internet services on the same day to meet the program's fast-service goal."
+          "title": "Customer Enrollment & Installation",
+          "details": "After securing new customers, I was directly responsible for assisting with enrollment and performing same-day internet service installations to meet the quick service program's goals."
         },
         {
           "title": "Material Management",
-          "details": "I coordinated with the warehouse to secure materials for installations, ensuring that I was fully prepared to complete installations without delay."
+          "details": "Coordinated with the warehouse to obtain materials for installations, ensuring that I was fully prepared to complete installations without delays."
         },
         {
           "title": "Daily Reporting",
-          "details": "I provided daily reports to management, detailing sales activities, installations, and customer feedback."
+          "details": "Provided daily reports to management, detailing sales activities, installations, and customer feedback."
         },
         {
-          "title": "Target and Performance",
-          "details": "My target was to acquire 10 new customers per month. Despite the challenging nature of this role, particularly with limited marketing experience, I managed to achieve 50% of the target in my first month."
+          "title": "Target & Performance",
+          "details": "My target was to acquire 10 new customers per month. Despite the challenging nature of the role, particularly with limited marketing experience, I managed to achieve 50% of the target in the first month."
         }
       ]
     },
@@ -195,12 +199,12 @@
       "position": "Technician",
       "duration": "Jul 2015 - Jan 2016",
       "years": "7 months",
-      "description": "At the start of my career, I worked as a New Installation Technician, responsible for installing internet, telephone, and IPTV services for customers.",
+      "description": "At the beginning of my career, I worked as a New Installation Technician, responsible for installing internet, telephone, and IPTV services for customers.",
       "keyResponsibilities": "Key responsibilities:",
       "responsibilities": [
         {
           "title": "Cable Installation",
-          "details": "Managed the pulling of fiber optic cables from the distribution point (ODP) to the customer's premises and performed fusion splicing to ensure reliable connections."
+          "details": "Managed fiber optic cable pulling from the distribution point (ODP) to the customer's home and performed fusion splicing to ensure a reliable connection."
         },
         {
           "title": "Service Activation",
@@ -208,7 +212,7 @@
         },
         {
           "title": "Customer Education",
-          "details": "Provided detailed instructions on how to use Wi-Fi, change Wi-Fi names and passwords, operate telephone services, and navigate IPTV features such as live TV, TV on demand, and additional add-ons."
+          "details": "Provided detailed instructions on using Wi-Fi, changing Wi-Fi name and password, operating telephone services, and navigating IPTV features such as live TV, on-demand TV, and additional add-ons."
         },
         {
           "title": "Administrative Tasks",
@@ -219,14 +223,13 @@
   },
 
   "education": {
-    "school": "Muhammadiyah 1 Kepanjen Vocational School",
+    "school": "Muhammadiyah 1 Vocational High School Kepanjen",
     "location": "Kab. Malang, Indonesia",
-    "durationSchool": "Jul, 2012 - Mar, 2015",
-    "title": "Computer and Networking Engineering",
-    "duration": "Jul 2015 - Jan 2016",
-    "description1": "During my studies, I gained extensive knowledge and hands-on experience in various areas of IT:",
-    "description2": "During my time at SMK Muhammadiyah 1 Kepanjen, I participated in an internship at STIKI (Sekolah Tinggi Informatika dan Komputer Indonesia), where I gained practical experience in IT support and server maintenance. My responsibilities included performing disk defragmentation, repairing PCs, and maintaining physical servers. This hands-on experience reinforced my passion for technology and provided me with valuable insights into real-world IT operations.",
-    "description3": "Additionally, I competed in the provincial-level Student Competency Competition focused on IT Networking Support. In this competition, I showcased my skills in setting up a server with various services, including DNS, DHCP, and firewall configurations. I demonstrated my ability to connect users via Wi-Fi using MikroTik and access points. These experiences solidified my foundation in networking and further fueled my enthusiasm for the field.",
+    "durationSchool": "Jul 2012 - Mar 2015",
+    "title": "Computer and Network Engineering",
+    "description1": "During my studies, I gained extensive knowledge and practical experience in various areas of IT:",
+    "description2": "While studying at Muhammadiyah 1 Vocational High School Kepanjen, I interned at STIKI (Indonesian College of Informatics and Computers), where I gained hands-on experience in IT support and server maintenance. My responsibilities included performing disk defragmentation, repairing PCs, and maintaining physical servers. This real-world experience solidified my interest in technology and provided valuable insights into IT operations.",
+    "description3": "Additionally, I participated in the provincial-level Student Competency Competition focused on IT Network Support. In this competition, I demonstrated my skills in setting up servers with various services, including DNS, DHCP, and firewall configuration. I also showcased my ability to connect users via Wi-Fi using MikroTik and access points. This experience strengthened my foundation in networking and fueled my enthusiasm for the field.",
     "keyResponsibilities": [
       {
         "title": "PC Assembly and Components",
@@ -234,15 +237,15 @@
       },
       {
         "title": "Web Design and Networking",
-        "details": "Studied web design, small and large-scale networking topologies, and server administration."
+        "details": "Studied web design, small and large-scale network topology, and server administration."
       },
       {
-        "title": "Networking Protocols",
-        "details": "Gained proficiency in Mikrotik, Cisco routers, and access points, as well as Linux server administration."
+        "title": "Network Protocols",
+        "details": "Mastered MikroTik, Cisco routers, access points, and Linux server administration."
       },
       {
         "title": "Server Management",
-        "details": "Explored Ubuntu and Debian servers, and learned about proxy, DNS, subdomains, DHCP, and firewalls."
+        "details": "Studied Ubuntu and Debian servers, including proxy, DNS, subdomain, DHCP, and firewall."
       }
     ]
   },
