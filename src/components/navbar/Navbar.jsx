@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { IoIosMenu } from "react-icons/io";
 
 const NavbarLinks = ({ children, link }) => {
   return (
@@ -47,7 +46,7 @@ const Navbar = () => {
         </div>
 
         <div className="group px-8 h-max relative">
-          <div className="cursor-default">
+          <div className="cursor-default animate-pulse">
             <p className="font-caveat font-medium text-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 tracking-widest text-center">
               Reza
             </p>

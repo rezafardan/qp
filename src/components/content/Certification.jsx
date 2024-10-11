@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import basic_leadership from "../../assets/basic_leadership.jpg";
-import bekerja_tim from "../../assets/bekerja_tim.jpg";
-import impersonal_communication from "../../assets/impersonal_communication.jpg";
 import osp_ftth from "../../assets/osp_ftth.jpg";
-import product_knowledge from "../../assets/product_knowledge.jpg";
 import indihome_technician from "../../assets/indihome_technician.jpg";
 import { MdReadMore } from "react-icons/md";
 import { useTranslation, Trans } from "react-i18next";
@@ -67,3 +64,4 @@ const Certification = () => {
 };
 
 export default Certification;
+
