@@ -250,7 +250,8 @@
     ]
   },
 
-  "certification": "Some certificates obtained in previous jobs",
+  "certification1": "Some certificates obtained in previous jobs",
+  "certification2": "Sertifikat penunjang yang diperoleh dari pembelajaran online",
   "certificationDetail": "TO VIEW ALL COURSE AND MY CERTIFICATION, PLEASE VISIT MY <a>{{linkedin}}</a> PROFILE",
 
   "skill": "LIST OF MY SKILLS SET",

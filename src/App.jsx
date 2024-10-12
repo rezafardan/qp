@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import Content from "./components/content/Content";
 import Hero from "./components/hero/Hero";

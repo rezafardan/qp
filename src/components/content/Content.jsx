@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Bio from "./Bio";
 import Certification from "./Certification";
 import Contact from "./Contact";

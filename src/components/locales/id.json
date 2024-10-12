@@ -253,7 +253,8 @@
     ]
   },
 
-  "certification": "Beberapa sertifikat yang diperoleh dari pekerjaan sebelumnya",
+  "certification1": "Beberapa sertifikat yang diperoleh dari pekerjaan sebelumnya",
+  "certification2": "Sertifikat penunjang yang diperoleh dari pembelajaran online",
   "certificationDetail": "UNTUK MELIHAT SEMUA KURSUS DAN SERTIFIKASI SAYA, SILAKAN KUNJUNGI PROFIL <a>{{linkedin}}</a> SAYA",
 
   "skill": "DAFTAR SET KETERAMPILAN SAYA",

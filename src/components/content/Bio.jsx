@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { MdReadMore } from "react-icons/md";

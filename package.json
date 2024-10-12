@@ -1,6 +1,6 @@
 {
   "name": "qp",
-  "homepage": "https://rezafardan.github.io/",
+  "homepage": "https://rezafardan.github.io/qp",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --port 8080"
   },
   "dependencies": {
     "animate.css": "^4.1.1",

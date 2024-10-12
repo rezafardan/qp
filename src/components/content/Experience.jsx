@@ -1,3 +1,4 @@
+import React from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { MdReadMore } from "react-icons/md";
