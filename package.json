@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo rezafardan.com > dist/CNAME",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",

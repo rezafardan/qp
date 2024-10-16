@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const NavbarLinks = ({ children, link }) => {
   return (
@@ -24,6 +25,7 @@ const NavbarIcons = ({ link, children }) => {
 
 const Navbar = () => {
   const [scroll, setScroll] = useState("bg-transparent");
+  const { t } = useTranslation();
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 10) {
@@ -40,9 +42,9 @@ const Navbar = () => {
           {/* <IoIosMenu size={24} /> */}
         </div>
         <div className="hidden gap-6 text-sm items-center md:flex">
-          <NavbarLinks link="#profile">PROFILE</NavbarLinks>
-          <NavbarLinks link="#project">PROJECT</NavbarLinks>
-          <NavbarLinks link="#contact">CONTACT</NavbarLinks>
+          <NavbarLinks link="#profile">{t("navbar.navbar1")}</NavbarLinks>
+          <NavbarLinks link="#project">{t("navbar.navbar2")}</NavbarLinks>
+          <NavbarLinks link="#contact">{t("navbar.navbar3")}</NavbarLinks>
         </div>
 
         <div className="group px-8 h-max relative">

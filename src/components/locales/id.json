@@ -1,45 +1,39 @@
 {
+  "navbar": {
+    "navbar1": "PROFIL",
+    "navbar2": "PROYEK",
+    "navbar3": "KONTAK"
+  },
   "content": {
     "profile": {
       "title": "PROFIL",
       "subtitle": {
-        "1": "BIOGRAFI SINGKAT",
-        "2": "CERITA SINGKAT",
-        "3": "PERJALANAN SINGKAT"
+        "1": "BIOGRAFI SINGKAT"
       }
     },
     "experience": {
       "subtitle": {
-        "1": "PEKERJAAN",
-        "2": "PENGALAMAN",
-        "3": "DAN",
-        "full": "PENGALAMAN KERJA DAN PENDIDIKAN"
+        "1": "PENGALAMAN KERJA DAN PENDIDIKAN"
       }
     },
     "certification": {
       "subtitle": {
-        "1": "KURSUS",
-        "2": "DAN",
-        "full": "KURSUS DAN SERTIFIKASI"
+        "1": "KURSUS DAN SERTIFIKASI"
       }
     },
     "skills": {
-      "subtitle": "KETERAMPILAN"
+      "subtitle": "KEAHLIAN"
     },
     "project": {
       "title": "PROYEK",
       "subtitle": {
-        "1": "DAFTAR",
-        "2": "PROYEK",
-        "full": "DAFTAR PROYEK"
+        "1": "DAFTAR PROYEK"
       }
     },
     "contact": {
       "title": "KONTAK",
       "subtitle": {
-        "1": "TETAP",
-        "2": "TERHUBUNG",
-        "full": "TETAP TERHUBUNG"
+        "1": "HUBUNGI KAMI"
       }
     }
   },
@@ -69,6 +63,66 @@
   "readMoreButton": "Baca Selengkapnya",
 
   "experience": {
+    "bootcamp": {
+      "company": "Harisenin.com Bootcamp",
+      "location": "Jakarta, Indonesia (Online)",
+      "title": "Junior Fullstack Web Developer",
+      "position": "Junior Fullstack Web Developer",
+      "duration": "Mei 2024 - Okt 2024",
+      "months": "6 Bulan",
+      "description": "Selama 6 bulan terakhir, mengikuti bootcamp fullstack web developer yang intensif, dengan fokus pada pengembangan keterampilan praktis yang dibutuhkan untuk menjadi software engineer. Program ini memberikan fondasi yang kuat dalam pengembangan web, mencakup front-end, back-end, serta manajemen proyek teknologi yang efisien. Di sini juga dipelajari bagaimana berpikir seperti engineer—menyelesaikan masalah dengan solusi yang scalable, efisien, dan terstruktur. Selain itu, pemahaman yang mendalam mengenai dasar-dasar software engineering menjadi pondasi penting dalam proses pengembangan aplikasi.",
+      "keyResponsibilities": "Materi yang dipelajari selama Bootcamp:",
+      "responsibilities": [
+        {
+          "title": "Fundamental Software Engineering",
+          "details": "Memahami prinsip-prinsip dasar software engineering seperti struktur kode yang efisien, debugging, dan strategi problem-solving yang menjadi dasar dalam membangun aplikasi."
+        },
+        {
+          "title": "Pengembangan Website dan Konsep Fullstack",
+          "details": "Mempelajari bagaimana seluruh komponen website bekerja secara bersamaan, mencakup pengembangan client-side (front-end) dan server-side (back-end) yang terintegrasi dengan baik dalam satu aplikasi."
+        },
+        {
+          "title": "Front-End dan Back-End Development",
+          "details": "Mendapatkan pemahaman tentang peran dan hubungan antara pengembangan front-end dan back-end serta memastikan bahwa data dari back-end dapat diproses dan ditampilkan dengan baik di sisi front-end."
+        },
+        {
+          "title": "Version Control System dengan Git",
+          "details": "Menggunakan Git sebagai alat manajemen kode, untuk melacak perubahan, bekerja dalam tim, serta menerapkan versioning yang jelas dalam pengembangan proyek."
+        },
+        {
+          "title": "HTML & CSS",
+          "details": "Membangun halaman web yang terstruktur dengan baik, responsif, dan sesuai dengan standar industri menggunakan HTML dan CSS, menjadi fondasi kuat untuk pengembangan web lebih lanjut."
+        },
+        {
+          "title": "JavaScript untuk Interaktivitas Website",
+          "details": "JavaScript digunakan untuk mengembangkan interaktivitas di dalam website, seperti pengelolaan event, pengambilan data secara dinamis, dan pengembangan logika aplikasi."
+        },
+        {
+          "title": "Database dan Query Design",
+          "details": "Mengelola data di back-end, mulai dari merancang query, mengelola database relasional, hingga menghubungkannya dengan aplikasi untuk menyajikan data secara efektif."
+        },
+        {
+          "title": "Desain UI Dasar",
+          "details": "Selain pengkodean, mempelajari dasar-dasar desain antarmuka pengguna (UI) dengan fokus pada pengalaman pengguna yang intuitif dan desain yang menarik."
+        },
+        {
+          "title": "TypeScript dan React Scalability",
+          "details": "TypeScript digunakan untuk meningkatkan skalabilitas aplikasi, memungkinkan penulisan kode yang lebih aman dan dapat dipelihara dengan baik, terutama dalam aplikasi yang lebih besar."
+        },
+        {
+          "title": "NodeJS untuk API Development",
+          "details": "Menggunakan NodeJS untuk membangun API server-side, memahami bagaimana mengelola routing, middleware, serta koneksi database di back-end."
+        },
+        {
+          "title": "Testing dan Deployment",
+          "details": "Melakukan testing untuk memastikan aplikasi bebas dari bug, serta mempersiapkannya untuk di-deploy ke lingkungan produksi dengan standar terbaik."
+        },
+        {
+          "title": "NextJS untuk Pengembangan Aplikasi Web Modern",
+          "details": "Mempelajari pengembangan aplikasi React menggunakan NextJS, dengan fitur seperti server-side rendering untuk meningkatkan performa dan SEO."
+        }
+      ]
+    },
     "company": "PT Telkom Akses",
     "location": "Malang, Indonesia",
     "duration": "Jul, 2015 - Mar, 2024",
@@ -255,6 +309,26 @@
 
   "certification1": "Beberapa sertifikat yang diperoleh dari pekerjaan sebelumnya",
   "certification2": "Sertifikat penunjang yang diperoleh dari pembelajaran online",
+  "certification": [
+    {
+      "title": "Basic Leadership",
+      "arranged": "Disusun oleh: Telkom Indonesia",
+      "credential": "ID Kredensial C.TEL.A-053443/PD620/TCU-1B000000/2020",
+      "detail": "Pembelajaran bertujuan untuk mengembangkan keterampilan kepemimpinan. Individu dapat memahami konsep dasar kepemimpinan, meningkatkan keterampilan komunikasi, pengambilan keputusan, manajemen waktu, dan motivasi tim."
+    },
+    {
+      "title": "Dasar Pemrograman JavaScript",
+      "arranged": "Disusun oleh: Dicoding Indonesia",
+      "credential": "ID Kredensial 4EXG4R931PRL",
+      "detail": "Ditujukan untuk individu yang ingin melangkah menjadi seorang Web Developer/Back-end developer menggunakan teknologi Node.js menggunakan standar kompetensi industri yang divalidasi oleh AWS. Di akhir kelas, siswa dapat menguasai dasar JavaScript untuk pengembangan aplikasi web menggunakan Node.Js"
+    },
+    {
+      "title": "Membuat Front-End Web untuk Pemula",
+      "arranged": "Disusun oleh: Dicoding Indonesia",
+      "credential": "ID Kredensial 72ZDVJVJLZYW",
+      "detail": "Ditujukan untuk seorang Front-End Web Developer yang ingin mengembangkan website yang memiliki fungsionalitas lebih daripada hanya media informasi saja, sesuai dengan standar industri. Di akhir kelas, siswa dapat membuat aplikasi front-end web yang interaktif serta memiliki fitur penyimpanan menggunakan web storage."
+    }
+  ],
   "certificationDetail": "UNTUK MELIHAT SEMUA KURSUS DAN SERTIFIKASI SAYA, SILAKAN KUNJUNGI PROFIL <a>{{linkedin}}</a> SAYA",
 
   "skill": "DAFTAR SET KETERAMPILAN SAYA",

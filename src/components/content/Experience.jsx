@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useRef } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { MdReadMore } from "react-icons/md";
 import { BsFillRouterFill } from "react-icons/bs";
 import ScrollAnimation from "react-animate-on-scroll";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
+import arrow_left from "../../assets/arrow_left.svg";
+import arrow_right from "../../assets/arrow_right.svg";
+import bootcamp1 from "../../assets/bootcamp/bootcamp-1.png";
+
+const ScrollButtonListPoster = ({ className = "", src, click, listRef }) => {
+  const scrollLeft = () => {
+    listRef.current.scrollBy({ left: -968, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    listRef.current.scrollBy({ left: 968, behavior: "smooth" });
+  };
+
+  return (
+    <>
+      <button
+        onClick={click === "left" ? scrollLeft : scrollRight}
+        className={`hidden lg:block absolute bottom-[44%] p-2 border-[#E7E3FC] border-opacity-25 border-[1px] text-2xl bg-[#2F3334] rounded-full z-10 ${className}`}
+      >
+        <img
+          src={src === "left" ? arrow_left : arrow_right}
+          alt=""
+          className="w-6 h-6"
+        />
+      </button>
+    </>
+  );
+};
 
 const ReadMoreButton = ({ onClick }) => {
   const { t } = useTranslation();
@@ -21,11 +49,233 @@ const ReadMoreButton = ({ onClick }) => {
 
 const Experience = () => {
   const { t } = useTranslation();
+  const listRef = useRef(null);
   return (
     <section>
       {/* CONTAINER */}
       <div className="flex flex-col gap-6 sm:grid sm:grid-cols-[30%_69%]">
         {/*  */}
+
+        {/* JUDUL */}
+        <div className="relative flex flex-col items-start bg-gradient-to-r from-violet-500 to-pink-500 h-fit py-2 px-4 ml-5 sm:ml-0">
+          <div className="absolute sm:hidden flex ml-1 sm:ml-0 items-center justify-center top-6 w-8 h-8 rounded-l-full left-[-32px]  bg-violet-500 z-[2]">
+            <RiArrowDownSLine />
+          </div>
+          <h3 className="text-xl font-semibold sm:text-lg md:text-xl">
+            {t("experience.bootcamp.company")}
+          </h3>
+          <span className="text-sm font-light">
+            {t("experience.bootcamp.location")}
+          </span>
+          <span className="text-xs font-light self-end">
+            {t("experience.bootcamp.duration")}
+          </span>
+        </div>
+        {/* JUDUL */}
+
+        {/* CONTAINER ISI */}
+        <ul className="relative ml-3 flex flex-col">
+          {/* == */}
+          <div className="relative px-4 ml-2 sm:ml-0 before:absolute before:-top-20 sm:before:top-0 before:-bottom-12 before:w-0.5 before:-left-3 before:bg-white">
+            {/* diatas ini garis */}
+
+            <ScrollAnimation animateIn="fadeIn" duration={0.3}>
+              <li className="flex flex-col relative mb-6">
+                {/* == */}
+
+                <div className="absolute flex items-center justify-center top-6 w-8 h-8 rounded-full left-[-43px] border-2 bg-violet-500">
+                  <FaBookOpenReader />
+                </div>
+                {/* diatas ini lingkaran ungu */}
+
+                <div className="border-b flex flex-col pb-2">
+                  {/* ini kotak isi */}
+
+                  <div className="bg-white flex flex-col gap-0 items-center justify-center py-4 px-4">
+                    <h4 className="text-black text-base text-center font-bold tracking-wide">
+                      {t("experience.bootcamp.title")}
+                    </h4>
+                    <h6 className="font-thin text-black text-sm">
+                      {t("experience.bootcamp.duration")}
+                    </h6>
+                    <h6 className="font-thin text-black text-xs">
+                      {" "}
+                      {t("experience.bootcamp.months")}
+                    </h6>
+                  </div>
+
+                  <div className="p-4 sm:p-6 text-justify">
+                    <h2 className="mb-2 text-sm text-white font-extralight">
+                      {t("experience.bootcamp.description")}
+                    </h2>
+                    <span className="text-sm font-extralight">
+                      {t("experience.bootcamp.keyResponsibilities")}
+                    </span>
+                    <ul className="text-sm text-gray-400 font-extralight list-disc list-outside flex flex-col pl-4">
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.0.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.0.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.1.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.1.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.2.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.2.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.3.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.3.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.4.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.4.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.5.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.5.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.6.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.6.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.7.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.7.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.8.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.8.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.9.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.9.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.10.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.10.details")}
+                        </p>
+                      </li>
+
+                      <li>
+                        <span className="text-gray-300">
+                          {t("experience.bootcamp.responsibilities.11.title")}
+                        </span>
+                        <p>
+                          {t("experience.bootcamp.responsibilities.11.details")}
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  {/* <div className="relative my-10 mx-[4%] max-w-fit">
+                    <ScrollButtonListPoster
+                      src="left"
+                      className="left-[-22px]"
+                      click="left"
+                      listRef={listRef}
+                    />
+                    <div
+                      className="flex items-center gap-4 relative scroll-smooth overflow-x-scroll overflow-y-hidden no-scrollbar no-scrollbar::-webkit-scrollbar"
+                      ref={listRef}
+                    >
+                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
+                        <img
+                          src={bootcamp1}
+                          alt={`image not found or broken`}
+                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
+                        />
+                      </div>
+                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
+                        <img
+                          src={bootcamp1}
+                          alt={`image not found or broken`}
+                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
+                        />
+                      </div>
+                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
+                        <img
+                          src={bootcamp1}
+                          alt={`image not found or broken`}
+                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
+                        />
+                      </div>
+                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
+                        <img
+                          src={bootcamp1}
+                          alt={`image not found or broken`}
+                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
+                        />
+                      </div>
+                    </div>
+                    <ScrollButtonListPoster
+                      src="right"
+                      className="right-[-22px]"
+                      click="right"
+                      listRef={listRef}
+                    />
+                  </div> */}
+                  {/* <ReadMoreButton /> */}
+                </div>
+              </li>
+            </ScrollAnimation>
+          </div>
+        </ul>
+        {/* CONTAINER ISI */}
+
         {/* JUDUL */}
         <div className="relative flex flex-col items-start bg-gradient-to-r from-violet-500 to-pink-500 h-fit py-2 px-4 ml-5 sm:ml-0">
           <div className="absolute sm:hidden flex ml-1 sm:ml-0 items-center justify-center top-6 w-8 h-8 rounded-l-full left-[-32px]  bg-violet-500 z-[2]">
@@ -39,7 +289,8 @@ const Experience = () => {
             {t("experience.duration")}
           </span>
         </div>
-        {/*  */}
+        {/* JUDUL */}
+
         {/* CONTAINER ISI */}
         <ul className="relative ml-3 flex flex-col">
           {/*  */}
@@ -81,7 +332,7 @@ const Experience = () => {
                     </span>
                     <ul className="text-sm text-gray-400 font-extralight list-disc list-outside flex flex-col pl-4">
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.teamLeader.responsibilities.0.title")}
                         </span>
                         <p>
@@ -92,7 +343,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.teamLeader.responsibilities.1.title")}
                         </span>
                         <p>
@@ -103,7 +354,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.teamLeader.responsibilities.2.title")}
                         </span>
                         <p>
@@ -114,7 +365,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.teamLeader.responsibilities.3.title")}
                         </span>
                         <p>
@@ -125,7 +376,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.teamLeader.responsibilities.4.title")}
                         </span>
                         <p>
@@ -175,7 +426,7 @@ const Experience = () => {
                     </span>
                     <ul className="text-sm text-gray-400 font-extralight list-disc list-outside flex flex-col pl-4">
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.helpdesk.responsibilities.0.title")}
                         </span>
                         <p>
@@ -184,7 +435,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.helpdesk.responsibilities.1.title")}
                         </span>
                         <p>
@@ -193,7 +444,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.helpdesk.responsibilities.2.title")}
                         </span>
                         <p>
@@ -202,7 +453,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.helpdesk.responsibilities.3.title")}
                         </span>
                         <p>
@@ -211,7 +462,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.helpdesk.responsibilities.4.title")}
                         </span>
                         <p>
@@ -220,7 +471,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.helpdesk.responsibilities.5.title")}
                         </span>
                         <p>
@@ -268,35 +519,35 @@ const Experience = () => {
                     </span>
                     <ul className="text-sm text-gray-400 font-extralight list-disc list-outside flex flex-col pl-4">
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.ioan.responsibilities.0.title")}
                         </span>
                         <p>{t("experience.ioan.responsibilities.0.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.ioan.responsibilities.1.title")}
                         </span>
                         <p>{t("experience.ioan.responsibilities.1.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.ioan.responsibilities.2.title")}
                         </span>
                         <p>{t("experience.ioan.responsibilities.2.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.ioan.responsibilities.3.title")}
                         </span>
                         <p>{t("experience.ioan.responsibilities.3.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.ioan.responsibilities.4.title")}
                         </span>
                         <p>{t("experience.ioan.responsibilities.4.details")}</p>
@@ -342,35 +593,35 @@ const Experience = () => {
                     </span>
                     <ul className="text-sm text-gray-400 font-extralight list-disc list-outside flex flex-col pl-4">
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.dshr.responsibilities.0.title")}
                         </span>
                         <p>{t("experience.dshr.responsibilities.0.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.dshr.responsibilities.1.title")}
                         </span>
                         <p>{t("experience.dshr.responsibilities.1.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.dshr.responsibilities.2.title")}
                         </span>
                         <p>{t("experience.dshr.responsibilities.2.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.dshr.responsibilities.3.title")}
                         </span>
                         <p>{t("experience.dshr.responsibilities.3.details")}</p>
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("experience.dshr.responsibilities.4.title")}
                         </span>
                         <p>{t("experience.dshr.responsibilities.4.details")}</p>
@@ -416,7 +667,7 @@ const Experience = () => {
                     </span>
                     <ul className="text-sm text-gray-400 font-extralight list-disc list-outside flex flex-col pl-4">
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t(
                             "experience.provisioning.responsibilities.0.title"
                           )}
@@ -429,7 +680,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t(
                             "experience.provisioning.responsibilities.1.title"
                           )}
@@ -442,7 +693,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t(
                             "experience.provisioning.responsibilities.2.title"
                           )}
@@ -455,7 +706,7 @@ const Experience = () => {
                       </li>
 
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t(
                             "experience.provisioning.responsibilities.3.title"
                           )}
@@ -474,6 +725,7 @@ const Experience = () => {
             </ScrollAnimation>
           </div>
         </ul>
+        {/* CONTAINER ISI */}
 
         {/* JUDUL */}
         <div className="relative flex flex-col items-start bg-gradient-to-r from-violet-500 to-pink-500 h-fit py-2 px-4 ml-5 sm:ml-0">
@@ -488,7 +740,8 @@ const Experience = () => {
             {t("education.durationSchool")}
           </span>
         </div>
-        {/*  */}
+        {/* JUDUL */}
+
         {/* CONTAINER ISI */}
         <ul className="relative ml-3 flex flex-col">
           {/* == */}
@@ -522,25 +775,25 @@ const Experience = () => {
                     </h2>
                     <ul className="text-sm text-gray-400 list-disc list-outside flex flex-col pl-4 mb-2">
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("education.keyResponsibilities.0.title")}
                         </span>
                         <p>{t("education.keyResponsibilities.0.details")}</p>
                       </li>
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("education.keyResponsibilities.1.title")}
                         </span>
                         <p>{t("education.keyResponsibilities.1.details")}</p>
                       </li>
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("education.keyResponsibilities.2.title")}
                         </span>
                         <p>{t("education.keyResponsibilities.2.details")}</p>
                       </li>
                       <li>
-                        <span>
+                        <span className="text-gray-300">
                           {t("education.keyResponsibilities.3.title")}
                         </span>
                         <p>{t("education.keyResponsibilities.3.details")}</p>
@@ -559,6 +812,7 @@ const Experience = () => {
             </ScrollAnimation>
           </div>
         </ul>
+        {/* CONTAINER ISI */}
       </div>
     </section>
   );

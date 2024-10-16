@@ -47,82 +47,28 @@ const Content = () => {
       <div>
         <ScrollAnimation animateIn="fadeIn" duration={0.3}>
           <h3 className="text-center md:text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-pink-300 to-violet-300 tracking-widest">
-            <TypeAnimation
-              sequence={[
-                t("content.profile.subtitle.1"),
-                4000,
-                t("content.profile.subtitle.2"),
-                4000,
-                t("content.profile.subtitle.3"),
-                4000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-            />
+            {t("content.profile.subtitle.1")}
           </h3>
           <Bio />
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeIn" duration={0.3}>
           <h3 className="text-center mt-40 md:text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-pink-300 to-violet-300 tracking-widest">
-            <TypeAnimation
-              sequence={[
-                " ",
-                500,
-                t("content.experience.subtitle.1"),
-                1000,
-                t("content.experience.subtitle.2"),
-                1000,
-                t("content.experience.subtitle.3"),
-                1000,
-                t("content.experience.subtitle.full"),
-                18000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-            />
+            {t("content.experience.subtitle.1")}
           </h3>
           <Experience />
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeIn" duration={0.3}>
           <h3 className="text-center mt-40 md:text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-pink-300 to-violet-300 tracking-widest">
-            <TypeAnimation
-              sequence={[
-                " ",
-                500,
-                t("content.certification.subtitle.1"),
-                1000,
-                t("content.certification.subtitle.2"),
-                1000,
-                t("content.certification.subtitle.full"),
-                18000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-            />
+            {t("content.certification.subtitle.1")}
           </h3>
           <Certification />
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeIn" duration={0.3}>
           <h3 className="text-center mt-40 md:text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-pink-300 to-violet-300 tracking-widest">
-            <TypeAnimation
-              sequence={[
-                " ",
-                500,
-                t("content.skills.subtitle"),
-                1000,
-                t("content.skills.subtitle"),
-                18000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-            />
+            {t("content.skills.subtitle")}
           </h3>
           <Skill />
         </ScrollAnimation>
@@ -144,21 +90,7 @@ const Content = () => {
         </h1>
         <div>
           <h3 className="text-center md:text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-pink-300 to-violet-300 tracking-widest">
-            <TypeAnimation
-              sequence={[
-                " ",
-                500,
-                t("content.project.subtitle.1"),
-                1000,
-                t("content.project.subtitle.2"),
-                1000,
-                t("content.project.subtitle.full"),
-                18000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-            />
+            {t("content.project.subtitle.1")}
           </h3>
           <Project />
         </div>
@@ -180,21 +112,7 @@ const Content = () => {
         </h1>
         <div>
           <h3 className="text-center md:text-xl font-bold mb-10 bg-clip-text text-transparent bg-gradient-to-br from-pink-300 to-violet-300 tracking-widest">
-            <TypeAnimation
-              sequence={[
-                " ",
-                500,
-                t("content.contact.subtitle.1"),
-                1000,
-                t("content.contact.subtitle.2"),
-                1000,
-                t("content.contact.subtitle.full"),
-                18000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-            />
+            {t("content.contact.subtitle.1")}
           </h3>
           <Contact />
         </div>

@@ -1,26 +1,24 @@
 {
+  "navbar": {
+    "navbar1": "PROFILE",
+    "navbar2": "PROJECT",
+    "navbar3": "CONTACT"
+  },
   "content": {
     "profile": {
       "title": "PROFILE",
       "subtitle": {
-        "1": "SHORT BIOGRAPHY",
-        "2": "SHORT STORY",
-        "3": "SHORT JOURNEY"
+        "1": "SHORT BIOGRAPHY"
       }
     },
     "experience": {
       "subtitle": {
-        "1": "WORK",
-        "2": "EXPERIENCE",
-        "3": "AND",
-        "full": "WORK EXPERIENCE AND EDUCATION"
+        "1": "WORK EXPERIENCE AND EDUCATION"
       }
     },
     "certification": {
       "subtitle": {
-        "1": "COURSE",
-        "2": "AND",
-        "full": "COURSE AND CERTIFICATION"
+        "1": "COURSE AND CERTIFICATION"
       }
     },
     "skills": {
@@ -29,17 +27,13 @@
     "project": {
       "title": "PROJECT",
       "subtitle": {
-        "1": "PROJECT",
-        "2": "LIST",
-        "full": "PROJECT LIST"
+        "1": "PROJECT LIST"
       }
     },
     "contact": {
       "title": "CONTACT",
       "subtitle": {
-        "1": "STAY",
-        "2": "IN",
-        "full": "STAY IN TOUCH"
+        "1": "STAY IN TOUCH"
       }
     }
   },
@@ -67,6 +61,66 @@
   "readMoreButton": "Read More",
 
   "experience": {
+    "bootcamp": {
+      "company": "Harisenin.com Bootcamp",
+      "location": "Jakarta, Indonesia (Online)",
+      "title": "Junior Fullstack Web Developer",
+      "position": "Junior Fullstack Web Developer",
+      "duration": "May 2024 - Oct 2024",
+      "months": "6 Months",
+      "description": "For the last 6 months, I joined an intensive fullstack web developer bootcamp, focusing on practical skills needed to become a software engineer. This program gave me a strong foundation in web development, covering front-end, back-end, and efficient technology project management. I also learned how to think like an engineer—solving problems with scalable, efficient, and structured solutions. In addition, I gained a deep understanding of software engineering fundamentals, which became an important base in the application development process.",
+      "keyResponsibilities": "Subjects learned during Bootcamp:",
+      "responsibilities": [
+        {
+          "title": "Fundamental Software Engineering",
+          "details": "Learning the basic principles of software engineering, like writing efficient code, debugging, and problem-solving strategies, which became the foundation for building applications."
+        },
+        {
+          "title": "Website Development and Fullstack Concepts",
+          "details": "Understanding how all parts of a website work together, including developing both client-side (front-end) and server-side (back-end) that are well integrated in one application."
+        },
+        {
+          "title": "Front-End and Back-End Development",
+          "details": "Learning the role and relationship between front-end and back-end development, and ensuring data from back-end is processed and displayed properly on the front-end."
+        },
+        {
+          "title": "Version Control System with Git",
+          "details": "Using Git as a code management tool, to track changes, work in teams, and apply clear versioning in project development."
+        },
+        {
+          "title": "HTML & CSS",
+          "details": "Building well-structured, responsive web pages that follow industry standards using HTML and CSS, providing a strong foundation for further web development."
+        },
+        {
+          "title": "JavaScript for Website Interactivity",
+          "details": "Using JavaScript to develop website interactivity, like managing events, fetching dynamic data, and building application logic."
+        },
+        {
+          "title": "Database and Query Design",
+          "details": "Managing data in the back-end, starting from designing queries, managing relational databases, and connecting them to applications to display data effectively."
+        },
+        {
+          "title": "Basic UI Design",
+          "details": "Besides coding, learning the basics of user interface (UI) design, focusing on intuitive user experience and attractive design."
+        },
+        {
+          "title": "TypeScript and React Scalability",
+          "details": "Using TypeScript to improve application scalability, allowing safer and more maintainable code, especially in larger applications."
+        },
+        {
+          "title": "NodeJS for API Development",
+          "details": "Using NodeJS to build server-side APIs, understanding how to manage routing, middleware, and database connections in the back-end."
+        },
+        {
+          "title": "Testing and Deployment",
+          "details": "Doing testing to ensure the application is free from bugs, and preparing it for deployment to production environments with the best practices."
+        },
+        {
+          "title": "NextJS for Modern Web Application Development",
+          "details": "Learning how to develop React applications using NextJS, with features like server-side rendering to improve performance and SEO."
+        }
+      ]
+    },
     "company": "PT Telkom Akses",
     "location": "Malang, Indonesia",
     "duration": "Jul 2015 - Mar 2024",
@@ -251,7 +305,27 @@
   },
 
   "certification1": "Some certificates obtained in previous jobs",
-  "certification2": "Sertifikat penunjang yang diperoleh dari pembelajaran online",
+  "certification2": "Supporting certificates obtained from online learning",
+  "certification": [
+    {
+      "title": "Basic Leadership",
+      "arranged": "Arranged by: Telkom Indonesia",
+      "credential": "Credential ID: C.TEL.A-053443/PD620/TCU-1B000000/2020",
+      "detail": "The course aims to develop leadership skills. Individuals can understand the basic concepts of leadership, improve communication skills, decision-making, time management, and team motivation."
+    },
+    {
+      "title": "JavaScript Programming Basics",
+      "arranged": "Arranged by: Dicoding Indonesia",
+      "credential": "Credential ID: 4EXG4R931PRL",
+      "detail": "Designed for individuals aspiring to become a Web Developer/Back-end Developer using Node.js technology, following industry standards validated by AWS. By the end of the course, students will master the basics of JavaScript for web application development using Node.js."
+    },
+    {
+      "title": "Building Front-End Web for Beginners",
+      "arranged": "Arranged by: Dicoding Indonesia",
+      "credential": "Credential ID: 72ZDVJVJLZYW",
+      "detail": "Designed for Front-End Web Developers who want to build websites with more functionality than just providing information, following industry standards. By the end of the course, students will be able to create interactive front-end web applications with storage features using web storage."
+    }
+  ],
   "certificationDetail": "TO VIEW ALL COURSE AND MY CERTIFICATION, PLEASE VISIT MY <a>{{linkedin}}</a> PROFILE",
 
   "skill": "LIST OF MY SKILLS SET",

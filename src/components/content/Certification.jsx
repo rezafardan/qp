@@ -19,7 +19,7 @@ const Certification = () => {
         {t("certification1")}
       </p>
       <div className="flex gap-2 my-4 justify-center">
-        <div className="w-1/2 sm:w-1/6 min-w-56 bg-white">
+        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white">
           <a
             href="https://www.dicoding.com/certificates/4EXG4R931PRL"
             target="_blank"
@@ -28,21 +28,17 @@ const Certification = () => {
           </a>
           <div className="px-4 py-2">
             <div className="font-bold text-gray-800 text-lg tracking-tight">
-              Basic Leadership
+              {t("certification.0.title")}
             </div>
             <p className="font-semibold text-gray-700 text-sm">
-              Disusun oleh: Telkom Indonesia
+              {t("certification.0.arranged")}
             </p>
             <p className="text-gray-600 text-xs">
-              ID Kredensial <br />
-              <span>C.TEL.A-053443/PD620/TCU-1B000000/2020</span>
+              {t("certification.0.credential")}
             </p>
             <hr className="mt-2" />
             <p className="italic text-sm text-gray-700 mt-2">
-              Pembelajaran bertujuan untuk mengembangkan keterampilan
-              kepemimpinan. Individu dapat memahami konsep dasar kepemimpinan,
-              meningkatkan keterampilan komunikasi, pengambilan keputusan,
-              manajemen waktu, dan motivasi tim.
+              {t("certification.0.detail")}
             </p>
           </div>
         </div>
@@ -51,8 +47,8 @@ const Certification = () => {
       <p className=" text-center font-extralight text-[10px] sm:text-xs tracking-widest mt-10">
         {t("certification2")}
       </p>
-      <div className="flex gap-2 my-4 justify-center">
-        <div className="w-1/2 sm:w-1/6 min-w-56 bg-white">
+      <div className="flex flex-col sm:flex-row gap-8 my-4 justify-center items-start">
+        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white">
           <a
             href="https://www.dicoding.com/certificates/4EXG4R931PRL"
             target="_blank"
@@ -61,24 +57,22 @@ const Certification = () => {
           </a>
           <div className="px-4 py-2">
             <div className="font-bold text-gray-800 text-lg tracking-tight">
-              Dasar Pemrograman JavaScript
+              {t("certification.1.title")}
             </div>
             <p className="font-semibold text-gray-700 text-sm">
-              Disusun oleh: Dicoding Indonesia
+              {t("certification.1.arranged")}
             </p>
-            <p className="text-gray-600 text-xs">ID Kredensial 4EXG4R931PRL</p>
+            <p className="text-gray-600 text-xs">
+              {t("certification.1.credential")}
+            </p>
             <hr className="mt-2" />
             <p className="italic text-sm text-gray-700 mt-2">
-              Ditujukan untuk individu yang ingin melangkah menjadi seorang Web
-              Developer/Back-end developer menggunakan teknologi Node.js
-              menggunakan standar kompetensi industri yang divalidasi oleh AWS.
-              Di akhir kelas, siswa dapat menguasai dasar JavaScript untuk
-              pengembangan aplikasi web menggunakan Node.Js
+              {t("certification.1.detail")}
             </p>
           </div>
         </div>
 
-        <div className="w-1/2 sm:w-1/6 min-w-56 bg-white">
+        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white">
           <a
             href="https://www.dicoding.com/certificates/72ZDVJVJLZYW"
             target="_blank"
@@ -87,20 +81,17 @@ const Certification = () => {
           </a>
           <div className="px-4 py-2">
             <div className="font-bold text-gray-800 text-lg tracking-tight">
-              Membuat Front-End Web untuk Pemula
+              {t("certification.2.title")}
             </div>
             <p className="font-semibold text-gray-700 text-sm">
-              Disusun oleh: Dicoding Indonesia
+              {t("certification.2.arranged")}
             </p>
-            <p className="text-gray-600 text-xs">ID Kredensial 72ZDVJVJLZYW</p>
+            <p className="text-gray-600 text-xs">
+              {t("certification.2.credential")}
+            </p>
             <hr className="mt-2" />
             <p className="italic text-sm text-gray-700 mt-2">
-              Ditujukan untuk seorang Front-End Web Developer yang ingin
-              mengembangkan website yang memiliki fungsionalitas lebih daripada
-              hanya media informasi saja, sesuai dengan standar industri. Di
-              akhir kelas, siswa dapat membuat aplikasi front-end web yang
-              interaktif serta memiliki fitur penyimpanan menggunakan web
-              storage.
+              {t("certification.2.detail")}
             </p>
           </div>
         </div>
