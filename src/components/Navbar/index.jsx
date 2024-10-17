@@ -1,27 +1,8 @@
 import React, { useState } from "react";
+import NavbarIcons from "./NavbarIcons";
+import NavbarLinks from "./NavbarLinks";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-
-const NavbarLinks = ({ children, link }) => {
-  return (
-    <a href={link} className="group relative w-max">
-      <span className="cursor-pointer">{children}</span>
-      <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-violet-500 bg-bg- group-hover:w-full"></span>
-    </a>
-  );
-};
-
-const NavbarIcons = ({ link, children }) => {
-  return (
-    <a
-      href={link}
-      target="_blank"
-      className="shadow-lg transform translate-y-0 hover:-translate-y-1 ease-in-out duration-300"
-    >
-      {children}
-    </a>
-  );
-};
 
 const Navbar = () => {
   const [scroll, setScroll] = useState("bg-transparent");

@@ -1,6 +1,6 @@
 import React from "react";
-import project_bg from "../../assets/project_bg.jpg";
-import movie_app from "../../assets/movie_app.png";
+import project_bg from "../../../assets/project_bg.jpg";
+import movie_app from "../../../assets/movie_app.png";
 import { useTranslation } from "react-i18next";
 
 const Project = () => {

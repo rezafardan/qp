@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import js_dicoding from "../../assets/js-dicoding.jpg";
-import fe_dicoding from "../../assets/fe-dicoding.jpg";
-import basic_leadership from "../../assets/basic_leadership.jpg";
+import js_dicoding from "../../../assets/js-dicoding.jpg";
+import fe_dicoding from "../../../assets/fe-dicoding.jpg";
+import basic_leadership from "../../../assets/basic_leadership.jpg";
 import { MdReadMore } from "react-icons/md";
 import { useTranslation, Trans } from "react-i18next";
 

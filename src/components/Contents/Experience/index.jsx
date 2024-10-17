@@ -1,13 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { MdReadMore } from "react-icons/md";
 import { BsFillRouterFill } from "react-icons/bs";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useTranslation } from "react-i18next";
-import arrow_left from "../../assets/arrow_left.svg";
-import arrow_right from "../../assets/arrow_right.svg";
-import bootcamp1 from "../../assets/bootcamp/bootcamp-1.png";
+import arrow_left from "../../../assets/arrow_left.svg";
+import arrow_right from "../../../assets/arrow_right.svg";
+import bootcamp1 from "../../../assets/bootcamp/bootcamp-1.png";
+import Contents from "./Contents";
+import Titles from "./Titles";
 
 const ScrollButtonListPoster = ({ className = "", src, click, listRef }) => {
   const scrollLeft = () => {
@@ -34,22 +36,15 @@ const ScrollButtonListPoster = ({ className = "", src, click, listRef }) => {
   );
 };
 
-const ReadMoreButton = ({ onClick }) => {
-  const { t } = useTranslation();
-  return (
-    <button
-      onClick={onClick}
-      className="max-w-max text-xs flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal"
-    >
-      <span>{t("readMoreButton")}</span>
-      <MdReadMore />
-    </button>
-  );
-};
-
 const Experience = () => {
+  const [readMore, setReadMore] = useState(false);
   const { t } = useTranslation();
   const listRef = useRef(null);
+
+  const toggleReadMore = () => {
+    setReadMore(!readMore);
+  };
+
   return (
     <section>
       {/* CONTAINER */}
@@ -57,219 +52,35 @@ const Experience = () => {
         {/*  */}
 
         {/* JUDUL */}
-        <div className="relative flex flex-col items-start bg-gradient-to-r from-violet-500 to-pink-500 h-fit py-2 px-4 ml-5 sm:ml-0">
-          <div className="absolute sm:hidden flex ml-1 sm:ml-0 items-center justify-center top-6 w-8 h-8 rounded-l-full left-[-32px]  bg-violet-500 z-[2]">
-            <RiArrowDownSLine />
-          </div>
-          <h3 className="text-xl font-semibold sm:text-lg md:text-xl">
-            {t("experience.bootcamp.company")}
-          </h3>
-          <span className="text-sm font-light">
-            {t("experience.bootcamp.location")}
-          </span>
-          <span className="text-xs font-light self-end">
-            {t("experience.bootcamp.duration")}
-          </span>
-        </div>
+        <Titles icon={<RiArrowDownSLine />} />
         {/* JUDUL */}
 
         {/* CONTAINER ISI */}
         <ul className="relative ml-3 flex flex-col">
-          {/* == */}
+          {/* CONTAINER ISI */}
+
+          {/* INI GARIS PUTIH */}
           <div className="relative px-4 ml-2 sm:ml-0 before:absolute before:-top-20 sm:before:top-0 before:-bottom-12 before:w-0.5 before:-left-3 before:bg-white">
-            {/* diatas ini garis */}
+            {/* INI GARIS PUTIH */}
 
             <ScrollAnimation animateIn="fadeIn" duration={0.3}>
               <li className="flex flex-col relative mb-6">
                 {/* == */}
 
+                {/* LINGKARANG UNGU */}
                 <div className="absolute flex items-center justify-center top-6 w-8 h-8 rounded-full left-[-43px] border-2 bg-violet-500">
                   <FaBookOpenReader />
                 </div>
-                {/* diatas ini lingkaran ungu */}
+                {/* LINGKARANG UNGU */}
 
-                <div className="border-b flex flex-col pb-2">
-                  {/* ini kotak isi */}
-
-                  <div className="bg-white flex flex-col gap-0 items-center justify-center py-4 px-4">
-                    <h4 className="text-black text-base text-center font-bold tracking-wide">
-                      {t("experience.bootcamp.title")}
-                    </h4>
-                    <h6 className="font-thin text-black text-sm">
-                      {t("experience.bootcamp.duration")}
-                    </h6>
-                    <h6 className="font-thin text-black text-xs">
-                      {" "}
-                      {t("experience.bootcamp.months")}
-                    </h6>
-                  </div>
-
-                  <div className="p-4 sm:p-6 text-justify">
-                    <h2 className="mb-2 text-sm text-white font-extralight">
-                      {t("experience.bootcamp.description")}
-                    </h2>
-                    <span className="text-sm font-extralight">
-                      {t("experience.bootcamp.keyResponsibilities")}
-                    </span>
-                    <ul className="text-sm text-gray-400 font-extralight list-disc list-outside flex flex-col pl-4">
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.0.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.0.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.1.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.1.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.2.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.2.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.3.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.3.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.4.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.4.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.5.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.5.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.6.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.6.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.7.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.7.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.8.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.8.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.9.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.9.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.10.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.10.details")}
-                        </p>
-                      </li>
-
-                      <li>
-                        <span className="text-gray-300">
-                          {t("experience.bootcamp.responsibilities.11.title")}
-                        </span>
-                        <p>
-                          {t("experience.bootcamp.responsibilities.11.details")}
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  {/* <div className="relative my-10 mx-[4%] max-w-fit">
-                    <ScrollButtonListPoster
-                      src="left"
-                      className="left-[-22px]"
-                      click="left"
-                      listRef={listRef}
-                    />
-                    <div
-                      className="flex items-center gap-4 relative scroll-smooth overflow-x-scroll overflow-y-hidden no-scrollbar no-scrollbar::-webkit-scrollbar"
-                      ref={listRef}
-                    >
-                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
-                        <img
-                          src={bootcamp1}
-                          alt={`image not found or broken`}
-                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
-                        />
-                      </div>
-                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
-                        <img
-                          src={bootcamp1}
-                          alt={`image not found or broken`}
-                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
-                        />
-                      </div>
-                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
-                        <img
-                          src={bootcamp1}
-                          alt={`image not found or broken`}
-                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
-                        />
-                      </div>
-                      <div className="flex relative min-h-[195px] md:min-h-[365px] min-w-[145px] md:min-w-[234px] cursor-pointer">
-                        <img
-                          src={bootcamp1}
-                          alt={`image not found or broken`}
-                          className="rounded-md absolute inset-0 object-cover object-center w-full h-full"
-                        />
-                      </div>
-                    </div>
-                    <ScrollButtonListPoster
-                      src="right"
-                      className="right-[-22px]"
-                      click="right"
-                      listRef={listRef}
-                    />
-                  </div> */}
-                  {/* <ReadMoreButton /> */}
-                </div>
+                {/* BOX CONTENT */}
+                <Contents
+                  description={t("experience.bootcamp.description")}
+                  keyresponsibilities={t(
+                    "experience.bootcamp.keyResponsibilities"
+                  )}
+                />
+                {/* BOX CONTENT */}
               </li>
             </ScrollAnimation>
           </div>

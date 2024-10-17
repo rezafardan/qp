@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Bio from "./Bio";
+import Bio from "./Biography";
 import Certification from "./Certification";
 import Contact from "./Contact";
 import Experience from "./Experience";
@@ -8,7 +8,7 @@ import Skill from "./Skill";
 import { TypeAnimation } from "react-type-animation";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
-import Footer from "../footer/Footer";
+import Footer from "../Footer/";
 import { useTranslation } from "react-i18next";
 
 const Content = () => {

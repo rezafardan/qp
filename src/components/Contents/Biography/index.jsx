@@ -1,41 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { RiArrowDownSLine } from "react-icons/ri";
-import { MdReadMore } from "react-icons/md";
 import { useTranslation, Trans } from "react-i18next";
-import profile from "../../assets/profile.jpeg";
+import Button from "../../Button";
 
-const Accordion = ({ title }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const togglePhotoProfile = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className="flex flex-col items-center gap-2">
-      <button
-        onClick={togglePhotoProfile}
-        className="max-w-max text-xs flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm"
-      >
-        <span>{isOpen ? "Close Photo" : "Open Photo"}</span>
-        <RiArrowDownSLine />
-      </button>
-
-      {isOpen && (
-        <img
-          className="h-auto max-w-full sm:max-w-xs transition-all duration-300  filter grayscale hover:grayscale-0 px-8"
-          src={profile}
-          alt="image description"
-        />
-      )}
-    </div>
-  );
-};
-
-const Bio = () => {
+const Biography = () => {
   const [readMore, setReadMore] = useState(false);
-
   const { t } = useTranslation();
 
   const toggleReadMore = () => {
@@ -44,8 +13,6 @@ const Bio = () => {
 
   return (
     <section className="flex flex-col-reverse gap-6 mb-4 pb-2">
-      {/* <Accordion /> */}
-
       <div className="flex flex-col gap-2 py-2 px-4 sm:px-20 md:px-32 font-light">
         <p className="font-extralight mb-3 text-justify">
           <Trans
@@ -119,16 +86,12 @@ const Bio = () => {
           </>
         )}
 
-        <button
-          onClick={toggleReadMore}
-          className="max-w-max text-xs flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal"
-        >
-          <span>{t("readMoreButton")}</span>
-          <MdReadMore />
-        </button>
+        <Button onClick={toggleReadMore}>
+          {readMore ? t("closeButton") : t("readMoreButton")}
+        </Button>
       </div>
     </section>
   );
 };
 
-export default Bio;
+export default Biography;
