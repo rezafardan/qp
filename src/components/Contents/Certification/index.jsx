@@ -47,8 +47,8 @@ const Certification = () => {
       <p className=" text-center font-extralight text-[10px] sm:text-xs tracking-widest mt-10">
         {t("certification2")}
       </p>
-      <div className="flex flex-col sm:flex-row gap-8 my-4 justify-center items-start">
-        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white">
+      <div className="flex flex-col sm:flex-row gap-8 my-4 justify-center items-center">
+        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white sm:self-start">
           <a
             href="https://www.dicoding.com/certificates/4EXG4R931PRL"
             target="_blank"
@@ -72,7 +72,7 @@ const Certification = () => {
           </div>
         </div>
 
-        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white">
+        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white sm:self-start">
           <a
             href="https://www.dicoding.com/certificates/72ZDVJVJLZYW"
             target="_blank"
