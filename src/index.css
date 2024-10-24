@@ -23,3 +23,16 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.bg-video {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.bg-clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
