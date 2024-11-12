@@ -28,12 +28,12 @@ const Galaxy = () => {
 
     const geometry = new THREE.BufferGeometry();
     const vertices = [];
-    const numStars = 4000;
+    const numStars = 2000;
 
     for (let i = 0; i < numStars; i++) {
-      const x = THREE.MathUtils.randFloatSpread(2000);
-      const y = THREE.MathUtils.randFloatSpread(1000);
-      const z = THREE.MathUtils.randFloatSpread(2000);
+      const x = THREE.MathUtils.randFloatSpread(2500);
+      const y = THREE.MathUtils.randFloatSpread(1250);
+      const z = THREE.MathUtils.randFloatSpread(2500);
       vertices.push(x, y, z);
     }
 

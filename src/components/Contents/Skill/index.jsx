@@ -94,20 +94,23 @@ const Skill = () => {
                 <Box text="React JS" progress={t("skills")}>
                   <SiReact />
                 </Box>
-                <Box text="Tailwind CSS">
-                  <SiTailwindcss />
+                <Box text="Next JS" progress={t("skills")}>
+                  <SiReact />
                 </Box>
-                {/* <Box text="Shadcn UI">
-                <SiShadcnui />
-              </Box>
-              <Box text="Three JS">
-                <SiThreedotjs />
-              </Box> */}
                 <Box text="Axios" progress={t("skills")}>
                   <SiAxios />
                 </Box>
                 <Box text="Redux" progress={t("skills")}>
                   <SiRedux />
+                </Box>
+                <Box text="Tailwind CSS">
+                  <SiTailwindcss />
+                </Box>
+                <Box text="Shadcn UI">
+                  <SiShadcnui />
+                </Box>
+                <Box text="Three JS">
+                  <SiThreedotjs />
                 </Box>
               </div>
             </div>
@@ -140,7 +143,7 @@ const Skill = () => {
             <div className="flex flex-col gap-2">
               <div className="bg-white py-4 px-4 w-60">
                 <h4 className="text-black text-base text-center font-bold tracking-wide">
-                  NETWORKING
+                  NETWORK
                 </h4>
               </div>
               <div className="min-w-full flex flex-col gap-1 px-2">
