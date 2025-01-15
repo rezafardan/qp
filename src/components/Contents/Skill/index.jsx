@@ -1,4 +1,3 @@
-import React from "react";
 import {
   SiHtml5,
   SiCss3,
@@ -36,11 +35,11 @@ const Box = ({ children, text, progress }) => {
 
 const ScrollButton = ({ listRef, click, children, className }) => {
   const scrollLeft = () => {
-    listRef.current.scrollBy({ left: -240, behavior: "smooth" });
+    listRef.current.scrollBy({ left: -256, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    listRef.current.scrollBy({ left: 240, behavior: "smooth" });
+    listRef.current.scrollBy({ left: 256, behavior: "smooth" });
   };
 
   return (
@@ -72,32 +71,35 @@ const Skill = () => {
         </ScrollButton>
         <section className="flex flex-col items-center">
           <div
-            className="overflow-x-hidden overflow-y-hidden scroll-smooth flex w-60"
+            className="overflow-x-hidden overflow-y-hidden scroll-smooth flex w-64"
             ref={listRef}
           >
             <div className="flex flex-col gap-2">
-              <div className="bg-white py-4 px-4 w-60">
+              <div className="bg-white py-4 px-4 w-64">
                 <h4 className="text-black text-base text-center font-bold tracking-wide">
                   FRONTEND
                 </h4>
               </div>
               <div className="min-w-full flex flex-col gap-1 px-2">
-                <Box text="HTML">
+                <Box text="HTML5">
                   <SiHtml5 />
                 </Box>
-                <Box text="CSS">
+                <Box text="CSS3">
                   <SiCss3 />
                 </Box>
                 <Box text="Javascript">
                   <SiJavascript />
                 </Box>
-                <Box text="React JS" progress={t("skills")}>
+                <Box text="Typescript">
+                  <SiJavascript />
+                </Box>
+                <Box text="React JS">
                   <SiReact />
                 </Box>
-                <Box text="Next JS" progress={t("skills")}>
+                <Box text="Next JS">
                   <SiReact />
                 </Box>
-                <Box text="Axios" progress={t("skills")}>
+                <Box text="Axios">
                   <SiAxios />
                 </Box>
                 <Box text="Redux" progress={t("skills")}>
@@ -109,14 +111,14 @@ const Skill = () => {
                 <Box text="Shadcn UI">
                   <SiShadcnui />
                 </Box>
-                <Box text="Three JS">
+                {/* <Box text="Three JS">
                   <SiThreedotjs />
-                </Box>
+                </Box> */}
               </div>
             </div>
 
             <div className="flex flex-col gap-2">
-              <div className="bg-white py-4 px-4 w-60">
+              <div className="bg-white py-4 px-4 w-64">
                 <h4 className="text-black text-base text-center font-bold tracking-wide">
                   BACKEND
                 </h4>
@@ -125,10 +127,19 @@ const Skill = () => {
                 <Box text="Node JS">
                   <SiNodedotjs />
                 </Box>
-                <Box text="Express JS" progress={t("skills")}>
+                <Box text="Express JS">
+                  <SiExpress />
+                </Box>
+                <Box text="Hapi JS" progress={t("skills")}>
                   <SiExpress />
                 </Box>
                 <Box text="MySql" progress={t("skills")}>
+                  <SiMysql />
+                </Box>
+                <Box text="Prisma ORM" progress={t("skills")}>
+                  <SiMysql />
+                </Box>
+                <Box text="Json Web Token (JWT)">
                   <SiMysql />
                 </Box>
                 {/* <Box text="PostgreSql">
@@ -141,7 +152,7 @@ const Skill = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <div className="bg-white py-4 px-4 w-60">
+              <div className="bg-white py-4 px-4 w-64">
                 <h4 className="text-black text-base text-center font-bold tracking-wide">
                   NETWORK
                 </h4>
@@ -150,10 +161,19 @@ const Skill = () => {
                 {/* <Box text="Linux">
                 <SiLinux />
               </Box> */}
-                <Box text="OSP FTTH">
+                <Box text="Linux Server (Ubuntu, Debian)">
+                  <BsTools />
+                </Box>
+                <Box text="MikroTik">
+                  <BsTools />
+                </Box>
+                <Box text="OSP FTTx">
                   <LuCable />
                 </Box>
                 <Box text="Fusion Splicing">
+                  <BsTools />
+                </Box>
+                <Box text="Cyber Security">
                   <BsTools />
                 </Box>
               </div>

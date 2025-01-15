@@ -14,7 +14,7 @@ const Biography = () => {
   return (
     <section className="flex flex-col-reverse gap-6 mb-4 pb-2">
       <div className="flex flex-col gap-2 py-2 px-4 sm:px-20 md:px-32 font-light">
-        <p className="font-extralight mb-3 text-justify">
+        <p className="font-normal md:font-light mb-3 text-justify">
           <Trans
             i18nKey="shortBiography_1"
             values={{
@@ -39,13 +39,13 @@ const Biography = () => {
           />
         </p>
 
-        <p className="font-extralight mb-3 text-justify">
+        <p className="font-normal md:font-light mb-3 text-justify">
           <Trans i18nKey="shortBiography_2" />
         </p>
 
         {readMore && (
           <>
-            <p className="font-extralight mb-3 text-justify">
+            <p className="font-normal md:font-light mb-3 text-justify">
               <Trans
                 i18nKey="shortBiography_3"
                 values={{ company: "PT Telkom Akses" }}
@@ -57,19 +57,19 @@ const Biography = () => {
               />
             </p>
 
-            <p className="font-extralight mb-3 text-justify">
+            <p className="font-normal md:font-light mb-3 text-justify">
               <Trans i18nKey="shortBiography_4" />
             </p>
 
-            <p className="font-extralight mb-3 text-justify">
+            <p className="font-normal md:font-light mb-3 text-justify">
               <Trans i18nKey="shortBiography_5" />
             </p>
 
-            <p className="font-extralight mb-3 text-justify">
+            <p className="font-normal md:font-light mb-3 text-justify">
               <Trans i18nKey="shortBiography_6" />
             </p>
 
-            <p className="font-extralight mb-3 text-justify">
+            <p className="font-normal md:font-light mb-3 text-justify">
               <Trans
                 i18nKey="shortBiography_7"
                 values={{ contact: "contact" }}

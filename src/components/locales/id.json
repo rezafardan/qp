@@ -42,7 +42,7 @@
 
   "projectName": "Movie App",
   "projectDetail": "Membangun aplikasi film dari awal, menggunakan React JS untuk frontend, Express untuk backend, dan MySQL sebagai database.",
-  "projectButton": "Lihat di Github",
+  "projectButton": "Lihat Proyek",
 
   "shortBiography_1": "Nama saya {{name}}, bisa dipanggil dengan <highlight>{{nickname}}</highlight>. Saya berusia {{age}} tahun dan saat ini sedang mengikuti bootcamp fullstack web developer bersama <a>{{bootcamp}}</a>. Tujuan saya adalah menjadi  fullstack web developer dengan fokus yang kuat pada pengembangan frontend. Saya berkomitmen untuk terus belajar, selalu berusaha meningkatkan keterampilan saya dan tetap mengikuti tren industri terbaru.",
 

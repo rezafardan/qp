@@ -41,7 +41,7 @@
   "skills": "Learning stage",
   "projectName": "Movie App",
   "projectDetail": "Building a movie application from scratch, using React JS for the frontend, Express for the backend, and MySQL as the database.",
-  "projectButton": "View on Github",
+  "projectButton": "View Project",
 
   "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. I am {{age}} years old and currently participating in a full-stack web developer bootcamp at <a>{{bootcamp}}</a>. My goal is to become a full-stack web developer with a strong focus on frontend development. I am committed to continuous learning, always striving to improve my skills and stay updated with the latest industry trends.",
 

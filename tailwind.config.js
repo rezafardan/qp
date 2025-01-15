@@ -26,6 +26,7 @@ export default {
       },
       fontFamily: {
         caveat: ["Caveat", "sans-serif"],
+        BebasNeue: ["Bebas Neue", "serif"],
       },
     },
   },

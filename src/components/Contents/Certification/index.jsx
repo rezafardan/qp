@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import js_dicoding from "../../../assets/js-dicoding.jpg";
-import fe_dicoding from "../../../assets/fe-dicoding.jpg";
-import basic_leadership from "../../../assets/basic_leadership.jpg";
-import { MdReadMore } from "react-icons/md";
+import js_dicoding from "../../../assets/sertifikat/js-dicoding.jpg";
+import fe_dicoding from "../../../assets/sertifikat/fe-dicoding.jpg";
+import basic_leadership from "../../../assets/sertifikat/basic_leadership.jpg";
+import cybersecurity from "../../../assets/sertifikat/cybersecurity.png";
+import fsd_harisenin from "../../../assets/sertifikat/fsd-harisenin.jpg";
 import { useTranslation, Trans } from "react-i18next";
+import { useState } from "react";
 
 const Certification = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,85 +16,43 @@ const Certification = () => {
 
   return (
     <section className="flex flex-col items-center">
-      <p className=" text-center font-extralight text-[10px] sm:text-xs tracking-widest">
-        {t("certification1")}
-      </p>
-      <div className="flex gap-2 my-4 justify-center">
-        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white">
-          <a
-            href="https://www.dicoding.com/certificates/4EXG4R931PRL"
-            target="_blank"
-          >
-            <img src={basic_leadership} />
-          </a>
-          <div className="px-4 py-2">
-            <div className="font-bold text-gray-800 text-lg tracking-tight">
-              {t("certification.0.title")}
-            </div>
-            <p className="font-semibold text-gray-700 text-sm">
-              {t("certification.0.arranged")}
-            </p>
-            <p className="text-gray-600 text-xs">
-              {t("certification.0.credential")}
-            </p>
-            <hr className="mt-2" />
-            <p className="italic text-sm text-gray-700 mt-2">
-              {t("certification.0.detail")}
-            </p>
-          </div>
-        </div>
+      <div className="w-32 mt-4">
+        <a
+          href="https://www.credly.com/badges/eb630edf-8f9d-468a-93cd-ff5c04d7e3ac/public_url"
+          target="_blank"
+        >
+          <img src={cybersecurity} alt="" />
+        </a>
       </div>
 
-      <p className=" text-center font-extralight text-[10px] sm:text-xs tracking-widest mt-10">
+      <p className=" text-center font-extralight text-[10px] sm:text-xs tracking-widest mt-4">
+        {t("certification1")}
+      </p>
+
+      <div className="w-60 mt-10">
+        <a href="https://www.linkedin.com/in/reza-fardan/" target="_blank">
+          <img src={fsd_harisenin} alt="" />
+        </a>
+      </div>
+
+      <p className=" text-center font-extralight text-[10px] sm:text-xs tracking-widest mt-4">
         {t("certification2")}
       </p>
-      <div className="flex flex-col sm:flex-row gap-8 my-4 justify-center items-center">
-        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white sm:self-start">
+
+      <div className="flex flex-col md:flex-row gap-8 my-4 justify-start items-start mt-10">
+        <div className="w-[14.75rem] border-[6px] border-slate-700 bg-white">
+          <a href="https://www.linkedin.com/in/reza-fardan/" target="_blank">
+            <img src={basic_leadership} />
+          </a>
+        </div>
+
+        <div className="w-60 bg-white">
           <a
             href="https://www.dicoding.com/certificates/4EXG4R931PRL"
             target="_blank"
           >
             <img src={js_dicoding} />
           </a>
-          <div className="px-4 py-2">
-            <div className="font-bold text-gray-800 text-lg tracking-tight">
-              {t("certification.1.title")}
-            </div>
-            <p className="font-semibold text-gray-700 text-sm">
-              {t("certification.1.arranged")}
-            </p>
-            <p className="text-gray-600 text-xs">
-              {t("certification.1.credential")}
-            </p>
-            <hr className="mt-2" />
-            <p className="italic text-sm text-gray-700 mt-2">
-              {t("certification.1.detail")}
-            </p>
-          </div>
-        </div>
-
-        <div className="w-5/6 sm:w-1/4 min-w-56 bg-white sm:self-start">
-          <a
-            href="https://www.dicoding.com/certificates/72ZDVJVJLZYW"
-            target="_blank"
-          >
-            <img src={fe_dicoding} />
-          </a>
-          <div className="px-4 py-2">
-            <div className="font-bold text-gray-800 text-lg tracking-tight">
-              {t("certification.2.title")}
-            </div>
-            <p className="font-semibold text-gray-700 text-sm">
-              {t("certification.2.arranged")}
-            </p>
-            <p className="text-gray-600 text-xs">
-              {t("certification.2.credential")}
-            </p>
-            <hr className="mt-2" />
-            <p className="italic text-sm text-gray-700 mt-2">
-              {t("certification.2.detail")}
-            </p>
-          </div>
         </div>
       </div>
 

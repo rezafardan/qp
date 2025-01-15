@@ -15,7 +15,7 @@ i18n
       },
     },
     lng: "en", // Bahasa default
-    fallbackLng: "en", // Bahasa fallback jika bahasa yang diminta tidak tersedia
+    fallbackLng: "id", // Bahasa fallback jika bahasa yang diminta tidak tersedia
     interpolation: {
       escapeValue: false, // React sudah melindungi dari XSS
     },
