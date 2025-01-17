@@ -63,6 +63,16 @@ const Content = () => {
         </h3>
         <Bio />
 
+        <div className="flex justify-center items-center w-full mt-20">
+          <div class="loader">
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+          </div>
+        </div>
+
         <h3 className="text-center mt-40 md:text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-pink-300 to-violet-300 tracking-widest">
           {t("content.certification.subtitle.1")}
         </h3>

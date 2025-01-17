@@ -11,11 +11,19 @@ import {
   SiMysql,
   SiPostgresql,
   SiMongodb,
+  SiNextdotjs,
+  SiPrisma,
   SiTailwindcss,
   SiJavascript,
+  SiTypescript,
+  SiJsonwebtokens,
+  SiMikrotik,
+  SiCyberdefenders,
   SiLinux,
 } from "react-icons/si";
 import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
+import { PiNetwork } from "react-icons/pi";
+import { TbApi } from "react-icons/tb";
 import { LuCable } from "react-icons/lu";
 import { BsTools } from "react-icons/bs";
 import { useRef } from "react";
@@ -91,13 +99,13 @@ const Skill = () => {
                   <SiJavascript />
                 </Box>
                 <Box text="Typescript">
-                  <SiJavascript />
+                  <SiTypescript />
                 </Box>
                 <Box text="React JS">
                   <SiReact />
                 </Box>
                 <Box text="Next JS">
-                  <SiReact />
+                  <SiNextdotjs />
                 </Box>
                 <Box text="Axios">
                   <SiAxios />
@@ -131,16 +139,16 @@ const Skill = () => {
                   <SiExpress />
                 </Box>
                 <Box text="Hapi JS" progress={t("skills")}>
-                  <SiExpress />
+                  <TbApi />
                 </Box>
                 <Box text="MySql" progress={t("skills")}>
                   <SiMysql />
                 </Box>
                 <Box text="Prisma ORM" progress={t("skills")}>
-                  <SiMysql />
+                  <SiPrisma />
                 </Box>
                 <Box text="Json Web Token (JWT)">
-                  <SiMysql />
+                  <SiJsonwebtokens />
                 </Box>
                 {/* <Box text="PostgreSql">
                 <SiPostgresql />
@@ -161,19 +169,23 @@ const Skill = () => {
                 {/* <Box text="Linux">
                 <SiLinux />
               </Box> */}
-                <Box text="Linux Server (Ubuntu, Debian)">
-                  <BsTools />
+                <Box text="Cisco Networking Basics">
+                  <PiNetwork />
+                </Box>
+                <Box text="Cisco Cyber Security">
+                  <SiCyberdefenders />
                 </Box>
                 <Box text="MikroTik">
-                  <BsTools />
+                  <SiMikrotik />
                 </Box>
+                <Box text="Linux Server (Ubuntu, Debian)">
+                  <SiLinux />
+                </Box>
+
                 <Box text="OSP FTTx">
                   <LuCable />
                 </Box>
                 <Box text="Fusion Splicing">
-                  <BsTools />
-                </Box>
-                <Box text="Cyber Security">
                   <BsTools />
                 </Box>
               </div>

@@ -32,9 +32,9 @@ function App() {
         </button>
       </div>
 
-      <div className="fixed flex flex-col gap-1 -left-[9.5rem] sm:-left-[8.5rem] bottom-[10.8rem] -rotate-90">
-        <p className="text-[0.6rem] font-extralight font-sans tracking-[0.3em] flex">
-          <div className="border-b m-2 w-20"></div>
+      <div className="fixed flex flex-col gap-1 -left-[14.2rem] bottom-[16rem] -rotate-90">
+        <p className="text-xs font-extralight font-sans tracking-[0.3em] flex">
+          <div className="border-b m-2 w-48"></div>
           <span>Last updated - 15 January 2025</span>
         </p>
       </div>

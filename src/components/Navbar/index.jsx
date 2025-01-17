@@ -34,7 +34,9 @@ const Navbar = () => {
             <p className="font-caveat font-medium text-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 tracking-widest text-center">
               Reza
             </p>
-            <p className="font-thin text-xs text-center">Junior Programmer</p>
+            <p className="font-thin text-xs text-center md:underline">
+              Web Dev Enthusiast
+            </p>
           </div>
           <div
             className="absolute hidden bg-violet-500 right-0 top-0 bottom-0 w-0 opacity-0 transition-all duration-500 
