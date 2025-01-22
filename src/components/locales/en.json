@@ -62,6 +62,36 @@
   "closeButton": "Close",
 
   "experience": {
+    "internship": {
+      "company": "Yukti ID",
+      "location": "Malang, Indonesia (Onsite)",
+      "position": "Junior Fullstack Web Developer",
+      "duration": "Nov 2024 - Jan 2025",
+      "months": "3 Months",
+      "title": "Junior Fullstack Web Developer",
+      "description1": "Lorem",
+      "description2": "Lorem.",
+      "description3": "Lorem.",
+      "keyResponsibilities": [
+        {
+          "title": "Lorem",
+          "details": "Learned to assemble PCs and understand computer components."
+        },
+        {
+          "title": "Lorem",
+          "details": "Studied web design, small and large-scale network topology, and server administration."
+        },
+        {
+          "title": "Lorem",
+          "details": "Mastered MikroTik, Cisco routers, access points, and Linux server administration."
+        },
+        {
+          "title": "Lorem",
+          "details": "Studied Ubuntu and Debian servers, including proxy, DNS, subdomain, DHCP, and firewall."
+        }
+      ]
+    },
+
     "bootcamp": {
       "company": "Harisenin.com Bootcamp",
       "location": "Jakarta, Indonesia (Online)",
@@ -122,6 +152,7 @@
         }
       ]
     },
+
     "company": "PT Telkom Akses",
     "location": "Malang, Indonesia",
     "duration": "Jul 2015 - Mar 2024",
@@ -307,26 +338,6 @@
 
   "certification1": "it's the certification network that I have",
   "certification2": "Other certificates obtained from previous employment and online learning",
-  "certification": [
-    {
-      "title": "Basic Leadership",
-      "arranged": "Arranged by: Telkom Indonesia",
-      "credential": "Credential ID: C.TEL.A-053443/PD620/TCU-1B000000/2020",
-      "detail": "The course aims to develop leadership skills. Individuals can understand the basic concepts of leadership, improve communication skills, decision-making, time management, and team motivation."
-    },
-    {
-      "title": "JavaScript Programming Basics",
-      "arranged": "Arranged by: Dicoding Indonesia",
-      "credential": "Credential ID: 4EXG4R931PRL",
-      "detail": "Designed for individuals aspiring to become a Web Developer/Back-end Developer using Node.js technology, following industry standards validated by AWS. By the end of the course, students will master the basics of JavaScript for web application development using Node.js."
-    },
-    {
-      "title": "Building Front-End Web for Beginners",
-      "arranged": "Arranged by: Dicoding Indonesia",
-      "credential": "Credential ID: 72ZDVJVJLZYW",
-      "detail": "Designed for Front-End Web Developers who want to build websites with more functionality than just providing information, following industry standards. By the end of the course, students will be able to create interactive front-end web applications with storage features using web storage."
-    }
-  ],
   "certificationDetail": "TO VIEW ALL COURSE AND MY CERTIFICATION, PLEASE VISIT MY <a>{{linkedin}}</a> PROFILE",
 
   "skill": "LIST OF MY SKILLS SET",

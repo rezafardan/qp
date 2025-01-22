@@ -50,7 +50,107 @@ const Experience = () => {
         {/*  */}
 
         {/* JUDUL */}
-        <Titles icon={<RiArrowDownSLine />} />
+        <Titles
+          icon={<RiArrowDownSLine />}
+          company={t("experience.internship.company")}
+          location={t("experience.internship.location")}
+          duration={t("experience.internship.duration")}
+        />
+        {/* JUDUL */}
+
+        {/* CONTAINER ISI */}
+        <ul className="relative ml-3 flex flex-col">
+          {/* == */}
+          <div className="relative px-4 ml-2 sm:ml-0 before:absolute before:-top-20 sm:before:top-0 before:bottom-6 before:w-0.5 before:-left-3 before:bg-white">
+            {/* diatas ini garis */}
+
+            <li className="flex flex-col relative mb-6">
+              {/* == */}
+
+              <div className="absolute flex items-center justify-center top-6 w-8 h-8 rounded-full left-[-43px] border-2 bg-violet-500">
+                <FaBookOpenReader />
+              </div>
+              {/* diatas ini lingkaran ungu */}
+
+              <div className="border-b flex flex-col pb-2">
+                {/* ini kotak isi */}
+
+                <div className="bg-white flex flex-col gap-0 items-center justify-center py-4 px-4">
+                  <h4 className="text-black text-base text-center font-bold tracking-wide">
+                    {t("experience.internship.title")}
+                  </h4>
+                  <h6 className="font-thin text-black text-sm">
+                    {t("experience.internship.title")}
+                  </h6>
+                </div>
+
+                <div className="p-4 sm:p-6 text-justify">
+                  <h2 className="mb-2 text-sm text-white font-extralight">
+                    {t("experience.internship.description1")}
+                  </h2>
+                  <ul className="text-sm text-gray-400 list-disc list-outside flex flex-col pl-4 mb-2">
+                    <li>
+                      <span className="text-gray-300">
+                        {t("experience.internship.keyResponsibilities.0.title")}
+                      </span>
+                      <p>
+                        {t(
+                          "experience.internship.keyResponsibilities.0.details"
+                        )}
+                      </p>
+                    </li>
+                    <li>
+                      <span className="text-gray-300">
+                        {t("experience.internship.keyResponsibilities.1.title")}
+                      </span>
+                      <p>
+                        {t(
+                          "experience.internship.keyResponsibilities.1.details"
+                        )}
+                      </p>
+                    </li>
+                    <li>
+                      <span className="text-gray-300">
+                        {t("experience.internship.keyResponsibilities.2.title")}
+                      </span>
+                      <p>
+                        {t(
+                          "experience.internship.keyResponsibilities.2.details"
+                        )}
+                      </p>
+                    </li>
+                    <li>
+                      <span className="text-gray-300">
+                        {t("experience.internship.keyResponsibilities.3.title")}
+                      </span>
+                      <p>
+                        {t(
+                          "experience.internship.keyResponsibilities.3.details"
+                        )}
+                      </p>
+                    </li>
+                  </ul>
+                  <h2 className="mb-2 text-sm text-white font-extralight">
+                    {t("experience.internship.description2")}
+                  </h2>
+                  <h2 className="mb-2 text-sm text-white font-extralight">
+                    {t("experience.internship.description3")}
+                  </h2>
+                </div>
+                {/* <ReadMoreButton /> */}
+              </div>
+            </li>
+          </div>
+        </ul>
+        {/* CONTAINER ISI */}
+
+        {/* JUDUL */}
+        <Titles
+          icon={<RiArrowDownSLine />}
+          company={t("experience.bootcamp.company")}
+          location={t("experience.bootcamp.location")}
+          duration={t("experience.bootcamp.duration")}
+        />
         {/* JUDUL */}
 
         {/* CONTAINER ISI */}
@@ -84,18 +184,12 @@ const Experience = () => {
         {/* CONTAINER ISI */}
 
         {/* JUDUL */}
-        <div className="relative flex flex-col items-start bg-gradient-to-r from-violet-500 to-pink-500 h-fit py-2 px-4 ml-5 sm:ml-0">
-          <div className="absolute sm:hidden flex ml-1 sm:ml-0 items-center justify-center top-6 w-8 h-8 rounded-l-full left-[-32px]  bg-violet-500 z-[2]">
-            <RiArrowDownSLine />
-          </div>
-          <h3 className="text-xl font-semibold sm:text-lg md:text-xl">
-            {t("experience.company")}
-          </h3>
-          <span className="text-sm font-light">{t("experience.location")}</span>
-          <span className="text-xs font-light self-end">
-            {t("experience.duration")}
-          </span>
-        </div>
+        <Titles
+          icon={<RiArrowDownSLine />}
+          company={t("experience.company")}
+          location={t("experience.company")}
+          duration={t("experience.duration")}
+        />
         {/* JUDUL */}
 
         {/* CONTAINER ISI */}
@@ -507,18 +601,11 @@ const Experience = () => {
         {/* CONTAINER ISI */}
 
         {/* JUDUL */}
-        <div className="relative flex flex-col items-start bg-gradient-to-r from-violet-500 to-pink-500 h-fit py-2 px-4 ml-5 sm:ml-0">
-          <div className="absolute sm:hidden flex ml-1 sm:ml-0 items-center justify-center top-6 w-8 h-8 rounded-l-full left-[-32px]  bg-violet-500 z-[2]">
-            <RiArrowDownSLine />
-          </div>
-          <h3 className="text-xl font-semibold sm:text-lg md:text-xl">
-            {t("education.school")}
-          </h3>
-          <span className="text-sm font-light">{t("education.location")}</span>
-          <span className="text-xs font-light self-end">
-            {t("education.durationSchool")}
-          </span>
-        </div>
+        <Titles
+          icon={<RiArrowDownSLine />}
+          company={t("education.school")}
+          duration={t("education.durationSchool")}
+        />
         {/* JUDUL */}
 
         {/* CONTAINER ISI */}

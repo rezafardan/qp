@@ -64,6 +64,36 @@
   "closeButton": "Tutup",
 
   "experience": {
+    "internship": {
+      "company": "Yukti ID",
+      "location": "Malang, Indonesia (Di Tempat)",
+      "position": "Junior Fullstack Web Developer",
+      "duration": "Nov 2024 - Jan 2025",
+      "months": "3 Bulan",
+      "title": "Junior Fullstack Web Developer",
+      "description1": "Lorem",
+      "description2": "Lorem.",
+      "description3": "Lorem.",
+      "keyResponsibilities": [
+        {
+          "title": "Lorem",
+          "details": "Learned to assemble PCs and understand computer components."
+        },
+        {
+          "title": "Lorem",
+          "details": "Studied web design, small and large-scale network topology, and server administration."
+        },
+        {
+          "title": "Lorem",
+          "details": "Mastered MikroTik, Cisco routers, access points, and Linux server administration."
+        },
+        {
+          "title": "Lorem",
+          "details": "Studied Ubuntu and Debian servers, including proxy, DNS, subdomain, DHCP, and firewall."
+        }
+      ]
+    },
+
     "bootcamp": {
       "company": "Harisenin.com Bootcamp",
       "location": "Jakarta, Indonesia (Online)",
@@ -124,6 +154,7 @@
         }
       ]
     },
+
     "company": "PT Telkom Akses",
     "location": "Malang, Indonesia",
     "duration": "Jul, 2015 - Mar, 2024",
@@ -310,26 +341,7 @@
 
   "certification1": "IT Network sertifikasi yang saya miliki",
   "certification2": "Sertifikat lain yang diperoleh dari pekerjaan sebelumnya dan pembelajaran online",
-  "certification": [
-    {
-      "title": "Basic Leadership",
-      "arranged": "Disusun oleh: Telkom Indonesia",
-      "credential": "ID Kredensial C.TEL.A-053443/PD620/TCU-1B000000/2020",
-      "detail": "Pembelajaran bertujuan untuk mengembangkan keterampilan kepemimpinan. Individu dapat memahami konsep dasar kepemimpinan, meningkatkan keterampilan komunikasi, pengambilan keputusan, manajemen waktu, dan motivasi tim."
-    },
-    {
-      "title": "Dasar Pemrograman JavaScript",
-      "arranged": "Disusun oleh: Dicoding Indonesia",
-      "credential": "ID Kredensial 4EXG4R931PRL",
-      "detail": "Ditujukan untuk individu yang ingin melangkah menjadi seorang Web Developer/Back-end developer menggunakan teknologi Node.js menggunakan standar kompetensi industri yang divalidasi oleh AWS. Di akhir kelas, siswa dapat menguasai dasar JavaScript untuk pengembangan aplikasi web menggunakan Node.Js"
-    },
-    {
-      "title": "Membuat Front-End Web untuk Pemula",
-      "arranged": "Disusun oleh: Dicoding Indonesia",
-      "credential": "ID Kredensial 72ZDVJVJLZYW",
-      "detail": "Ditujukan untuk seorang Front-End Web Developer yang ingin mengembangkan website yang memiliki fungsionalitas lebih daripada hanya media informasi saja, sesuai dengan standar industri. Di akhir kelas, siswa dapat membuat aplikasi front-end web yang interaktif serta memiliki fitur penyimpanan menggunakan web storage."
-    }
-  ],
+
   "certificationDetail": "UNTUK MELIHAT SEMUA KURSUS DAN SERTIFIKASI SAYA, SILAKAN KUNJUNGI PROFIL <a>{{linkedin}}</a> SAYA",
 
   "skill": "DAFTAR SET KETERAMPILAN SAYA",

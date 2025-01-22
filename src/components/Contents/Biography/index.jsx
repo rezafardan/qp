@@ -2,11 +2,40 @@ import React from "react";
 import { useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import Button from "../../Button";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { MdReadMore } from "react-icons/md";
+import profile from "../../../assets/profile.jpg";
+
+const Accordion = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const togglePhotoProfile = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <div className="flex flex-col items-center gap-2 mb-10">
+      <button
+        onClick={togglePhotoProfile}
+        className="max-w-max text-xs flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm"
+      >
+        <span>{isOpen ? "Close Photo" : "Open Photo"}</span>
+        <RiArrowDownSLine />
+      </button>
+      {isOpen && (
+        <img
+          className="h-auto max-w-full sm:max-w-xs transition-all duration-300 px-8"
+          src={profile}
+          alt="image description"
+        />
+      )}
+    </div>
+  );
+};
 
 const Biography = () => {
   const [readMore, setReadMore] = useState(false);
   const { t } = useTranslation();
 
+  console.log(profile);
   const toggleReadMore = () => {
     setReadMore(!readMore);
   };
@@ -83,6 +112,8 @@ const Biography = () => {
                 }}
               />
             </p>
+
+            <Accordion />
           </>
         )}
 
