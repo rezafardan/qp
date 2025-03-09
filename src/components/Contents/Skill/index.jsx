@@ -181,11 +181,13 @@ const Skill = () => {
                 <Box text="Linux Server (Ubuntu, Debian)">
                   <SiLinux />
                 </Box>
-
                 <Box text="OSP FTTx">
                   <LuCable />
                 </Box>
                 <Box text="Fusion Splicing">
+                  <BsTools />
+                </Box>
+                <Box text="NMS Zabbix">
                   <BsTools />
                 </Box>
               </div>
