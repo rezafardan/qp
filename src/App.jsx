@@ -35,7 +35,7 @@ function App() {
       <div className="fixed flex flex-col gap-1 -left-[14.2rem] bottom-[16rem] -rotate-90">
         <p className="text-xs font-extralight font-sans tracking-[0.3em] flex">
           <div className="border-b m-2 w-48"></div>
-          <span>Last updated - 15 January 2025</span>
+          <span>Last updated - 30 October 2025</span>
         </p>
       </div>
       <Content />
