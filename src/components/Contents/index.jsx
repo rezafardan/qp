@@ -1,37 +1,43 @@
-import React, { useState } from "react";
+// src/components/Contents/index.jsx
+import React, { useState, useEffect } from "react";
 import Bio from "./Biography";
 import Certification from "./Certification";
 import Contact from "./Contact";
 import Experience from "./Experience";
 import Project from "./Project";
 import Skill from "./Skill";
-import { TypeAnimation } from "react-type-animation";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.compat.css";
 import Footer from "../Footer/";
 import { useTranslation } from "react-i18next";
 
 const Content = () => {
   const { t } = useTranslation();
-  const [scroll, setScroll] = useState("bg-transparent");
+  const [scrolled, setScrolled] = useState(false);
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
-      setScroll("backdrop-blur-3xl bg-black/50 ease-in-out duration-500");
-    } else {
-      setScroll("bg-transparent");
-    }
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
-      className={`px-[4%] py-4 sm:px-[8%] lg:px-[14%] xl:px-[18%] 2xl:px-[18%] 3xl:px-[22%] flex flex-col items-center ${scroll}`}
+      className={`
+        px-[4%] py-4 sm:px-[8%] lg:px-[14%] xl:px-[18%] 2xl:px-[18%] 3xl:px-[22%]
+        flex flex-col items-center
+        relative z-10
+        transition-all ease-in-out duration-500
+        ${scrolled
+          ? "backdrop-blur-2xl bg-black/95"
+          : "bg-transparent"
+        }
+      `}
     >
-      {/* ====== */}
-      <div className="h-[94vh]" />
+      {/* Spacer setinggi hero — konten mulai setelah hero */}
+      <div className="h-screen" />
 
-      {/* ====== */}
-
-      {/* TITLE */}
+      {/* TITLE PROJECT */}
       <h1
         id="project"
         className="text-5xl md:text-9xl mb-6 self-start font-extrabold"
@@ -64,12 +70,12 @@ const Content = () => {
         <Bio />
 
         <div className="flex justify-center items-center w-full mt-20">
-          <div class="loader">
-            <div class="loader__circle"></div>
-            <div class="loader__circle"></div>
-            <div class="loader__circle"></div>
-            <div class="loader__circle"></div>
-            <div class="loader__circle"></div>
+          <div className="loader">
+            <div className="loader__circle"></div>
+            <div className="loader__circle"></div>
+            <div className="loader__circle"></div>
+            <div className="loader__circle"></div>
+            <div className="loader__circle"></div>
           </div>
         </div>
 
@@ -83,8 +89,6 @@ const Content = () => {
         </h3>
         <Skill />
       </div>
-
-      {/* ====== */}
 
       <h1
         id="contact"

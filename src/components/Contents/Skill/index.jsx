@@ -1,209 +1,232 @@
+// src/components/Contents/Skill.jsx
+import React, { useState, useRef } from "react";
+import { motion } from "motion/react";
 import {
-  SiHtml5,
-  SiCss3,
-  SiReact,
-  SiNodedotjs,
-  SiShadcnui,
-  SiThreedotjs,
-  SiExpress,
-  SiRedux,
-  SiAxios,
-  SiMysql,
-  SiPostgresql,
-  SiMongodb,
-  SiNextdotjs,
-  SiPrisma,
-  SiTailwindcss,
-  SiJavascript,
-  SiTypescript,
-  SiJsonwebtokens,
+  SiGooglecloud,
+  SiProxmox, SiVmware, SiDocker, SiKubernetes,
+  SiGrafana, SiPrometheus, SiLinux,
   SiMikrotik,
-  SiCyberdefenders,
-  SiLinux,
+  SiReact, SiNextdotjs, SiExpress, SiTypescript,
+  SiTailwindcss, SiPrisma, SiMysql, SiNodedotjs,
+  SiNginx, SiGit, SiGithub,
 } from "react-icons/si";
-import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
-import { PiNetwork } from "react-icons/pi";
-import { TbApi } from "react-icons/tb";
-import { LuCable } from "react-icons/lu";
-import { BsTools } from "react-icons/bs";
-import { useRef } from "react";
+import {
+  PiNetwork, PiVideoCameraFill,
+} from "react-icons/pi";
+import { BsTools, BsShieldCheck } from "react-icons/bs";
+import { TbApi, TbTopologyRing } from "react-icons/tb";
+import { MdOutlineMonitor } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
-const Box = ({ children, text, progress }) => {
-  return (
-    <div className="text-xs flex cursor-default items-center justify-between min-w-fit p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm">
-      <div className="flex gap-2 items-center">
-        {children}
-        <p>{text}</p>
-      </div>
-      <div className="text-[8px] text-orange-500 text-left">{progress}</div>
-    </div>
-  );
-};
+const SKILL_CARDS = [
+  {
+    category: "CLOUD & VIRTUALIZATION",
+    items: [
+      { icon: <SiGooglecloud />,        label: "Google Cloud Platform" },
+      { icon: <BsTools />,  label: "AWS" },
+      { icon: <BsTools />,     label: "Microsoft Azure" },
+      { icon: <SiProxmox />,            label: "Proxmox VE" },
+      { icon: <SiVmware />,             label: "VMware ESXi" },
+      { icon: <PiNetwork />,            label: "Hyper-V" },
+      { icon: <SiDocker />,             label: "Docker" },
+      { icon: <SiKubernetes />,         label: "Kubernetes" },
+    ],
+  },
+  {
+    category: "MONITORING & OBSERVABILITY",
+    items: [
+      { icon: <SiGrafana />,          label: "Grafana" },
+      { icon: <SiPrometheus />,       label: "Prometheus" },
+      { icon: <BsTools />,             label: "Loki" },
+      { icon: <MdOutlineMonitor />,   label: "Alertmanager" },
+      { icon: <BsTools />,            label: "Zabbix" },
+      { icon: <BsTools />,            label: "Uptime Kuma" },
+      { icon: <BsTools />,            label: "Node Exporter" },
+      { icon: <BsTools />,            label: "cAdvisor" },
+    ],
+  },
+  {
+    category: "NETWORK & SECURITY",
+    items: [
+      { icon: <SiMikrotik />,       label: "MikroTik RouterOS" },
+      { icon: <TbTopologyRing />,   label: "SD-WAN / VLAN" },
+      { icon: <BsTools />,       label: "PowerDNS Recursor" },
+      { icon: <PiNetwork />,        label: "phpIPAM" },
+      { icon: <BsTools />,          label: "Wazuh (SIEM)" },
+      { icon: <BsShieldCheck />,    label: "TheHive / Cortex" },
+      { icon: <BsTools />,          label: "MISP / Kafka" },
+      { icon: <PiVideoCameraFill />,label: "Dahua / Hikvision CCTV" },
+    ],
+  },
+  {
+    category: "INFRASTRUCTURE & SERVICES",
+    items: [
+      { icon: <SiNginx />,        label: "Nginx Reverse Proxy" },
+      { icon: <BsTools />,      label: "Traefik Ingress" },
+      { icon: <SiLinux />,        label: "Linux (Ubuntu / CentOS)" },
+      { icon: <BsTools />,        label: "Issabel PBX" },
+      { icon: <BsTools />,        label: "GLPI / OCS Inventory" },
+      { icon: <BsTools />,        label: "NFS / SMB Storage" },
+      { icon: <TbApi />,          label: "REST API Integration" },
+      { icon: <BsTools />,        label: "Bash Scripting" },
+    ],
+  },
+  {
+    category: "WEB DEVELOPMENT",
+    items: [
+      { icon: <SiReact />,        label: "React.js" },
+      { icon: <SiNextdotjs />,    label: "Next.js (SSR/SSG)" },
+      { icon: <SiNodedotjs />,    label: "Node.js" },
+      { icon: <SiExpress />,      label: "Express.js" },
+      { icon: <SiTypescript />,   label: "TypeScript" },
+      { icon: <SiTailwindcss />,  label: "Tailwind CSS" },
+      { icon: <SiPrisma />,       label: "Prisma ORM" },
+      { icon: <SiMysql />,        label: "MySQL" },
+    ],
+  },
+];
 
-const ScrollButton = ({ listRef, click, children, className }) => {
-  const scrollLeft = () => {
-    listRef.current.scrollBy({ left: -256, behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
-    listRef.current.scrollBy({ left: 256, behavior: "smooth" });
-  };
-
-  return (
-    <button
-      onClick={click === "left" ? scrollLeft : scrollRight}
-      className={className}
-    >
-      {children}
-    </button>
-  );
-};
+const CARD_W = 260;
+const CARD_H = 400;
 
 const Skill = () => {
-  const listRef = useRef(null);
   const { t } = useTranslation();
+  const [current, setCurrent] = useState(0);
+  const dragStartX = useRef(null);
+  const total = SKILL_CARDS.length;
+
+  const prev = () => setCurrent((c) => (c - 1 + total) % total);
+  const next = () => setCurrent((c) => (c + 1) % total);
+
+  const handleDragStart = (e) => {
+    dragStartX.current = e.type === "touchstart"
+      ? e.touches[0].clientX : e.clientX;
+  };
+
+  const handleDragEnd = (e) => {
+    if (dragStartX.current === null) return;
+    const endX = e.type === "touchend"
+      ? e.changedTouches[0].clientX : e.clientX;
+    const diff = dragStartX.current - endX;
+    if (Math.abs(diff) > 40) diff > 0 ? next() : prev();
+    dragStartX.current = null;
+  };
 
   return (
-    <section className="flex flex-col items-center">
-      <p className=" text-center font-extralight text-[10px] sm:text-xs tracking-widest mb-4">
-        {t("skill")}
-      </p>
-      <div className="relative flex flex-col items-center justify-center min-w-fit">
-        <ScrollButton
-          click="left"
-          listRef={listRef}
-          className="absolute -left-12 top-16 bottom-36 hover:bg-white/10 ease-in-out duration-500 transform translate-x-0 hover:-translate-x-1"
-        >
-          <RiArrowLeftWideFill size={46} />
-        </ScrollButton>
-        <section className="flex flex-col items-center">
-          <div
-            className="overflow-x-hidden overflow-y-hidden scroll-smooth flex w-64"
-            ref={listRef}
-          >
-            <div className="flex flex-col gap-2">
-              <div className="bg-white py-4 px-4 w-64">
-                <h4 className="text-black text-base text-center font-bold tracking-wide">
-                  FRONTEND
-                </h4>
-              </div>
-              <div className="min-w-full flex flex-col gap-1 px-2">
-                <Box text="HTML5">
-                  <SiHtml5 />
-                </Box>
-                <Box text="CSS3">
-                  <SiCss3 />
-                </Box>
-                <Box text="Javascript">
-                  <SiJavascript />
-                </Box>
-                <Box text="Typescript">
-                  <SiTypescript />
-                </Box>
-                <Box text="React JS">
-                  <SiReact />
-                </Box>
-                <Box text="Next JS">
-                  <SiNextdotjs />
-                </Box>
-                <Box text="Axios">
-                  <SiAxios />
-                </Box>
-                <Box text="Redux" progress={t("skills")}>
-                  <SiRedux />
-                </Box>
-                <Box text="Tailwind CSS">
-                  <SiTailwindcss />
-                </Box>
-                <Box text="Shadcn UI">
-                  <SiShadcnui />
-                </Box>
-                {/* <Box text="Three JS">
-                  <SiThreedotjs />
-                </Box> */}
-              </div>
-            </div>
+    <section className="flex flex-col items-center gap-8 w-full py-4">
 
-            <div className="flex flex-col gap-2">
-              <div className="bg-white py-4 px-4 w-64">
-                <h4 className="text-black text-base text-center font-bold tracking-wide">
-                  BACKEND
-                </h4>
-              </div>
-              <div className="min-w-full flex flex-col gap-1 px-2">
-                <Box text="Node JS">
-                  <SiNodedotjs />
-                </Box>
-                <Box text="Express JS">
-                  <SiExpress />
-                </Box>
-                <Box text="Hapi JS" progress={t("skills")}>
-                  <TbApi />
-                </Box>
-                <Box text="MySql" progress={t("skills")}>
-                  <SiMysql />
-                </Box>
-                <Box text="Prisma ORM" progress={t("skills")}>
-                  <SiPrisma />
-                </Box>
-                <Box text="Json Web Token (JWT)">
-                  <SiJsonwebtokens />
-                </Box>
-                {/* <Box text="PostgreSql">
-                <SiPostgresql />
-              </Box>
-              <Box text="MongoDB">
-                <SiMongodb />
-              </Box> */}
-              </div>
-            </div>
+      <div
+        onMouseDown={handleDragStart}
+        onMouseUp={handleDragEnd}
+        onTouchStart={handleDragStart}
+        onTouchEnd={handleDragEnd}
+        style={{
+          display: "grid",
+          width: CARD_W + 50,
+          height: CARD_H + 40,
+          cursor: "grab",
+          userSelect: "none",
+        }}
+      >
+        {[...Array(total)].map((_, i) => {
+          const stackPos = (i - current + total) % total;
+          if (stackPos > 3) return null;
+          const isActive = stackPos === 0;
+          const card = SKILL_CARDS[i];
 
-            <div className="flex flex-col gap-2">
-              <div className="bg-white py-4 px-4 w-64">
-                <h4 className="text-black text-base text-center font-bold tracking-wide">
-                  NETWORK
-                </h4>
-              </div>
-              <div className="min-w-full flex flex-col gap-1 px-2">
-                {/* <Box text="Linux">
-                <SiLinux />
-              </Box> */}
-                <Box text="Cisco Networking Basics">
-                  <PiNetwork />
-                </Box>
-                <Box text="Cisco Cyber Security">
-                  <SiCyberdefenders />
-                </Box>
-                <Box text="MikroTik">
-                  <SiMikrotik />
-                </Box>
-                <Box text="Linux Server (Ubuntu, Debian)">
-                  <SiLinux />
-                </Box>
-                <Box text="OSP FTTx">
-                  <LuCable />
-                </Box>
-                <Box text="Fusion Splicing">
-                  <BsTools />
-                </Box>
-                <Box text="NMS Zabbix">
-                  <BsTools />
-                </Box>
-              </div>
-            </div>
+          return (
+            <motion.div
+              key={i}
+              animate={{
+                x: stackPos * 12,
+                y: stackPos * -5,
+                rotate: stackPos * 1.8,
+                scale: 1 - stackPos * 0.025,
+                opacity: stackPos === 3 ? 0.2 : 1 - stackPos * 0.15,
+                zIndex: total - stackPos,
+              }}
+              transition={{ type: "spring", stiffness: 350, damping: 30 }}
+              style={{
+                gridArea: "1 / 1",
+                width: CARD_W,
+                height: CARD_H,
+                transformOrigin: "bottom right",
+              }}
+            >
+              <div
+                className={`
+                  w-full h-full rounded-xl overflow-hidden
+                  bg-gradient-to-br from-neutral-900 to-neutral-800
+                  border border-neutral-700 shadow-2xl flex flex-col
+                  ${isActive ? "ring-1 ring-violet-500/40" : ""}
+                `}
+              >
+                {/* Header */}
+                <div className="bg-white py-3 px-4 shrink-0">
+                  <h4 className="text-black text-xs text-center font-extrabold tracking-widest">
+                    {card.category}
+                  </h4>
+                </div>
 
-            {/*  */}
-          </div>
-        </section>
-        <ScrollButton
-          click="right"
-          listRef={listRef}
-          className="absolute -right-12 top-16 bottom-36 hover:bg-white/10 ease-in-out duration-500 transform translate-x-0 hover:translate-x-1"
-        >
-          <RiArrowRightWideFill size={46} />
-        </ScrollButton>
+                {/* Skill list */}
+                <div className="flex-1 overflow-hidden px-3 py-3">
+                  {isActive && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.08 }}
+                      className="flex flex-col gap-1.5"
+                    >
+                      {card.items.map((item, si) => (
+                        <div
+                          key={si}
+                          className="flex items-center gap-2 px-3 py-1.5 border border-neutral-700 text-neutral-300 hover:bg-neutral-700 hover:border-violet-400 transition-all duration-300 text-xs rounded"
+                        >
+                          <span className="text-base shrink-0">{item.icon}</span>
+                          <span>{item.label}</span>
+                        </div>
+                      ))}
+                    </motion.div>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
+
+      {/* Controls */}
+      <div className="flex items-center gap-5">
+        <button
+          onClick={prev}
+          className="w-9 h-9 rounded-full border border-neutral-700 flex items-center justify-center text-neutral-400 hover:text-white hover:border-violet-500 transition-all duration-300 text-sm"
+        >
+          ←
+        </button>
+        <div className="flex gap-2">
+          {SKILL_CARDS.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`rounded-full transition-all duration-300 ${
+                i === current
+                  ? "w-5 h-2 bg-violet-500"
+                  : "w-2 h-2 bg-neutral-700 hover:bg-neutral-500"
+              }`}
+            />
+          ))}
+        </div>
+        <button
+          onClick={next}
+          className="w-9 h-9 rounded-full border border-neutral-700 flex items-center justify-center text-neutral-400 hover:text-white hover:border-violet-500 transition-all duration-300 text-sm"
+        >
+          →
+        </button>
+      </div>
+
+      <p className="text-[10px] tracking-[0.3em] text-neutral-600 uppercase -mt-4">
+        {current + 1} / {total} — {SKILL_CARDS[current].category}
+      </p>
     </section>
   );
 };

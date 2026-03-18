@@ -1,9 +1,14 @@
+// src/components/Contents/Project/index.jsx
 import React from "react";
+import { PiArrowUpRightBold } from "react-icons/pi";
+import { useTranslation } from "react-i18next";
+
+// ── Import backgrounds
 import bg_a from "../../../assets/bg/bg-a.jpg";
 import bg_b from "../../../assets/bg/bg-b.jpg";
 import bg_c from "../../../assets/bg/bg-c.jpg";
-import bg_d from "../../../assets/bg/bg-d.jpg";
 
+// ── Import project screenshots
 import p_a_image_a from "../../../assets/project-a/image-a.jpg";
 import p_a_image_b from "../../../assets/project-a/image-b.jpg";
 import p_b_image_a from "../../../assets/project-b/image-a.jpg";
@@ -11,241 +16,121 @@ import p_b_image_b from "../../../assets/project-b/image-b.jpg";
 import p_c_image_a from "../../../assets/project-c/image-a.jpg";
 import p_c_image_b from "../../../assets/project-c/image-b.jpg";
 
-import { PiArrowUpRightBold } from "react-icons/pi";
+// ── Map asset ke project id
+const PROJECT_ASSETS = {
+  "dashboard-cms": { bg: bg_a, imgA: p_a_image_a, imgB: p_a_image_b },
+  "cms-api":       { bg: bg_b, imgA: p_b_image_a, imgB: p_b_image_b },
+  "blogpage":      { bg: bg_c, imgA: p_c_image_a, imgB: p_c_image_b },
+};
 
-import { useTranslation } from "react-i18next";
-
-const Project = () => {
+// ── Card Component
+const ProjectCard = ({ project, assets }) => {
   const { t } = useTranslation();
+  const { bg, imgA, imgB } = assets;
 
   return (
-    <div className="flex flex-col gap-8">
-      {/* CARD */}
-      <div className="relative">
-        {/* IMAGE BACKGROUND */}
-        <img
-          src={bg_a}
-          alt="Background Card"
-          className="filter brightness-75"
-        />
+    <div className="relative overflow-hidden group rounded-sm">
 
-        {/* IMAGE CONTENT 1 */}
-        <img
-          src={p_a_image_a}
-          alt="Image content 1"
-          className="absolute w-4/6 bottom-4 sm:bottom-6 md:bottom-8 right-14 filter brightness-75 contrast-75"
-        />
+      {/* Background image */}
+      <img
+        src={bg}
+        alt={project.title}
+        loading="lazy"
+        className="w-full object-cover filter brightness-75 transition-transform duration-700 group-hover:scale-105"
+      />
 
-        {/* IMAGE CONTENT 2 */}
-        <img
-          src={p_a_image_b}
-          alt="Image content 2"
-          className="absolute w-2/12 bottom-2 sm:bottom-4 md:bottom-6 right-4 filter brightness-75 contrast-75"
-        />
+      {/* Gradient overlay — fade bawah supaya teks terbaca */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-        {/* BUTTON MOBILE */}
-        <a href="https://y-dashboard-delta.vercel.app/" target="_blank">
-          <button className="max-w-max absolute right-2 bottom-2 text-xs md:hidden flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-            {t("projectButton")}
-          </button>
+      {/* Screenshot preview — kanan bawah */}
+      {imgA && (
+        <img
+          src={imgA}
+          alt="Preview"
+          loading="lazy"
+          className="absolute w-[55%] bottom-8 right-12 filter brightness-75 contrast-75
+                     transition-all duration-500 group-hover:brightness-90 group-hover:translate-y-[-4px]
+                     shadow-2xl"
+        />
+      )}
+      {imgB && (
+        <img
+          src={imgB}
+          alt="Preview detail"
+          loading="lazy"
+          className="absolute w-[20%] bottom-4 right-2 filter brightness-75 contrast-75
+                     transition-all duration-500 group-hover:brightness-90 group-hover:translate-y-[-2px]
+                     shadow-xl"
+        />
+      )}
+
+      {/* ── TOP LEFT — Judul & subtitle */}
+      <div className="absolute top-3 sm:top-5 md:top-6 left-3 sm:left-5 md:left-6 w-[65%]">
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/link flex items-center gap-2"
+        >
+          <span className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide text-white leading-tight">
+            {project.title}
+          </span>
+          <span className="transform transition-transform duration-300 group-hover/link:rotate-45 text-white">
+            <PiArrowUpRightBold />
+          </span>
         </a>
-
-        {/* BUTTON DESKTOP */}
-        <a href="https://y-dashboard-delta.vercel.app/" target="_blank">
-          <button className="hidden max-w-max absolute right-6 top-6 text-xs md:block items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-            {t("projectButton")}
-          </button>
-        </a>
-
-        {/* TEXT */}
-        <div className="absolute text-white top-2 sm:top-4 md:top-6 left-2 sm:left-4 md:left-6 w-full sm:w-3/4">
-          {/* TOP LINK */}
-          <a
-            href="https://y-dashboard-delta.vercel.app/"
-            className="text-base sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide flex items-center gap-2 group"
-          >
-            <span>DASHBOARD PANEL CMS</span>
-            <span className="transform group-hover:rotate-45 ease-in-out duration-500">
-              <PiArrowUpRightBold />
-            </span>
-          </a>
-          <p className="text-xs tracking-widest">2025 | Yukti ID</p>
-        </div>
-
-        {/* CONTENT */}
-        <div className="absolute text-white md:bottom-16 lg:bottom-24 xl:bottom-28 2xl:bottom-32 w-full md:w-4/5 lg:w-3/4 xl:w-1/2 left-2 md:left-6">
-          {/* CONTENT TITLE */}
-          <h1 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-2 hidden md:block">
-            {/* {t("projectName")} */}
-            DASHBOARD PANEL WEBSITE FOR CONTENT MANAGEMENT SYSTEM OF PROTOTYPE
-            BLOGPAGE NEWS MEDIA
-          </h1>
-
-          {/* DESCRIPTION */}
-          <p className="text-sm font-thin hidden lg:block">
-            This dashboard is designed with Next.js, ShadCN UI, Tailwind CSS,
-            React Hook Form, Zod, CropperJS, and Axios to replace WordPress,
-            providing a fast, secure, and flexible solution.
-          </p>
-        </div>
-
-        {/* FOOTER TEXT */}
-        <div className="absolute text-xs md:text-base bottom-2 sm:bottom-4 left-2 sm:left-4 md:left-6 md:bottom-6">
-          FRONTEND DEV
-        </div>
+        <p className="text-[10px] sm:text-xs tracking-widest text-white/70 mt-1">
+          {project.subtitle}
+        </p>
       </div>
 
-      {/* CARD */}
-      <div className="relative">
-        {/* IMAGE BACKGROUND */}
-        <img
-          src={bg_b}
-          alt="Background Card"
-          className="filter brightness-75"
-        />
+      {/* ── TOP RIGHT — View Project button */}
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-3 sm:top-5 md:top-6 right-3 sm:right-5 md:right-6"
+      >
+        <button className="text-[10px] sm:text-xs px-3 py-1.5 border border-white/50 text-white
+                           hover:bg-white/10 hover:border-violet-400 hover:shadow-violet-500/30 hover:shadow-md
+                           transition-all ease-in-out duration-300 backdrop-blur-sm">
+          {t("projects.button")}
+        </button>
+      </a>
 
-        {/* IMAGE CONTENT 1 */}
-        <img
-          src={p_b_image_a}
-          alt="Image content 1"
-          className="absolute w-4/6 bottom-4 sm:bottom-6 md:bottom-8 right-14 filter brightness-75 contrast-75"
-        />
-
-        {/* IMAGE CONTENT 2 */}
-        <img
-          src={p_b_image_b}
-          alt="Image content 2"
-          className="absolute w-3/12 bottom-2 sm:bottom-4 md:bottom-6 right-4 filter brightness-75 contrast-75"
-        />
-
-        {/* BUTTON MOBILE */}
-        <a href="https://backend-sable-mu.vercel.app/" target="_blank">
-          <button className="max-w-max absolute right-2 bottom-2 text-xs md:hidden flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-            {t("projectButton")}
-          </button>
-        </a>
-
-        {/* BUTTON DESKTOP */}
-        <a href="https://backend-sable-mu.vercel.app/" target="_blank">
-          <button className="hidden max-w-max absolute right-6 top-6 text-xs md:block items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-            {t("projectButton")}
-          </button>
-        </a>
-
-        {/* TEXT */}
-        <div className="absolute text-white top-2 sm:top-4 md:top-6 left-2 sm:left-4 md:left-6 w-full sm:w-3/4">
-          {/* TOP LINK */}
-          <a
-            href="https://backend-sable-mu.vercel.app/"
-            className="text-base sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide flex items-center gap-2 group"
-          >
-            <span>CMS & BLOGPAGE REST API</span>
-            <span className="transform group-hover:rotate-45 ease-in-out duration-500">
-              <PiArrowUpRightBold />
-            </span>
-          </a>
-          <p className="text-xs tracking-widest">2025 | Yukti ID</p>
-        </div>
-
-        {/* CONTENT */}
-        <div className="absolute text-white md:bottom-16 lg:bottom-24 xl:bottom-28 2xl:bottom-32 w-full md:w-4/5 lg:w-3/4 xl:w-1/2 left-2 md:left-6">
-          {/* CONTENT TITLE */}
-          <h1 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-2 hidden md:block">
-            {/* {t("projectName")} */}
-            BACKEND DEVELOPMENT FOR CMS DASHBOARD BLOG SYSTEM WITH EXPRESS.JS ,
-            TYPESCRIPT, AND MYSQL
-          </h1>
-
-          {/* DESCRIPTION */}
-          <p className="text-sm font-thin hidden lg:block">
-            Backend system built with Express.js, TypeScript, and Prisma ORM,
-            featuring secure authentication, content management, and media
-            handling. Implements JWT for authorization, Bcrypt for password
-            encryption, and Sharp for image processing.
-          </p>
-        </div>
-
-        {/* FOOTER TEXT */}
-        <div className="absolute text-xs md:text-base bottom-2 sm:bottom-4 left-2 sm:left-4 md:left-6 md:bottom-6">
-          BACKEND DEV
-        </div>
+      {/* ── BOTTOM LEFT — Heading + Description + Tag */}
+      <div className="absolute bottom-3 sm:bottom-5 md:bottom-6 left-3 sm:left-5 md:left-6
+                      w-full md:w-4/5 lg:w-3/5 xl:w-1/2">
+        <h2 className="text-[10px] sm:text-xs md:text-sm lg:text-base font-bold text-white mb-1 hidden md:block leading-snug">
+          {project.heading}
+        </h2>
+        <p className="text-xs text-white/70 font-light hidden lg:block leading-relaxed">
+          {project.description}
+        </p>
+        <span className="mt-2 inline-block text-[9px] sm:text-[10px] tracking-[0.2em] text-white/50 font-light">
+          {project.tag}
+        </span>
       </div>
 
-      {/* CARD */}
-      <div className="relative">
-        {/* IMAGE BACKGROUND */}
-        <img
-          src={bg_c}
-          alt="Background Card"
-          className="filter brightness-75"
+    </div>
+  );
+};
+
+// ── Main Component
+const Project = () => {
+  const { t } = useTranslation();
+  // ← ambil array projects langsung dari i18n
+  const projects = t("projects.items", { returnObjects: true });
+
+  return (
+    <div className="flex flex-col gap-6 md:gap-8">
+      {projects.map((project) => (
+        <ProjectCard
+          key={project.id}
+          project={project}
+          assets={PROJECT_ASSETS[project.id] || {}}
         />
-
-        {/* IMAGE CONTENT 1 */}
-        <img
-          src={p_c_image_a}
-          alt="Image content 1"
-          className="absolute w-4/6 bottom-4 sm:bottom-6 md:bottom-8 right-14 filter brightness-75 contrast-75"
-        />
-
-        {/* IMAGE CONTENT 2 */}
-        <img
-          src={p_c_image_b}
-          alt="Image content 2"
-          className="absolute w-3/12 bottom-2 sm:bottom-4 md:bottom-6 right-4 filter brightness-75 contrast-75"
-        />
-
-        {/* BUTTON MOBILE */}
-        <a href="https://github.com/rezafardan/y-blogpage" target="_blank">
-          <button className="max-w-max absolute right-2 bottom-2 text-xs md:hidden flex items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-            {t("projectButton")}
-          </button>
-        </a>
-
-        {/* BUTTON DESKTOP */}
-        <a href="https://github.com/rezafardan/y-blogpage" target="_blank">
-          <button className="hidden max-w-max absolute right-6 top-6 text-xs md:block items-center justify-center p-2 gap-2 border hover:bg-neutral-700 ease-in-out duration-300 hover:border-violet-400 hover:shadow-violet-500 hover:shadow-sm self-center font-normal cursor-pointer">
-            {t("projectButton")}
-          </button>
-        </a>
-
-        {/* TEXT */}
-        <div className="absolute text-white top-2 sm:top-4 md:top-6 left-2 sm:left-4 md:left-6 w-full sm:w-3/4">
-          {/* TOP LINK */}
-          <a
-            href="https://github.com/rezafardan/y-blogpage"
-            className="text-base sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide flex items-center gap-2 group"
-          >
-            <span>BLOGPAGE NEWS MEDIA (ON GOING DEV)</span>
-            <span className="transform group-hover:rotate-45 ease-in-out duration-500">
-              <PiArrowUpRightBold />
-            </span>
-          </a>
-          <p className="text-xs tracking-widest">2025 | Yukti ID</p>
-        </div>
-
-        {/* CONTENT */}
-        <div className="absolute text-white md:bottom-16 lg:bottom-24 xl:bottom-28 2xl:bottom-32 w-full md:w-4/5 lg:w-3/4 xl:w-1/2 left-2 md:left-6">
-          {/* CONTENT TITLE */}
-          <h1 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-2 hidden md:block">
-            {/* {t("projectName")} */}
-            MODERN NEWS BLOGPAGE WITH NEXT.JS SSR AND TYPESCRIPT FOR OPTIMAL
-            PERFORMANCE
-          </h1>
-
-          {/* DESCRIPTION */}
-          <p className="text-sm font-thin hidden lg:block">
-            A high-performance news blog platform built with Next.js and
-            TypeScript, leveraging Server-Side Rendering (SSR) for optimal data
-            fetching and SEO. Features dynamic content loading, responsive
-            design, and seamless integration with the CMS backend API.
-          </p>
-        </div>
-
-        {/* FOOTER TEXT */}
-        <div className="absolute text-xs md:text-base bottom-2 sm:bottom-4 left-2 sm:left-4 md:left-6 md:bottom-6">
-          FRONTEND DEV
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

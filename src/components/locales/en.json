@@ -4,6 +4,9 @@
     "navbar2": "PROJECT",
     "navbar3": "CONTACT"
   },
+
+  
+
   "content": {
     "profile": {
       "title": "PROFILE",
@@ -13,12 +16,12 @@
     },
     "experience": {
       "subtitle": {
-        "1": "WORK EXPERIENCE AND EDUCATION"
+        "1": "WORK EXPERIENCE & EDUCATION"
       }
     },
     "certification": {
       "subtitle": {
-        "1": "COURSE AND CERTIFICATION"
+        "1": "COURSES & CERTIFICATIONS"
       }
     },
     "skills": {
@@ -38,367 +41,418 @@
     }
   },
 
-  "skills": "Learning stage",
-  "projectName": "Movie App",
-  "projectDetail": "Building a movie application from scratch, using React JS for the frontend, Express for the backend, and MySQL as the database.",
-  "projectButton": "View Project",
+  "projects": {
+      "button": "View Project",
+      "items": [
+        {
+          "id": "dashboard-cms",
+          "title": "DASHBOARD PANEL CMS",
+          "subtitle": "2025 | Yukti ID",
+          "heading": "DASHBOARD PANEL WEBSITE FOR CONTENT MANAGEMENT SYSTEM",
+          "description": "Built with Next.js, ShadCN UI, Tailwind CSS, React Hook Form, Zod, CropperJS, and Axios. A fast, secure, and flexible CMS replacement for WordPress.",
+          "tag": "FRONTEND DEV",
+          "link": "https://y-dashboard-delta.vercel.app/"
+        },
+        {
+          "id": "cms-api",
+          "title": "CMS & BLOGPAGE REST API",
+          "subtitle": "2025 | Yukti ID",
+          "heading": "BACKEND DEVELOPMENT FOR CMS DASHBOARD BLOG SYSTEM",
+          "description": "Built with Express.js, TypeScript, and Prisma ORM. Features secure authentication, JWT authorization, Bcrypt encryption, and Sharp for image processing.",
+          "tag": "BACKEND DEV",
+          "link": "https://backend-sable-mu.vercel.app/"
+        },
+        {
+          "id": "blogpage",
+          "title": "BLOGPAGE NEWS MEDIA",
+          "subtitle": "2025 | Yukti ID · On Going",
+          "heading": "MODERN NEWS BLOGPAGE WITH NEXT.JS SSR AND TYPESCRIPT",
+          "description": "High-performance news blog platform built with Next.js and TypeScript, leveraging SSR for optimal data fetching and SEO. Seamless integration with the CMS backend API.",
+          "tag": "FRONTEND DEV",
+          "link": "https://github.com/rezafardan/y-blogpage"
+        }
+      ]
+    },
 
-  "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. I am {{age}} years old and currently participating in a full-stack web developer bootcamp at <a>{{bootcamp}}</a>. My goal is to become a full-stack web developer with a strong focus on frontend development. I am committed to continuous learning, always striving to improve my skills and stay updated with the latest industry trends.",
-
-  "shortBiography_2": "My journey into web development began six months ago, but my interest in technology has been ongoing for years. After graduating from Vocational High School in 2015, I developed a strong interest in IT, especially in networking and software. During my time in school, I participated in the Student Competency Competition at the provincial level in East Java. Although I didn't win, the experience sparked a deep interest in IT.",
-
-  "shortBiography_3": "After completing my studies, I worked at <highlight>{{company}}</highlight>, a subsidiary of PT Telkom Indonesia, in the telecommunications sector. Throughout my career there, I held various roles, including technician, helpdesk staff for service activation, and eventually, team lead. These positions allowed me to gain valuable technical skills and leadership experience, shaping my ability to manage projects effectively and collaborate with teams. The dynamic environment of the ISP sector also provided me with deep insights into IT, particularly in network infrastructure.",
-
-  "shortBiography_4": "Although I have gained a lot in the ISP industry, my interest in web development continued to grow. This passion eventually led me to shift my career towards full-time web development. Although it was a difficult decision, my determination to follow my passion motivated me to move forward. I firmly believe that learning is a lifelong process, and I am committed to continuously improving and growing in the field of web development.",
-
-  "shortBiography_5": "Currently, I am focusing on both frontend and backend technologies. On the frontend side, I am enhancing my knowledge of React and Redux, as well as exploring various npm React libraries. For the backend, I am working with relational databases and building APIs using Express.js. These are the skills I am developing to achieve my goal of becoming a full-stack developer.",
-
-  "shortBiography_6": "I see consistency and perseverance as the keys to success. I approach the challenges of web development as if climbing a mountain—every difficulty is a step closer to the summit, where the best views await. This mindset drives me to overcome obstacles and keep moving forward on my learning journey.",
-
-  "shortBiography_7": "I am always open to collaboration and learning opportunities. If you are interested in working together or exchanging knowledge, feel free to contact me through the <a>{{contact}}</a> section below. I look forward to connecting with individuals who share the same passion for web development.",
-  "shortBiography_8": "this website build, because inspired by Frans Jesky on <a>{{name}}</a>",
+  "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. I am {{age}} years old, based in Malang, East Java. I am an IT Enthusiast with nearly 10 years of experience in networking, infrastructure, and IT systems development.",
+  "shortBiography_2": "My career began at PT. Telkom Akses, where I handled fiber optic-based networks, service provisioning, and led a team of field technicians to maintain service stability and customer satisfaction across East Java.",
+  "shortBiography_3": "I expanded my expertise into web development through an internship at <highlight>Yukti ID</highlight>, where I developed a full-stack blog platform using Next.js, Express.js, and MySQL — building a CMS dashboard and backend API for a media company.",
+  "shortBiography_4": "I further sharpened my skills through an intensive 6-month bootcamp at Harisenin.com, covering frontend, backend, databases, and software engineering fundamentals — successfully transitioning from network infrastructure into software development.",
+  "shortBiography_5": "Currently, I work at PT. Gudang Baru Berkah as a DevSecOps Infrastructure Engineer, handling all aspects of IT infrastructure — from inter-branch network design and server virtualization (Proxmox, VMware, Hyper-V, Kubernetes), to monitoring & observability using Grafana Stack and Zabbix.",
+  "shortBiography_6": "I also maintain a SOC stack (Wazuh, TheHive, Cortex, MISP, Kafka), IP management (phpIPAM), and internal services such as PBX, DNS, and ticketing systems. I continuously develop myself in automation, security, and infrastructure-as-code, while studying SD-WAN, ZTNA, and NAC concepts.",
+  "shortBiography_7": "I am always open to collaboration and knowledge sharing. If you are interested in working together, feel free to reach out through the <a>{{contact}}</a> section below.",
+  "shortBiography_8": "This website was built inspired by Frans Jesky on <a>{{name}}</a>.",
 
   "readMoreButton": "Read More",
   "closeButton": "Close",
 
   "experience": {
+    "current": {
+      "company": "PT. Gudang Baru Berkah",
+      "location": "Malang, East Java, Indonesia (Onsite)",
+      "title": "PT. Gudang Baru Berkah",
+      "position": "DevSecOps Infrastructure Engineer",
+      "duration": "Feb 2025 - Present",
+      "years": "1 yr 2 months · Full-time",
+      "description": "As a DevOps and Network Engineer, responsible for deployment, management, and automation of various company IT services and infrastructure, with a focus on system stability, security, and efficiency.",
+      "keyResponsibilities": "Scope of Responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Proxmox & Bare Metal Management",
+          "details": "Installation, configuration, and management of bare metal servers using Proxmox VE as the primary virtualization platform for various internal company services."
+        },
+        {
+          "title": "Monitoring & Observability",
+          "details": "Deployed and integrated Prometheus and Grafana Stack to monitor infrastructure, network, and application performance. Built automated alerting systems to Microsoft Teams."
+        },
+        {
+          "title": "Internal Telecommunications",
+          "details": "Setup and maintenance of Issabel-based IP Phone PBX, including inter-branch integration and extension configuration for internal communications."
+        },
+        {
+          "title": "IT Asset Management",
+          "details": "Implementation and maintenance of OCS Inventory integrated with GLPI for IT asset management, device inventory, and asset lifecycle recording."
+        },
+        {
+          "title": "IP & Network Management",
+          "details": "Deployed and maintained phpIPAM for IP address management, subnet, and VLAN segmentation across the entire company network."
+        },
+        {
+          "title": "Containerization & Microservices",
+          "details": "Built and managed Kubernetes cluster environments for microservices deployment. Performed scaling, load balancing, and container-based application orchestration."
+        },
+        {
+          "title": "Ingress & Reverse Proxy",
+          "details": "Configured Traefik and Nginx as reverse proxy and ingress controllers for HTTP/HTTPS routing, TLS termination, and multi-application domain management."
+        },
+        {
+          "title": "Security & High Availability",
+          "details": "Ensured systems remain secure and highly available through server hardening, network segmentation, and backup automation. Also built SOC stack with Wazuh, TheHive, Cortex, MISP, and Kafka."
+        }
+      ]
+    },
+
     "internship": {
       "company": "Yukti ID",
-      "location": "Malang, Indonesia (Onsite)",
+      "location": "Malang, Indonesia (Hybrid)",
+      "title": "Yukti ID",
       "position": "Web Developer Intern",
-      "duration": "Nov 2024 - Jan 2025",
-      "months": "3 Months",
-      "title": "Web Developer Intern",
-      "description1": "Lorem ipsum",
-      "description2": "Lorem ipsum.",
-      "description3": "Lorem.",
-      "keyResponsibilities": [
+      "duration": "Oct 2024 - Jan 2025",
+      "years": "4 months · Internship",
+      "description": "Developed a full-stack blog platform for a media company over 4 months. Solely responsible for designing, developing, and deploying three main platform components — with regular planning sessions and weekly reviews with the software house owner.",
+      "keyResponsibilities": "Key Deliverables:",
+      "responsibilities": [
         {
-          "title": "Lorem",
-          "details": "Learned to assemble PCs and understand computer components."
+          "title": "Content Management Dashboard",
+          "details": "Built a CRUD content dashboard with role-based authentication using Next.js, enabling editors to manage articles, categories, and media assets. Deployed at y-dashboard-delta.vercel.app"
         },
         {
-          "title": "Lorem",
-          "details": "Studied web design, small and large-scale network topology, and server administration."
+          "title": "Backend API Development",
+          "details": "Developed a REST API backend using Express.js and TypeScript to handle data management, authentication, and business logic with structured endpoints. Deployed at backend-sable-mu.vercel.app"
         },
         {
-          "title": "Lorem",
-          "details": "Mastered MikroTik, Cisco routers, access points, and Linux server administration."
+          "title": "Frontend Development",
+          "details": "Developed the public-facing frontend interface using Next.js for content access, article listing, and user interaction with server-side rendering."
         },
         {
-          "title": "Lorem",
-          "details": "Studied Ubuntu and Debian servers, including proxy, DNS, subdomain, DHCP, and firewall."
+          "title": "Database Management",
+          "details": "Designed and managed MySQL database schema for content storage, user roles, and relational data with proper indexing and query optimization."
         }
       ]
     },
 
     "bootcamp": {
-      "company": "Harisenin.com Bootcamp",
+      "company": "Harisenin.com",
       "location": "Jakarta, Indonesia (Online)",
-      "title": "Junior Fullstack Web Developer",
+      "title": "Harisenin.com",
       "position": "Junior Fullstack Web Developer",
       "duration": "May 2024 - Nov 2024",
-      "months": "6 Months",
-      "description": "For the last 6 months, I joined an intensive fullstack web developer bootcamp, focusing on practical skills needed to become a software engineer. This program gave me a strong foundation in web development, covering front-end, back-end, and efficient technology project management. I also learned how to think like an engineer—solving problems with scalable, efficient, and structured solutions. In addition, I gained a deep understanding of software engineering fundamentals, which became an important base in the application development process.",
-      "keyResponsibilities": "Subjects learned during Bootcamp:",
+      "years": "6 months · Bootcamp",
+      "description": "Joined an intensive 6-month fullstack web developer bootcamp focusing on practical skills for software engineering. The program provided a strong foundation in web development covering front-end, back-end, and technology project management.",
+      "keyResponsibilities": "Subjects Covered:",
       "responsibilities": [
         {
           "title": "Fundamental Software Engineering",
-          "details": "Learning the basic principles of software engineering, like writing efficient code, debugging, and problem-solving strategies, which became the foundation for building applications."
+          "details": "Basic principles of software engineering — writing efficient code, debugging, and problem-solving strategies as the foundation for building applications."
         },
         {
-          "title": "Website Development and Fullstack Concepts",
-          "details": "Understanding how all parts of a website work together, including developing both client-side (front-end) and server-side (back-end) that are well integrated in one application."
+          "title": "Fullstack Web Concepts",
+          "details": "Understanding how all parts of a website work together, including developing both client-side (front-end) and server-side (back-end) in one integrated application."
         },
         {
-          "title": "Front-End and Back-End Development",
-          "details": "Learning the role and relationship between front-end and back-end development, and ensuring data from back-end is processed and displayed properly on the front-end."
+          "title": "Frontend Development",
+          "details": "Building responsive and interactive UIs using HTML, CSS, JavaScript, and React.js with component-based architecture."
         },
         {
-          "title": "Version Control System with Git",
-          "details": "Using Git as a code management tool, to track changes, work in teams, and apply clear versioning in project development."
+          "title": "Backend Development",
+          "details": "Building server-side applications and REST APIs using Node.js and Express.js with proper routing, middleware, and error handling."
         },
         {
-          "title": "HTML & CSS",
-          "details": "Building well-structured, responsive web pages that follow industry standards using HTML and CSS, providing a strong foundation for further web development."
+          "title": "Version Control with Git",
+          "details": "Using Git for code management, tracking changes, branching strategies, and collaborative workflows using GitHub."
         },
         {
-          "title": "JavaScript for Website Interactivity",
-          "details": "Using JavaScript to develop website interactivity, like managing events, fetching dynamic data, and building application logic."
+          "title": "Database Management",
+          "details": "Designing and managing relational databases with MySQL, including schema design, normalization, queries, and ORM usage."
         },
         {
-          "title": "Database and Query Design",
-          "details": "Managing data in the back-end, starting from designing queries, managing relational databases, and connecting them to applications to display data effectively."
+          "title": "React.js & State Management",
+          "details": "Building modern SPAs with React.js, managing global state, component lifecycle, hooks, and integrating with REST APIs."
         },
         {
-          "title": "Basic UI Design",
-          "details": "Besides coding, learning the basics of user interface (UI) design, focusing on intuitive user experience and attractive design."
-        },
-        {
-          "title": "TypeScript and React Scalability",
-          "details": "Using TypeScript to improve application scalability, allowing safer and more maintainable code, especially in larger applications."
-        },
-        {
-          "title": "NodeJS for API Development",
-          "details": "Using NodeJS to build server-side APIs, understanding how to manage routing, middleware, and database connections in the back-end."
-        },
-        {
-          "title": "Testing and Deployment",
-          "details": "Doing testing to ensure the application is free from bugs, and preparing it for deployment to production environments with the best practices."
-        },
-        {
-          "title": "NextJS for Modern Web Application Development",
-          "details": "Learning how to develop React applications using NextJS, with features like server-side rendering to improve performance and SEO."
+          "title": "Authentication & Authorization",
+          "details": "Implementing secure user authentication using JWT, session management, and role-based access control in full-stack applications."
         }
       ]
     },
 
-    "company": "PT Telkom Akses",
-    "location": "Malang, Indonesia",
+    "company": "PT. Telkom Akses",
     "duration": "Jul 2015 - Mar 2024",
+    "years": "8 yr 9 months · Contract · East Java, Indonesia",
+
     "teamLeader": {
-      "title": "Team Leader",
-      "position": "Provisioning & Migration",
+      "title": "PT. Telkom Akses",
+      "position": "Team Leader Provisioning & Migration",
       "duration": "Sep 2020 - Mar 2024",
-      "years": "3 years 7 months",
-      "description": "As a Team Leader, I led a team of 16 technicians, managed daily operations, and ensured the efficient execution of tasks across a large area. I was responsible for achieving KPIs with monthly performance targets above 98%, which was critical for meeting company revenue goals. I regularly collaborated with senior leaders, providing valuable insights for performance improvement.",
-      "keyResponsibilities": "Key responsibilities:",
+      "years": "3 yr 7 months",
+      "description": "Led a team of field technicians responsible for provisioning and migration of fiber optic-based internet services. Ensured daily order completion targets were consistently met while maintaining high service quality and customer satisfaction.",
+      "keyResponsibilities": "Key Responsibilities:",
       "responsibilities": [
         {
-          "title": "Task Assignment & Field Support",
-          "details": "Distributed daily orders (over 20 per day) evenly among 8 teams, with a completion target of 80-90%. Provided support to technicians in handling field challenges to ensure task efficiency."
+          "title": "Team Coordination",
+          "details": "Distributed and controlled daily work orders to the technician team, setting completion deadlines and ensuring minimum 85% daily completion rate."
         },
         {
           "title": "Performance Monitoring",
-          "details": "Tracked daily completion rates on the dashboard, ensuring alignment with KPIs and company targets. Conducted morning briefings to align the team with daily goals and strategies."
+          "details": "Built internal dashboards and conducted evaluations to monitor team performance and maintain consistent order completion rates."
         },
         {
-          "title": "Reporting & Communication",
-          "details": "Submitted detailed performance reports three times a day, tracking progress, completion rates, and identifying escalations needed for management intervention."
+          "title": "Quality Control",
+          "details": "Conducted quality control inspections and spot checks on technician installations to verify installation quality, feasibility, and positive customer experience."
         },
         {
-          "title": "Quality Assurance",
-          "details": "Conducted random checks (spot checks) on installations to ensure compliance with company SOPs and quality standards."
+          "title": "Resource Assessment",
+          "details": "Conducted routine assessments per company schedule to ensure readiness of work tools and human resources for field operations."
         },
         {
-          "title": "KPI & Strategic Planning",
-          "details": "Regularly reviewed team performance against monthly KPIs, ensuring we remained above the 98% threshold. Presented results and proposed improvements during quarterly evaluations with management."
+          "title": "Reporting",
+          "details": "Provided regular performance reports to senior management regarding daily order completion status, team issues, and operational improvements."
         }
       ]
     },
+
     "helpdesk": {
-      "title": "Helpdesk",
-      "position": "Provisioning & Migration",
+      "title": "PT. Telkom Akses",
+      "position": "Helpdesk Migration",
       "duration": "Jun 2019 - Aug 2020",
-      "years": "1 year 3 months",
-      "description": "As a Migration Helpdesk, I managed the migration from copper to fiber networks in the Greater Malang area, coordinating with over 100 technicians through field supervisors from 10 partner companies. My role involved organizing daily operations, technical configuration, and ensuring smooth service activation for customers.",
-      "keyResponsibilities": "Key responsibilities:",
+      "years": "1 yr 3 months",
+      "description": "Served as the operational backbone between customer registration and field technician deployment for service migration. Managed data flow, ticket distribution, and service activation to ensure seamless customer onboarding.",
+      "keyResponsibilities": "Key Responsibilities:",
       "responsibilities": [
         {
-          "title": "Order Distribution & Management",
-          "details": "Distributed daily migration orders to field supervisors from 10 partner companies, ensuring fair and efficient task allocation across the region."
+          "title": "Ticket Distribution",
+          "details": "Distributed customer registration tickets and assisted field technicians with technical data management for efficient order processing."
         },
         {
-          "title": "Daily Reporting",
-          "details": "Prepared and submitted daily reports on migration results and technician performance to the division leader."
-        },
-        {
-          "title": "Service Activation & Troubleshooting",
-          "details": "Handled troubleshooting and service activation after migration, ensuring a smooth transition from copper to fiber for internet, telephone, and TV services."
-        },
-        {
-          "title": "OLT Configuration",
-          "details": "Configured customer accounts on the OLT system using Telnet and company tools, assigning internet and telephone credentials, and ensuring SIP, BRAS, and middleware integration for smooth services."
-        },
-        {
-          "title": "Collaboration & Support",
-          "details": "Collaborated with internal teams and technicians to resolve service issues, moved SIP numbers from MDU to OLT, and occasionally assisted field teams by contacting customers directly for faster installations."
-        },
-        {
-          "title": "Customer Assistance",
-          "details": "Assisted customers directly in locating addresses and resolving service activation issues, providing a smoother migration experience."
-        }
-      ]
-    },
-    "ioan": {
-      "title": "Integrated Access Network Operations",
-      "position": "Assurance Technician",
-      "duration": "May 2016 - May 2019",
-      "years": "3 years 1 month",
-      "description": "As an Assurance Technician, I was responsible for troubleshooting and restoring customer services, including internet, landline, and IPTV. My role involved efficiently handling service disruptions while maintaining professional communication with customers.",
-      "keyResponsibilities": "Key responsibilities:",
-      "responsibilities": [
-        {
-          "title": "Order Completion",
-          "details": "Each day, I received multiple service repair orders, aiming to complete 100% of them on the same day. Additional tasks would arrive throughout the afternoon, requiring swift completion and effective prioritization."
-        },
-        {
-          "title": "Issue Reporting",
-          "details": "After completing each job, I reported the cause of the disruption and actions taken to my supervisor. This included materials used for repairs and service restoration."
-        },
-        {
-          "title": "Technical Expertise",
-          "details": "I became proficient in diagnosing and repairing various equipment, including fiber optic cables, routers, IPTV systems, and SIP phones. I also gained knowledge of key fiber components such as OTP, ODP, ODC, and OLT."
-        },
-        {
-          "title": "Customer Interaction",
-          "details": "My position required clear and professional communication with customers, ensuring they understood the cause of issues and how they were resolved. I developed strong customer service skills through managing complaints and expectations."
-        },
-        {
-          "title": "Coverage Area",
-          "details": "The area I handled covered six operational sites, each with at least 6,000 active customers, sometimes reaching tens of thousands. This extensive coverage demanded efficient time management and a quick technical response to meet service level agreements."
-        }
-      ]
-    },
-    "dshr": {
-      "title": "Deployed Sales Home Reached",
-      "position": "Technician",
-      "duration": "Feb 2016 - Apr 2016",
-      "years": "3 months",
-      "description": "During a 3-month assignment, I was part of a special initiative aimed at providing same-day service installations to meet customer demand for fast and efficient service.",
-      "keyResponsibilities": "Key responsibilities:",
-      "responsibilities": [
-        {
-          "title": "Sales & Lead Generation",
-          "details": "Actively sought new customers by targeting clusters with available fiber ports, conducted door-to-door sales, and used social media to promote the one-day service program."
-        },
-        {
-          "title": "Customer Enrollment & Installation",
-          "details": "After securing new customers, I was directly responsible for assisting with enrollment and performing same-day internet service installations to meet the quick service program's goals."
-        },
-        {
-          "title": "Material Management",
-          "details": "Coordinated with the warehouse to obtain materials for installations, ensuring that I was fully prepared to complete installations without delays."
-        },
-        {
-          "title": "Daily Reporting",
-          "details": "Provided daily reports to management, detailing sales activities, installations, and customer feedback."
-        },
-        {
-          "title": "Target & Performance",
-          "details": "My target was to acquire 10 new customers per month. Despite the challenging nature of the role, particularly with limited marketing experience, I managed to achieve 50% of the target in the first month."
-        }
-      ]
-    },
-    "provisioning": {
-      "title": "Provisioning & Migration",
-      "position": "Technician",
-      "duration": "Jul 2015 - Jan 2016",
-      "years": "7 months",
-      "description": "At the beginning of my career, I worked as a New Installation Technician, responsible for installing internet, telephone, and IPTV services for customers.",
-      "keyResponsibilities": "Key responsibilities:",
-      "responsibilities": [
-        {
-          "title": "Cable Installation",
-          "details": "Managed fiber optic cable pulling from the distribution point (ODP) to the customer's home and performed fusion splicing to ensure a reliable connection."
+          "title": "Customer Data Management",
+          "details": "Managed prospective customer data and collaborated with other units to resolve technical and administrative issues."
         },
         {
           "title": "Service Activation",
-          "details": "After completing the physical installation, I coordinated with the helpdesk division to request service activation for the customer."
+          "details": "Performed service activations by configuring network devices and ensuring services functioned correctly per ticket specifications."
+        },
+        {
+          "title": "Customer Communication",
+          "details": "Communicated with customers via messaging and phone to provide ticket updates, schedule appointments, and confirm service activations."
+        }
+      ]
+    },
+
+    "Ioan": {
+      "title": "PT. Telkom Akses",
+      "position": "IOAN Technician",
+      "duration": "May 2016 - May 2019",
+      "years": "3 yr 1 month",
+      "description": "Field technician responsible for customer-side technical troubleshooting and network repairs within the assigned work area, with a maximum repair time of 3 hours from ticket opening.",
+      "keyResponsibilities": "Key Responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Technical Troubleshooting",
+          "details": "Received orders and performed customer-side technical troubleshooting, resolving network issues within a maximum 3-hour repair window from ticket opening."
+        },
+        {
+          "title": "Corrective & Preventive Maintenance",
+          "details": "Performed corrective and preventive maintenance on network infrastructure within the work area to minimize service disruptions."
+        },
+        {
+          "title": "Equipment Maintenance",
+          "details": "Conducted routine maintenance on production equipment, cleaning and resolving cable issues with a target of 0 incidents."
+        },
+        {
+          "title": "Fiber Optic Handling",
+          "details": "Applied OTDR, fusion splicing, and FTTx installation techniques for fiber optic network installation and troubleshooting."
+        }
+      ]
+    },
+
+    "dshr": {
+      "title": "PT. Telkom Akses",
+      "position": "DSHR Technician",
+      "duration": "Feb 2016 - Apr 2016",
+      "years": "3 months",
+      "description": "Handled rapid WiFi system installations with a one-day service model to increase customer satisfaction targets.",
+      "keyResponsibilities": "Key Responsibilities:",
+      "responsibilities": [
+        {
+          "title": "WiFi Installation",
+          "details": "Performed WiFi system installations with a one-day service commitment to improve customer satisfaction metrics."
+        },
+        {
+          "title": "Customer Acquisition",
+          "details": "Assisted in acquiring new customers, supporting registration processes, and performing initial service activations."
+        }
+      ]
+    },
+
+    "provisioning": {
+      "title": "PT. Telkom Akses",
+      "position": "Provisioning & Migration Technician",
+      "duration": "Jul 2015 - Jan 2016",
+      "years": "7 months",
+      "description": "Entry-level technician responsible for WiFi service installation with daily order targets, ensuring customers could fully utilize their services after activation.",
+      "keyResponsibilities": "Key Responsibilities:",
+      "responsibilities": [
+        {
+          "title": "Service Installation",
+          "details": "Completed WiFi service installation orders with a minimum daily target of 3 installations, ensuring quality and timely delivery."
         },
         {
           "title": "Customer Education",
-          "details": "Provided detailed instructions on using Wi-Fi, changing Wi-Fi name and password, operating telephone services, and navigating IPTV features such as live TV, on-demand TV, and additional add-ons."
+          "details": "Provided service information to customers and ensured they could optimally use their new services after installation."
         },
         {
-          "title": "Administrative Tasks",
-          "details": "Prepared installation reports for material reconciliation and administrative purposes."
+          "title": "Technical Guarantee",
+          "details": "Educated customers on the 60-day technical warranty, payment methods, and the process for reporting service disruptions."
+        },
+        {
+          "title": "Fiber Optic Skills",
+          "details": "Applied fusion splicing and FTTx installation techniques for fiber-to-the-home service deployments."
+        }
+      ]
+    },
+
+    "education": {
+      "title": "SMK Muhammadiyah 1 Kepanjen",
+      "position": "Computer & Network Engineering",
+      "duration": "2012 - 2015",
+      "years": "3 years · Vocational High School",
+      "description": "Graduated from SMK Muhammadiyah 1 Kepanjen majoring in Computer and Network Engineering. During this time, participated in the Student Competency Competition (LKS) at the provincial level in East Java, sparking a deep interest in IT and networking.",
+      "keyResponsibilities": "Key Activities:",
+      "responsibilities": [
+        {
+          "title": "Student Competency Competition (LKS)",
+          "details": "Participated in the provincial-level IT competency competition in East Java, gaining competitive exposure to networking and systems."
+        },
+        {
+          "title": "Network Infrastructure",
+          "details": "Studied computer networking fundamentals including LAN/WAN topology, IP addressing, routing, and structured cabling."
+        },
+        {
+          "title": "Linux & Server Administration",
+          "details": "Learned Ubuntu and Debian server administration including proxy, DNS, subdomain, DHCP, and firewall configuration."
+        },
+        {
+          "title": "Hardware & Troubleshooting",
+          "details": "Hands-on experience assembling PCs, understanding computer components, and performing hardware diagnostics."
         }
       ]
     }
   },
 
   "education": {
-    "school": "Muhammadiyah 1 Vocational High School Kepanjen",
-    "location": "Kab. Malang, Indonesia",
-    "durationSchool": "Jul 2012 - Mar 2015",
-    "title": "Computer and Network Engineering",
-    "description1": "During my studies, I gained extensive knowledge and practical experience in various areas of IT:",
-    "description2": "While studying at Muhammadiyah 1 Vocational High School Kepanjen, I interned at STIKI (Indonesian College of Informatics and Computers), where I gained hands-on experience in IT support and server maintenance. My responsibilities included performing disk defragmentation, repairing PCs, and maintaining physical servers. This real-world experience solidified my interest in technology and provided valuable insights into IT operations.",
-    "description3": "Additionally, I participated in the provincial-level Student Competency Competition focused on IT Network Support. In this competition, I demonstrated my skills in setting up servers with various services, including DNS, DHCP, and firewall configuration. I also showcased my ability to connect users via Wi-Fi using MikroTik and access points. This experience strengthened my foundation in networking and fueled my enthusiasm for the field.",
+    "school": "SMK Muhammadiyah 1 Kepanjen",
+    "durationSchool": "2012 - 2015",
+    "title": "Computer & Network Engineering",
+    "description1": "Graduated from SMK Muhammadiyah 1 Kepanjen majoring in Computer and Network Engineering.",
+    "description2": "Participated in the Student Competency Competition (LKS) at the provincial level in East Java.",
+    "description3": "This experience sparked a deep interest in IT, particularly in networking and infrastructure.",
     "keyResponsibilities": [
       {
-        "title": "PC Assembly and Components",
-        "details": "Learned to assemble PCs and understand computer components."
+        "title": "Student Competency Competition (LKS)",
+        "details": "Participated in the provincial-level IT competency competition in East Java."
       },
       {
-        "title": "Web Design and Networking",
-        "details": "Studied web design, small and large-scale network topology, and server administration."
+        "title": "Network Infrastructure",
+        "details": "Studied LAN/WAN topology, IP addressing, routing, and structured cabling."
       },
       {
-        "title": "Network Protocols",
-        "details": "Mastered MikroTik, Cisco routers, access points, and Linux server administration."
+        "title": "Linux & Server Administration",
+        "details": "Learned Ubuntu/Debian server administration — proxy, DNS, DHCP, and firewall."
       },
       {
-        "title": "Server Management",
-        "details": "Studied Ubuntu and Debian servers, including proxy, DNS, subdomain, DHCP, and firewall."
+        "title": "Hardware & Troubleshooting",
+        "details": "Hands-on experience assembling PCs and performing hardware diagnostics."
       }
     ]
   },
-
-  "certification1": "it's the certification network that I have",
-  "certification2": "Other certificates obtained from previous employment and online learning",
-  "certificationDetail": "TO VIEW ALL COURSE AND MY CERTIFICATION, PLEASE VISIT MY <a>{{linkedin}}</a> PROFILE",
-
-  "skill": "LIST OF MY SKILLS SET",
-
   "contact": {
-    "message": "If you're interested in hiring me or collaborating, feel free to reach out for recruitment, partnership, or follow to stay in touch.",
-    "items": [
-      {
-        "link": "mailto:rezafardaaan@gmail.com",
-        "img": "MdEmail",
-        "title": "Email",
-        "detail": "I always check up on my email daily, this is my primary contact method"
-      },
-      {
-        "link": "https://discordapp.com/users/claustrum_7",
-        "img": "PiDiscordLogo",
-        "title": "Discord",
-        "detail": "I use it daily for multiple purposes, add me if you need real-time conversation"
-      },
-      {
-        "link": "https://www.instagram.com/rezafardan_/",
-        "img": "RiInstagramLine",
-        "title": "Instagram",
-        "detail": "My daily social media, follow me to see my daily life!",
-        "className": "sm:row-start-2 md:row-auto"
-      },
-      {
-        "link": "https://t.me/rezafardan",
-        "img": "ImTelegram",
-        "title": "Telegram",
-        "detail": "I rarely use Telegram, but feel free to send me a text on this platform anytime",
-        "className": "sm:row-start-2 md:row-start-2 lg:row-auto"
-      },
-      {
-        "link": "https://www.linkedin.com/in/reza-fardan/",
-        "img": "GrLinkedin",
-        "title": "Linkedin",
-        "detail": "Learn more about my professional career background on Linkedin",
-        "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
-      },
-      {
-        "link": "https://github.com/rezafardan",
-        "img": "ImGithub",
-        "title": "Github",
-        "detail": "Find all my personal public project source code and contributions here",
-        "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
-      },
-      {
-        "link": "https://www.tiktok.com/@xijooojooo",
-        "img": "AiOutlineTikTok",
-        "title": "Tiktok",
-        "detail": "Usually, I use TikTok to see technology trends and some funny videos",
-        "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
-      },
-      {
-        "link": "https://x.com/xijoojoo",
-        "img": "FaTwitterSquare",
-        "title": "Twitter",
-        "detail": "Let's be friends on platform X, I use X to see the latest trends and news",
-        "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
-      }
-    ]
-  }
+  "message": "If you're interested in hiring me or collaborating, feel free to reach out — for recruitment, partnership, or just to stay connected.",
+  "items": [
+    {
+      "link": "mailto:rezafardaaan@gmail.com",
+      "img": "MdEmail",
+      "title": "Email",
+      "detail": "I check my email every day — this is my primary contact method"
+    },
+    {
+      "link": "https://discordapp.com/users/claustrum_7",
+      "img": "PiDiscordLogo",
+      "title": "Discord",
+      "detail": "I use it daily for various purposes, add me if you need real-time conversation"
+    },
+    {
+      "link": "https://www.instagram.com/rezafardan_/",
+      "img": "RiInstagramLine",
+      "title": "Instagram",
+      "detail": "My daily social media — follow to see what I'm up to!",
+      "className": "sm:row-start-2 md:row-auto"
+    },
+    {
+      "link": "https://t.me/rezafardan",
+      "img": "ImTelegram",
+      "title": "Telegram",
+      "detail": "I rarely use Telegram, but feel free to send a message anytime",
+      "className": "sm:row-start-2 md:row-start-2 lg:row-auto"
+    },
+    {
+      "link": "https://www.linkedin.com/in/reza-fardan/",
+      "img": "GrLinkedin",
+      "title": "Linkedin",
+      "detail": "Learn more about my professional career background on LinkedIn",
+      "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
+    },
+    {
+      "link": "https://github.com/rezafardan",
+      "img": "ImGithub",
+      "title": "Github",
+      "detail": "Find all my public project source code and contributions here",
+      "className": "sm:row-start-3 md:row-start-2 lg:row-start-2"
+    },
+    {
+      "link": "https://www.tiktok.com/@xijooojooo",
+      "img": "AiOutlineTikTok",
+      "title": "Tiktok",
+      "detail": "I usually use TikTok to follow tech trends and funny videos",
+      "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
+    },
+    {
+      "link": "https://x.com/xijoojoo",
+      "img": "FaTwitterSquare",
+      "title": "Twitter",
+      "detail": "Let's connect on X — I use it to follow trends and latest news",
+      "className": "sm:row-start-4 md:row-start-3 lg:row-start-2"
+    }
+  ]
+}
+
 }
