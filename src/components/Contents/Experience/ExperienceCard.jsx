@@ -1,17 +1,18 @@
 // src/components/Contents/Experience/ExperienceCard.jsx
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { RiArrowDownSLine } from "react-icons/ri";
 
 const ExperienceCard = ({ experienceKey, isCurrent = false }) => {
   const { t } = useTranslation();
+  const [expanded, setExpanded] = useState(false);
 
-  const title      = t(`experience.${experienceKey}.title`);
-  const position   = t(`experience.${experienceKey}.position`);
-  const duration   = t(`experience.${experienceKey}.duration`);
-  const years      = t(`experience.${experienceKey}.years`,              { defaultValue: "" });
-  const description= t(`experience.${experienceKey}.description`,        { defaultValue: "" });
-  const respLabel  = t(`experience.${experienceKey}.keyResponsibilities`,{ defaultValue: "" });
-
-  // ← returnObjects: true → ambil array langsung dari JSON
+  const title           = t(`experience.${experienceKey}.title`);
+  const position        = t(`experience.${experienceKey}.position`);
+  const duration        = t(`experience.${experienceKey}.duration`);
+  const years           = t(`experience.${experienceKey}.years`,               { defaultValue: "" });
+  const description     = t(`experience.${experienceKey}.description`,         { defaultValue: "" });
+  const respLabel       = t(`experience.${experienceKey}.keyResponsibilities`, { defaultValue: "" });
   const responsibilities = t(`experience.${experienceKey}.responsibilities`, {
     returnObjects: true,
     defaultValue: [],
@@ -20,7 +21,7 @@ const ExperienceCard = ({ experienceKey, isCurrent = false }) => {
   return (
     <div className="border-b border-white/10 flex flex-col pb-2">
 
-      {/* ── Header Putih ── */}
+      {/* ── White Header ── */}
       <div className="bg-white flex flex-col items-center justify-center gap-1 py-4 px-4">
         <h4 className="text-black text-base text-center font-bold tracking-wide">
           {title}
@@ -46,38 +47,56 @@ const ExperienceCard = ({ experienceKey, isCurrent = false }) => {
             </span>
           )}
         </div>
+
+        {/* Toggle button */}
+        <button
+          onClick={() => setExpanded((p) => !p)}
+          className="mt-2 flex items-center gap-1 text-violet-600 text-[11px] font-semibold tracking-widest uppercase hover:text-violet-400 transition-colors"
+        >
+          {expanded ? t("experience.collapseDetail") : t("experience.expandDetail")}
+          <RiArrowDownSLine
+            size={16}
+            className={`transition-transform duration-300 ${expanded ? "rotate-180" : "rotate-0"}`}
+          />
+        </button>
       </div>
 
-      {/* ── Body ── */}
-      <div className="p-4 sm:p-6 text-justify">
-        {description && (
-          <p className="mb-3 text-sm text-gray-300 font-light leading-relaxed">
-            {description}
-          </p>
-        )}
+      {/* ── Collapsible Body ── */}
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+          expanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="p-4 sm:p-6 text-justify">
+          {description && (
+            <p className="mb-3 text-sm text-gray-300 font-light leading-relaxed">
+              {description}
+            </p>
+          )}
 
-        {respLabel && (
-          <span className="block mb-2 text-xs font-semibold uppercase tracking-widest text-violet-400">
-            {respLabel}
-          </span>
-        )}
+          {respLabel && (
+            <span className="block mb-2 text-xs font-semibold uppercase tracking-widest text-violet-400">
+              {respLabel}
+            </span>
+          )}
 
-        {Array.isArray(responsibilities) && responsibilities.length > 0 && (
-          <ul className="text-sm list-disc list-outside flex flex-col pl-4 gap-1">
-            {responsibilities.map((item, i) => (
-              <li key={i} className="mb-1">
-                <span className="text-gray-200 font-medium text-sm">
-                  {item.title}
-                </span>
-                {item.details && (
-                  <p className="text-gray-400 text-xs font-light mt-0.5 leading-relaxed">
-                    {item.details}
-                  </p>
-                )}
-              </li>
-            ))}
-          </ul>
-        )}
+          {Array.isArray(responsibilities) && responsibilities.length > 0 && (
+            <ul className="text-sm list-disc list-outside flex flex-col pl-4 gap-1">
+              {responsibilities.map((item, i) => (
+                <li key={i} className="mb-1">
+                  <span className="text-gray-200 font-medium text-sm">
+                    {item.title}
+                  </span>
+                  {item.details && (
+                    <p className="text-gray-400 text-xs font-light mt-0.5 leading-relaxed">
+                      {item.details}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   );

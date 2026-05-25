@@ -127,6 +127,72 @@
       ]
     },
 
+  "skills": {
+    "cards": [
+      {
+        "category": "NETWORK & CONNECTIVITY",
+        "items": [
+          "MikroTik (CCR2004/CCR1009/RB750)",
+          "Ruijie SD-WAN Anylink",
+          "VLAN / OSPF / BGP",
+          "WireGuard VPN",
+          "FTTH / OSP Fiber Optic",
+          "LAN Cabling"
+        ]
+      },
+      {
+        "category": "INFRASTRUCTURE & VIRTUALIZATION",
+        "items": [
+          "Proxmox VE",
+          "Proxmox Backup Server",
+          "Linux Server (Ubuntu/Debian)",
+          "Docker",
+          "Git & Bash Scripting",
+          "Terraform / Ansible (IaaC)"
+        ]
+      },
+      {
+        "category": "MONITORING & OBSERVABILITY",
+        "items": [
+          "Zabbix",
+          "Grafana OSS",
+          "Grafana Alloy",
+          "Prometheus",
+          "Loki",
+          "Telegram Bot & MS Teams Alerting",
+          "rsyslog",
+          "WebSocket NMS-TV"
+        ]
+      },
+      {
+        "category": "SECURITY & DNS",
+        "items": [
+          "Cloudflare WAF/SSL (A+)",
+          "Teleport Bastion Host",
+          "Bitwarden Secrets Manager",
+          "Wazuh SIEM",
+          "MISP + IRIS",
+          "PowerDNS Recursor + Authoritative",
+          "DNSSEC + DNS-01 SSL",
+          "NGINX Proxy Manager"
+        ]
+      },
+      {
+        "category": "SERVICES & DEV TOOLS",
+        "items": [
+          "Asterisk IP PBX",
+          "Synology NAS (RBAC)",
+          "Dahua EVS CCTV",
+          "GLPI ITSM",
+          "Next.js",
+          "Express.js",
+          "MySQL",
+          "AWS / Vercel"
+        ]
+      }
+    ]
+  },
+
   "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. Based in Malang, East Java, I am an ICT Infrastructure & DevOps Engineer with 11+ years of experience building and managing enterprise infrastructure end-to-end.",
   "shortBiography_2": "My career began at PT. Telkom Akses (2015–2024), where I handled fiber optic networks, service provisioning, and grew from a field technician into a Team Leader managing a cross-area technician team — maintaining an order completion SLA of ≥85% across East Java.",
   "shortBiography_3": "I expanded into software development through a project-based engagement at <highlight>Yukti ID</highlight>, where I built a full-stack blog platform using Next.js, Express.js, and MySQL — designing the application architecture, backend API, database schema, and responsive frontend.",
@@ -134,13 +200,14 @@
   "shortBiography_5": "Currently, I work at PT. Gudang Baru Berkah as a DevOps Engineer (ICT NIS — Network, Infrastructure & Security), managing 30+ VMs on Proxmox VE and 30+ branch network connectivity. I designed the enterprise multi-site network with VLAN segmentation, OSPF/BGP routing, and SD-WAN Ruijie Anylink, and rebuilt the full-stack observability platform from scratch using Zabbix + Grafana + Alloy + Prometheus + Loki.",
   "shortBiography_6": "I also implemented a layered security architecture (Cloudflare WAF → MikroTik ACL → NGINX Proxy Manager) achieving A+ on Qualys SSL Labs and SecurityHeaders.com, a DNS split-brain with PowerDNS + DNSSEC, Bitwarden for secrets management, Teleport for SSH/RDP audit, and developed in-house tools — including an NMS real-time display, asset management platform for 30+ branches, and GLPI ITSM with ITIL workflow.",
   "shortBiography_7": "I am always open to collaboration and knowledge sharing. If you are interested in working together, feel free to reach out through the <a>{{contact}}</a> section below.",
-  "shortBiography_8": "This website was built inspired by Frans Jesky on <a>{{name}}</a>.",
 
   "readMoreButton": "Read More",
   "closeButton": "Close",
 
   "experience": {
     "currentBadge": "Current",
+    "expandDetail": "Show Details",
+    "collapseDetail": "Hide Details",
     "current": {
       "company": "PT. Gudang Baru Berkah",
       "location": "Malang, East Java, Indonesia (Onsite)",

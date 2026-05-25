@@ -125,10 +125,71 @@
       ]
     },
 
-  "skills": "Tahap pembelajaran",
-  "projectName": "Aplikasi Film",
-  "projectDetail": "Membangun aplikasi film dari awal, menggunakan React JS untuk frontend, Express untuk backend, dan MySQL sebagai database.",
-  "projectButton": "Lihat Proyek",
+  "skills": {
+    "cards": [
+      {
+        "category": "JARINGAN & KONEKTIVITAS",
+        "items": [
+          "MikroTik (CCR2004/CCR1009/RB750)",
+          "Ruijie SD-WAN Anylink",
+          "VLAN / OSPF / BGP",
+          "WireGuard VPN",
+          "FTTH / OSP Fiber Optik",
+          "Pemasangan Kabel LAN"
+        ]
+      },
+      {
+        "category": "INFRASTRUKTUR & VIRTUALISASI",
+        "items": [
+          "Proxmox VE",
+          "Proxmox Backup Server",
+          "Linux Server (Ubuntu/Debian)",
+          "Docker",
+          "Git & Bash Scripting",
+          "Terraform / Ansible (IaaC)"
+        ]
+      },
+      {
+        "category": "MONITORING & OBSERVABILITAS",
+        "items": [
+          "Zabbix",
+          "Grafana OSS",
+          "Grafana Alloy",
+          "Prometheus",
+          "Loki",
+          "Telegram Bot & Notifikasi MS Teams",
+          "rsyslog",
+          "WebSocket NMS-TV"
+        ]
+      },
+      {
+        "category": "KEAMANAN & DNS",
+        "items": [
+          "Cloudflare WAF/SSL (A+)",
+          "Teleport Bastion Host",
+          "Bitwarden Secrets Manager",
+          "Wazuh SIEM",
+          "MISP + IRIS",
+          "PowerDNS Recursor + Authoritative",
+          "DNSSEC + DNS-01 SSL",
+          "NGINX Proxy Manager"
+        ]
+      },
+      {
+        "category": "LAYANAN & ALAT PENGEMBANGAN",
+        "items": [
+          "Asterisk IP PBX",
+          "Synology NAS (RBAC)",
+          "Dahua EVS CCTV",
+          "GLPI ITSM",
+          "Next.js",
+          "Express.js",
+          "MySQL",
+          "AWS / Vercel"
+        ]
+      }
+    ]
+  },
 
   "shortBiography_1": "Nama saya {{name}}, bisa dipanggil <highlight>{{nickname}}</highlight>. Berdomisili di Malang, Jawa Timur, saya adalah ICT Infrastructure & DevOps Engineer dengan 11+ tahun pengalaman membangun dan mengelola infrastruktur enterprise end-to-end.",
   "shortBiography_2": "Karier saya dimulai di PT. Telkom Akses (2015–2024), menangani jaringan fiber optik, provisioning layanan, dan berkembang dari teknisi lapangan menjadi Team Leader — menjaga SLA penyelesaian order ≥85% di seluruh Jawa Timur.",
@@ -137,13 +198,14 @@
   "shortBiography_5": "Saat ini saya bekerja di PT. Gudang Baru Berkah sebagai DevOps Engineer (ICT NIS — Network, Infrastructure & Security), mengelola 30+ VM di Proxmox VE dan konektivitas 30+ cabang. Saya merancang enterprise multi-site network dengan VLAN segmentation, routing OSPF/BGP, dan SD-WAN Ruijie Anylink, serta membangun ulang full-stack observability platform dari nol menggunakan Zabbix + Grafana + Alloy + Prometheus + Loki.",
   "shortBiography_6": "Saya juga mengimplementasikan layered security architecture (Cloudflare WAF → MikroTik ACL → NGINX Proxy Manager) dengan pencapaian A+ di Qualys SSL Labs dan SecurityHeaders.com, DNS split-brain dengan PowerDNS + DNSSEC, Bitwarden untuk secrets management, Teleport untuk audit SSH/RDP, serta mengembangkan tools internal — termasuk NMS real-time display, platform asset management untuk 30+ cabang, dan GLPI ITSM dengan ITIL workflow.",
   "shortBiography_7": "Saya selalu terbuka untuk kolaborasi dan berbagi pengetahuan. Jika tertarik bekerja sama, jangan ragu menghubungi saya melalui bagian <a>{{contact}}</a> di bawah.",
-  "shortBiography_8": "Website ini dibangun karena terinspirasi dari Frans Jesky di <a>{{name}}</a>.",
 
   "readMoreButton": "Baca Selengkapnya",
   "closeButton": "Tutup",
 
   "experience": {
     "currentBadge": "Saat Ini",
+    "expandDetail": "Tampilkan Detail",
+    "collapseDetail": "Sembunyikan Detail",
     "current": {
       "company": "PT. Gudang Baru Berkah",
       "location": "Malang, Jawa Timur, Indonesia (Di Lokasi)",
@@ -445,8 +507,6 @@
   "certification1": "Ini adalah sertifikasi jaringan yang saya miliki",
   "certification2": "Sertifikat lain yang diperoleh dari pekerjaan sebelumnya dan pembelajaran online",
   "certificationDetail": "UNTUK MELIHAT SEMUA KURSUS DAN SERTIFIKASI SAYA, KUNJUNGI PROFIL <a>{{linkedin}}</a> SAYA",
-
-  "skill": "DAFTAR KEAHLIAN SAYA",
 
   "contact": {
     "message": "Jika Anda tertarik untuk merekrut saya atau berkolaborasi, jangan ragu untuk menghubungi saya untuk rekrutmen, kemitraan, atau ikuti untuk tetap terhubung.",
