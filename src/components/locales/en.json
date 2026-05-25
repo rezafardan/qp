@@ -1,8 +1,25 @@
 {
   "navbar": {
+    "brand": {
+      "name": "Reza Fardan",
+      "subtitle": "ICT Infrastructure & DevOps Engineer"
+    },
     "navbar1": "PROFILE",
     "navbar2": "PROJECT",
     "navbar3": "CONTACT"
+  },
+  "hero": {
+    "tagline": "Nice view to be had after a long climb"
+  },
+  "biography": {
+    "openPhoto": "Open Photo",
+    "closePhoto": "Close Photo"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 by Reza Fardan"
+  },
+  "app": {
+    "lastUpdated": "Last updated - May 2026"
   },
 
   
@@ -45,6 +62,42 @@
       "button": "View Project",
       "items": [
         {
+          "id": "observability-platform",
+          "title": "OBSERVABILITY PLATFORM",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "FULL-STACK MONITORING: ZABBIX · GRAFANA OSS · ALLOY · PROMETHEUS · LOKI",
+          "description": "Rebuilt monitoring stack from scratch. Single NOC dashboard for 30+ VMs, network devices, UPS, NAS, CCTV, and internal apps. NMS-TV real-time display via WebSocket in the NOC room with automatic alerting.",
+          "tag": "DEVOPS · OBSERVABILITY",
+          "link": "https://reza.is-a.dev"
+        },
+        {
+          "id": "network-redesign",
+          "title": "ENTERPRISE NETWORK REDESIGN",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "MULTI-SITE NETWORK: VLAN SEGMENTATION · OSPF/BGP ROUTING · SD-WAN RUIJIE ANYLINK HUB-SPOKE",
+          "description": "Rebuilt IPAM and VLAN design for all entities. Migrated tunneling from SSTP over EoIP to SD-WAN Ruijie Anylink Hub-Spoke for 30+ branch connectivity. Zero IP conflicts across all sites.",
+          "tag": "NETWORK · INFRA",
+          "link": "https://reza.is-a.dev"
+        },
+        {
+          "id": "security-architecture",
+          "title": "LAYERED SECURITY ARCHITECTURE",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "CLOUDFLARE WAF → MIKROTIK ACL → NGINX PROXY MANAGER — A+ QUALYS SSL LABS",
+          "description": "Layered gatekeeper with DNS split-brain (PowerDNS + DNSSEC), Bitwarden Secrets Manager, Teleport bastion host for SSH/RDP audit, and active SOC lab (Wazuh SIEM + MISP + IRIS).",
+          "tag": "SECURITY · DEVOPS",
+          "link": "https://reza.is-a.dev"
+        },
+        {
+          "id": "itsm-asset",
+          "title": "ITSM & ASSET MANAGEMENT",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "GLPI ITSM WITH ITIL WORKFLOW + CUSTOM ASSET MANAGEMENT FOR 30+ BRANCHES",
+          "description": "ITSM ticketing system with RBAC, automation rules, and analytics dashboard. Asset management platform with site history, device inventory, photo documentation, and PDF/Excel export.",
+          "tag": "INTERNAL TOOLS",
+          "link": "https://reza.is-a.dev"
+        },
+        {
           "id": "dashboard-cms",
           "title": "DASHBOARD PANEL CMS",
           "subtitle": "2025 | Yukti ID",
@@ -74,12 +127,12 @@
       ]
     },
 
-  "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. I am {{age}} years old, based in Malang, East Java. I am an IT Enthusiast with nearly 10 years of experience in networking, infrastructure, and IT systems development.",
-  "shortBiography_2": "My career began at PT. Telkom Akses, where I handled fiber optic-based networks, service provisioning, and led a team of field technicians to maintain service stability and customer satisfaction across East Java.",
-  "shortBiography_3": "I expanded my expertise into web development through an internship at <highlight>Yukti ID</highlight>, where I developed a full-stack blog platform using Next.js, Express.js, and MySQL — building a CMS dashboard and backend API for a media company.",
-  "shortBiography_4": "I further sharpened my skills through an intensive 6-month bootcamp at Harisenin.com, covering frontend, backend, databases, and software engineering fundamentals — successfully transitioning from network infrastructure into software development.",
-  "shortBiography_5": "Currently, I work at PT. Gudang Baru Berkah as a DevSecOps Infrastructure Engineer, handling all aspects of IT infrastructure — from inter-branch network design and server virtualization (Proxmox, VMware, Hyper-V, Kubernetes), to monitoring & observability using Grafana Stack and Zabbix.",
-  "shortBiography_6": "I also maintain a SOC stack (Wazuh, TheHive, Cortex, MISP, Kafka), IP management (phpIPAM), and internal services such as PBX, DNS, and ticketing systems. I continuously develop myself in automation, security, and infrastructure-as-code, while studying SD-WAN, ZTNA, and NAC concepts.",
+  "shortBiography_1": "My name is {{name}}, but you can call me <highlight>{{nickname}}</highlight>. Based in Malang, East Java, I am an ICT Infrastructure & DevOps Engineer with 11+ years of experience building and managing enterprise infrastructure end-to-end.",
+  "shortBiography_2": "My career began at PT. Telkom Akses (2015–2024), where I handled fiber optic networks, service provisioning, and grew from a field technician into a Team Leader managing a cross-area technician team — maintaining an order completion SLA of ≥85% across East Java.",
+  "shortBiography_3": "I expanded into software development through a project-based engagement at <highlight>Yukti ID</highlight>, where I built a full-stack blog platform using Next.js, Express.js, and MySQL — designing the application architecture, backend API, database schema, and responsive frontend.",
+  "shortBiography_4": "I further sharpened my development skills through an intensive 6-month bootcamp at Harisenin.com, covering frontend, backend, databases, and software engineering fundamentals.",
+  "shortBiography_5": "Currently, I work at PT. Gudang Baru Berkah as a DevOps Engineer (ICT NIS — Network, Infrastructure & Security), managing 30+ VMs on Proxmox VE and 30+ branch network connectivity. I designed the enterprise multi-site network with VLAN segmentation, OSPF/BGP routing, and SD-WAN Ruijie Anylink, and rebuilt the full-stack observability platform from scratch using Zabbix + Grafana + Alloy + Prometheus + Loki.",
+  "shortBiography_6": "I also implemented a layered security architecture (Cloudflare WAF → MikroTik ACL → NGINX Proxy Manager) achieving A+ on Qualys SSL Labs and SecurityHeaders.com, a DNS split-brain with PowerDNS + DNSSEC, Bitwarden for secrets management, Teleport for SSH/RDP audit, and developed in-house tools — including an NMS real-time display, asset management platform for 30+ branches, and GLPI ITSM with ITIL workflow.",
   "shortBiography_7": "I am always open to collaboration and knowledge sharing. If you are interested in working together, feel free to reach out through the <a>{{contact}}</a> section below.",
   "shortBiography_8": "This website was built inspired by Frans Jesky on <a>{{name}}</a>.",
 
@@ -87,47 +140,36 @@
   "closeButton": "Close",
 
   "experience": {
+    "currentBadge": "Current",
     "current": {
       "company": "PT. Gudang Baru Berkah",
       "location": "Malang, East Java, Indonesia (Onsite)",
       "title": "PT. Gudang Baru Berkah",
-      "position": "DevSecOps Infrastructure Engineer",
+      "position": "DevOps Engineer | ICT NIS – Network, Infrastructure & Security",
       "duration": "Feb 2025 - Present",
-      "years": "1 yr 2 months · Full-time",
-      "description": "As a DevOps and Network Engineer, responsible for deployment, management, and automation of various company IT services and infrastructure, with a focus on system stability, security, and efficiency.",
+      "years": "1 yr 3 months · Full-time",
+      "description": "Responsible for building and managing enterprise IT infrastructure end-to-end — from network design and server virtualization, to full-stack observability, layered security architecture, and internal application development. Handles 30+ VMs and 30+ branch connectivity, from design phase to go-live.",
       "keyResponsibilities": "Scope of Responsibilities:",
       "responsibilities": [
         {
-          "title": "Proxmox & Bare Metal Management",
-          "details": "Installation, configuration, and management of bare metal servers using Proxmox VE as the primary virtualization platform for various internal company services."
+          "title": "Network & Connectivity",
+          "details": "Designed and operates a multi-site enterprise network: VLAN segmentation, OSPF/BGP routing, and tunneling migration from SSTP over EoIP to SD-WAN Ruijie Anylink (Hub-Spoke) for 30+ branch connectivity. Rebuilt IPAM and VLAN design with zero IP conflicts; configured MikroTik (CCR2004, CCR1009, RB750): VLAN, firewall, OSPF, BGP, DHCP, port forwarding. Implemented WireGuard VPN with internal user provisioning."
+        },
+        {
+          "title": "Server & Virtualization",
+          "details": "Manages 30+ VMs on Proxmox VE: lifecycle management, VLAN bridge, resource planning, backup and cleanup. Planned DRC topology using Proxmox Replication for disaster recovery and mini data center commissioning."
         },
         {
           "title": "Monitoring & Observability",
-          "details": "Deployed and integrated Prometheus and Grafana Stack to monitor infrastructure, network, and application performance. Built automated alerting systems to Microsoft Teams."
+          "details": "Rebuilt full-stack observability from scratch: Zabbix + Grafana OSS + Grafana Alloy + Prometheus + Loki — single NOC dashboard for all infrastructure and internal applications. Developed NMS-TV: real-time monitoring display via WebSocket in the NOC room (VM status, active alerts, WAN status 24/7) with automatic alerting to messaging apps. Coverage: 30+ VMs, network devices, UPS, Synology NAS, EVS CCTV, IP PBX, and internal applications."
         },
         {
-          "title": "Internal Telecommunications",
-          "details": "Setup and maintenance of Issabel-based IP Phone PBX, including inter-branch integration and extension configuration for internal communications."
+          "title": "Security Architecture",
+          "details": "Implemented layered gatekeeper: Cloudflare WAF+DDoS+SSL as edge → MikroTik ACL (src-address Cloudflare only) → NGINX Proxy Manager for SSL termination and security headers — achieving A+ on Qualys SSL Labs and SecurityHeaders.com for all GBB Group public domains. DNS split-brain with PowerDNS Recursor + Authoritative + PowerAdmin; DNSSEC active, wildcard SSL auto-renewal via DNS-01 challenge. Bitwarden Secrets Manager, Teleport bastion host for SSH/RDP audit, and active SOC lab (Wazuh SIEM + MISP + IRIS) in finalization towards production."
         },
         {
-          "title": "IT Asset Management",
-          "details": "Implementation and maintenance of OCS Inventory integrated with GLPI for IT asset management, device inventory, and asset lifecycle recording."
-        },
-        {
-          "title": "IP & Network Management",
-          "details": "Deployed and maintained phpIPAM for IP address management, subnet, and VLAN segmentation across the entire company network."
-        },
-        {
-          "title": "Containerization & Microservices",
-          "details": "Built and managed Kubernetes cluster environments for microservices deployment. Performed scaling, load balancing, and container-based application orchestration."
-        },
-        {
-          "title": "Ingress & Reverse Proxy",
-          "details": "Configured Traefik and Nginx as reverse proxy and ingress controllers for HTTP/HTTPS routing, TLS termination, and multi-application domain management."
-        },
-        {
-          "title": "Security & High Availability",
-          "details": "Ensured systems remain secure and highly available through server hardening, network segmentation, and backup automation. Also built SOC stack with Wazuh, TheHive, Cortex, MISP, and Kafka."
+          "title": "Internal Services & Application Development",
+          "details": "Setup and operation of Asterisk-based IP PBX: SIP trunk Telkom Indibiz, IVR, Ring Group, Call Queue, Voicemail. Synology NAS enterprise configuration: RBAC per user/group/folder, SSL, backup schedule. Developed in-house tools: NOC real-time display (WebSocket), asset management platform for 30+ branches (site history, device inventory, photo documentation, PDF/Excel export), and GLPI ITSM with ITIL workflow, RBAC, automation rules, and analytics dashboard. Resolved domain takeover incident and redocumented all company domains."
         }
       ]
     },
@@ -136,10 +178,10 @@
       "company": "Yukti ID",
       "location": "Malang, Indonesia (Hybrid)",
       "title": "Yukti ID",
-      "position": "Web Developer Intern",
+      "position": "Web Application Developer (Project-Based)",
       "duration": "Oct 2024 - Jan 2025",
-      "years": "4 months · Internship",
-      "description": "Developed a full-stack blog platform for a media company over 4 months. Solely responsible for designing, developing, and deploying three main platform components — with regular planning sessions and weekly reviews with the software house owner.",
+      "years": "4 months · Project-Based",
+      "description": "Developed a full-stack web application and CMS using Next.js, Express.js, and MySQL — designing the application architecture, backend API, database schema, and responsive frontend. Solely responsible for all three platform components with regular planning sessions and weekly reviews with the software house owner.",
       "keyResponsibilities": "Key Deliverables:",
       "responsibilities": [
         {

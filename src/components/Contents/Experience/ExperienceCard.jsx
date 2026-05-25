@@ -42,7 +42,7 @@ const ExperienceCard = ({ experienceKey, isCurrent = false }) => {
           )}
           {isCurrent && (
             <span className="bg-violet-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
-              Current
+              {t("experience.currentBadge")}
             </span>
           )}
         </div>

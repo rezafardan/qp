@@ -1,8 +1,25 @@
 {
   "navbar": {
+    "brand": {
+      "name": "Reza Fardan",
+      "subtitle": "ICT Infrastructure & DevOps Engineer"
+    },
     "navbar1": "PROFIL",
     "navbar2": "PROYEK",
     "navbar3": "KONTAK"
+  },
+  "hero": {
+    "tagline": "Nice view to be had after a long climb"
+  },
+  "biography": {
+    "openPhoto": "Buka Foto",
+    "closePhoto": "Tutup Foto"
+  },
+  "footer": {
+    "copyright": "Hak Cipta © 2025 oleh Reza Fardan"
+  },
+  "app": {
+    "lastUpdated": "Terakhir diperbarui - Mei 2026"
   },
 
   "content": {
@@ -43,6 +60,42 @@
       "button": "Lihat Proyek",
       "items": [
         {
+          "id": "observability-platform",
+          "title": "OBSERVABILITY PLATFORM",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "FULL-STACK MONITORING: ZABBIX · GRAFANA OSS · ALLOY · PROMETHEUS · LOKI",
+          "description": "Membangun ulang monitoring stack dari nol. Single NOC dashboard untuk 30+ VM, network device, UPS, NAS, CCTV, dan aplikasi internal. NMS-TV display realtime via WebSocket di ruang NOC dengan alerting otomatis.",
+          "tag": "DEVOPS · OBSERVABILITY",
+          "link": "https://reza.is-a.dev"
+        },
+        {
+          "id": "network-redesign",
+          "title": "ENTERPRISE NETWORK REDESIGN",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "MULTI-SITE NETWORK: VLAN SEGMENTATION · ROUTING OSPF/BGP · SD-WAN RUIJIE ANYLINK HUB-SPOKE",
+          "description": "Rebuild IPAM dan VLAN design seluruh entitas. Migrasi tunneling dari SSTP over EoIP ke SD-WAN Ruijie Anylink Hub-Spoke untuk konektivitas 30+ cabang. Zero IP conflict di seluruh site.",
+          "tag": "NETWORK · INFRA",
+          "link": "https://reza.is-a.dev"
+        },
+        {
+          "id": "security-architecture",
+          "title": "LAYERED SECURITY ARCHITECTURE",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "CLOUDFLARE WAF → MIKROTIK ACL → NGINX PROXY MANAGER — A+ QUALYS SSL LABS",
+          "description": "Layered gatekeeper dengan DNS split-brain (PowerDNS + DNSSEC), Bitwarden Secret Manager, Teleport bastion host untuk audit akses SSH/RDP, dan SOC lab aktif (Wazuh SIEM + MISP + IRIS).",
+          "tag": "SECURITY · DEVOPS",
+          "link": "https://reza.is-a.dev"
+        },
+        {
+          "id": "itsm-asset",
+          "title": "ITSM & ASSET MANAGEMENT",
+          "subtitle": "2025 | PT. Gudang Baru Berkah · Production",
+          "heading": "GLPI ITSM DENGAN ITIL WORKFLOW + PLATFORM ASSET MANAGEMENT UNTUK 30+ CABANG",
+          "description": "ITSM ticketing system dengan RBAC, automation rules, dan dashboard analitik. Platform asset management dengan site history, inventaris perangkat, dokumentasi foto, dan export PDF/Excel.",
+          "tag": "INTERNAL TOOLS",
+          "link": "https://reza.is-a.dev"
+        },
+        {
           "id": "dashboard-cms",
           "title": "DASHBOARD PANEL CMS",
           "subtitle": "2025 | Yukti ID",
@@ -77,12 +130,12 @@
   "projectDetail": "Membangun aplikasi film dari awal, menggunakan React JS untuk frontend, Express untuk backend, dan MySQL sebagai database.",
   "projectButton": "Lihat Proyek",
 
-  "shortBiography_1": "Nama saya {{name}}, bisa dipanggil <highlight>{{nickname}}</highlight>. Saya berusia {{age}} tahun, berdomisili di Malang, Jawa Timur. Saya adalah IT Enthusiast dengan pengalaman hampir 10 tahun di bidang jaringan, infrastruktur, dan pengembangan sistem TI.",
-  "shortBiography_2": "Karier saya dimulai di PT. Telkom Akses, di mana saya menangani jaringan berbasis fiber optik, provisioning layanan, dan memimpin tim teknisi lapangan untuk menjaga stabilitas layanan serta kepuasan pelanggan di seluruh Jawa Timur.",
-  "shortBiography_3": "Saya memperluas keahlian ke bidang web development melalui magang di <highlight>Yukti ID</highlight>, di mana saya mengembangkan platform blog full-stack menggunakan Next.js, Express.js, dan MySQL — membangun dashboard CMS dan backend API untuk perusahaan media.",
-  "shortBiography_4": "Saya mempertajam kemampuan melalui bootcamp intensif 6 bulan di Harisenin.com, mencakup frontend, backend, database, dan fundamental software engineering — berhasil bertransisi dari infrastruktur jaringan ke pengembangan perangkat lunak.",
-  "shortBiography_5": "Saat ini saya bekerja di PT. Gudang Baru Berkah sebagai DevSecOps Infrastructure Engineer, menangani seluruh aspek infrastruktur TI — mulai dari desain jaringan antar cabang dan virtualisasi server (Proxmox, VMware, Hyper-V, Kubernetes), hingga monitoring & observability menggunakan Grafana Stack dan Zabbix.",
-  "shortBiography_6": "Saya juga membangun SOC stack (Wazuh, TheHive, Cortex, MISP, Kafka), manajemen IP (phpIPAM), serta layanan internal seperti PBX, DNS, dan sistem ticketing. Saya terus mengembangkan diri di bidang automation, security, dan infrastructure-as-code, sambil mempelajari konsep SD-WAN, ZTNA, dan NAC.",
+  "shortBiography_1": "Nama saya {{name}}, bisa dipanggil <highlight>{{nickname}}</highlight>. Berdomisili di Malang, Jawa Timur, saya adalah ICT Infrastructure & DevOps Engineer dengan 11+ tahun pengalaman membangun dan mengelola infrastruktur enterprise end-to-end.",
+  "shortBiography_2": "Karier saya dimulai di PT. Telkom Akses (2015–2024), menangani jaringan fiber optik, provisioning layanan, dan berkembang dari teknisi lapangan menjadi Team Leader — menjaga SLA penyelesaian order ≥85% di seluruh Jawa Timur.",
+  "shortBiography_3": "Saya memperluas kemampuan ke pengembangan perangkat lunak melalui engagement berbasis proyek di <highlight>Yukti ID</highlight>, membangun web application dan CMS full-stack menggunakan Next.js, Express.js, dan MySQL — merancang arsitektur aplikasi, backend API, database schema, dan frontend responsif.",
+  "shortBiography_4": "Saya mempertajam keahlian development melalui bootcamp intensif 6 bulan di Harisenin.com, mencakup frontend, backend, database, dan fundamental software engineering.",
+  "shortBiography_5": "Saat ini saya bekerja di PT. Gudang Baru Berkah sebagai DevOps Engineer (ICT NIS — Network, Infrastructure & Security), mengelola 30+ VM di Proxmox VE dan konektivitas 30+ cabang. Saya merancang enterprise multi-site network dengan VLAN segmentation, routing OSPF/BGP, dan SD-WAN Ruijie Anylink, serta membangun ulang full-stack observability platform dari nol menggunakan Zabbix + Grafana + Alloy + Prometheus + Loki.",
+  "shortBiography_6": "Saya juga mengimplementasikan layered security architecture (Cloudflare WAF → MikroTik ACL → NGINX Proxy Manager) dengan pencapaian A+ di Qualys SSL Labs dan SecurityHeaders.com, DNS split-brain dengan PowerDNS + DNSSEC, Bitwarden untuk secrets management, Teleport untuk audit SSH/RDP, serta mengembangkan tools internal — termasuk NMS real-time display, platform asset management untuk 30+ cabang, dan GLPI ITSM dengan ITIL workflow.",
   "shortBiography_7": "Saya selalu terbuka untuk kolaborasi dan berbagi pengetahuan. Jika tertarik bekerja sama, jangan ragu menghubungi saya melalui bagian <a>{{contact}}</a> di bawah.",
   "shortBiography_8": "Website ini dibangun karena terinspirasi dari Frans Jesky di <a>{{name}}</a>.",
 
@@ -90,47 +143,36 @@
   "closeButton": "Tutup",
 
   "experience": {
+    "currentBadge": "Saat Ini",
     "current": {
       "company": "PT. Gudang Baru Berkah",
       "location": "Malang, Jawa Timur, Indonesia (Di Lokasi)",
       "title": "PT. Gudang Baru Berkah",
-      "position": "DevSecOps Infrastructure Engineer",
+      "position": "DevOps Engineer | ICT NIS – Network, Infrastructure & Security",
       "duration": "Feb 2025 - Sekarang",
-      "years": "1 thn 2 bln · Purnawaktu",
-      "description": "Sebagai DevOps dan Network Engineer, bertanggung jawab atas deployment, pengelolaan, dan automasi berbagai layanan serta infrastruktur TI perusahaan, dengan fokus pada stabilitas, keamanan, dan efisiensi sistem.",
+      "years": "1 thn 3 bln · Purnawaktu",
+      "description": "Bertanggung jawab membangun dan mengelola infrastruktur TI enterprise end-to-end — dari desain jaringan dan virtualisasi server, hingga full-stack observability, layered security architecture, dan pengembangan aplikasi internal. Menangani 30+ VM dan konektivitas 30+ cabang, dari tahap perancangan hingga go-live.",
       "keyResponsibilities": "Ruang Lingkup Tanggung Jawab:",
       "responsibilities": [
         {
-          "title": "Proxmox & Bare Metal Management",
-          "details": "Instalasi, konfigurasi, dan pengelolaan bare metal server menggunakan Proxmox VE sebagai platform virtualisasi utama untuk berbagai layanan internal perusahaan."
+          "title": "Network & Connectivity",
+          "details": "Merancang dan mengoperasikan enterprise network multi-site: VLAN segmentation, routing OSPF/BGP, dan migrasi tunneling dari SSTP over EoIP ke SD-WAN Ruijie Anylink (Hub-Spoke) untuk konektivitas 30+ cabang. Rebuild IPAM dan VLAN design ke subnet terstruktur per departemen, zero IP conflict; konfigurasi MikroTik (CCR2004, CCR1009, RB750): VLAN, firewall, OSPF, BGP, DHCP, port forwarding. Implementasi WireGuard VPN dengan sistem provisioning user internal."
+        },
+        {
+          "title": "Server & Virtualization",
+          "details": "Mengelola 30+ VM di Proxmox VE: lifecycle management, VLAN bridge, resource planning, backup dan cleanup. Perencanaan DRC dengan desain topologi Proxmox Replication untuk disaster recovery dan komisioning mini data center."
         },
         {
           "title": "Monitoring & Observability",
-          "details": "Deploy dan integrasi Prometheus serta Grafana Stack untuk memantau performa infrastruktur, jaringan, dan aplikasi. Membangun sistem alerting otomatis ke Microsoft Teams."
+          "details": "Rebuild full-stack observability dari nol: Zabbix + Grafana OSS + Grafana Alloy + Prometheus + Loki — single NOC dashboard untuk seluruh infrastruktur dan aplikasi internal. Implementasi NMS-TV: display monitoring realtime via WebSocket di ruang NOC (status VM, alert aktif, WAN status live 24/7) dengan alerting otomatis ke aplikasi pesan. Coverage: 30+ VM, network device, UPS, Synology NAS, EVS CCTV, IP PBX, dan aplikasi internal."
         },
         {
-          "title": "Telekomunikasi Internal",
-          "details": "Setup dan maintenance IP Phone PBX berbasis Issabel, termasuk integrasi antar cabang dan konfigurasi ekstensi untuk komunikasi internal."
+          "title": "Security Architecture",
+          "details": "Implementasi layered gatekeeper: Cloudflare WAF+DDoS+SSL sebagai edge → MikroTik ACL (src-address Cloudflare only) → NGINX Proxy Manager untuk SSL termination dan security headers — pencapaian skor A+ di Qualys SSL Labs dan SecurityHeaders.com untuk seluruh domain publik GBB Group. DNS split-brain dengan PowerDNS Recursor + Authoritative + PowerAdmin; DNSSEC aktif, wildcard SSL auto-renewal via DNS-01 challenge. Bitwarden Secret Manager, Teleport bastion host untuk audit akses SSH/RDP, dan SOC lab aktif (Wazuh SIEM + MISP + IRIS) dalam finalisasi menuju production."
         },
         {
-          "title": "Manajemen Aset TI",
-          "details": "Implementasi dan pemeliharaan OCS Inventory serta integrasinya dengan GLPI untuk manajemen aset TI, inventory perangkat, dan pencatatan lifecycle aset."
-        },
-        {
-          "title": "Manajemen IP & Jaringan",
-          "details": "Deploy dan maintenance phpIPAM untuk pengelolaan alamat IP, subnet, dan VLAN segmentation di seluruh jaringan perusahaan."
-        },
-        {
-          "title": "Containerization & Microservices",
-          "details": "Membangun dan mengelola lingkungan Kubernetes cluster untuk deployment microservices. Melakukan scaling, load balancing, dan orchestration aplikasi berbasis container."
-        },
-        {
-          "title": "Ingress & Reverse Proxy",
-          "details": "Mengonfigurasi Traefik dan Nginx sebagai reverse proxy dan ingress controller untuk routing HTTP/HTTPS, terminasi TLS, serta manajemen domain multi-aplikasi."
-        },
-        {
-          "title": "Keamanan & High Availability",
-          "details": "Menjamin sistem selalu secure dan high-availability melalui hardening server, network segmentation, dan backup automation. Membangun SOC stack dengan Wazuh, TheHive, Cortex, MISP, dan Kafka."
+          "title": "Internal Services & Application Development",
+          "details": "Setup dan operasional IP PBX berbasis Asterisk: SIP trunk Telkom Indibiz, IVR, Ring Group, Call Queue, Voicemail. Konfigurasi NAS Synology enterprise: RBAC per user/group/folder, SSL, backup schedule. Mengembangkan tools internal: NOC real-time display system (WebSocket), platform asset management untuk 30+ cabang (site history, inventaris perangkat, dokumentasi foto, export PDF/Excel), dan ITSM ticketing system GLPI dengan ITIL workflow, RBAC, automation rules, dan dashboard analitik. Koordinasi penyelesaian insiden domain takeover dan redokumentasi seluruh domain perusahaan."
         }
       ]
     },
@@ -139,10 +181,10 @@
       "company": "Yukti ID",
       "location": "Malang, Indonesia (Gabungan)",
       "title": "Yukti ID",
-      "position": "Magang Web Developer",
+      "position": "Web Application Developer (Project-Based)",
       "duration": "Okt 2024 - Jan 2025",
-      "years": "4 bulan · Magang",
-      "description": "Mengembangkan platform blog full-stack untuk perusahaan media selama 4 bulan. Bertanggung jawab penuh dalam merancang, mengembangkan, dan men-deploy tiga komponen utama platform secara mandiri — dengan sesi perencanaan rutin dan review mingguan bersama pemilik software house.",
+      "years": "4 bulan · Project-Based",
+      "description": "Mengembangkan web application dan CMS berbasis Next.js, Express.js, dan MySQL — merancang arsitektur aplikasi, backend API, database schema, dan frontend responsif. Bertanggung jawab penuh atas ketiga komponen utama platform secara mandiri dengan sesi perencanaan rutin dan review mingguan bersama pemilik software house.",
       "keyResponsibilities": "Hasil Utama:",
       "responsibilities": [
         {
